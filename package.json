@@ -7,11 +7,24 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
+    "detox:build:ios": "detox build --configuration ios.sim.debug",
+    "predetox:ios": "rm -rf files/ios && mkdir -p files/ios",
+    "detox:test:ios": "npm run predetox:ios && detox test -c ios.sim.debug --record-logs all --record-videos all --take-screenshots all --artifacts-location ./files/ios/ && node scripts/finalizeVideo.js ios",
+    "detox:build:android": "detox build --configuration android.emu.debug",
+    "predetox:android": "rm -rf files/android && mkdir -p files/android",
+    "detox:test:android": "npm run predetox:android && detox test -c android.emu.debug --record-logs all --record-videos all --take-screenshots all --artifacts-location ./files/android/ && node scripts/finalizeVideo.js android",
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "@react-navigation/native": "^7.1.6",
+    "@react-navigation/native-stack": "^7.3.10",
     "react": "18.3.1",
-    "react-native": "0.75.2"
+    "react-native": "0.75.2",
+    "react-native-gesture-handler": "^2.25.0",
+    "react-native-reanimated": "^3.17.4",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "^4.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -21,14 +34,28 @@
     "@react-native/eslint-config": "0.75.2",
     "@react-native/metro-config": "0.75.2",
     "@react-native/typescript-config": "0.75.2",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/react-native": "^13.2.0",
+    "@types/jest": "^29.5.14",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
+    "detox": "^20.37.0",
     "eslint": "^8.19.0",
-    "jest": "^29.6.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-html-reporter": "^4.1.0",
+    "metro-react-native-babel-preset": "^0.77.0",
     "prettier": "2.8.8",
     "react-test-renderer": "18.3.1",
+    "ts-jest": "^29.3.2",
     "typescript": "5.0.4"
+  },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {},
+      "android.emu.debug": {}
+    }
   },
   "engines": {
     "node": ">=18"

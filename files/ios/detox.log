@@ -1,0 +1,3226 @@
+17:16:23.225 detox[32475] [90mB[39m node_modules/.bin/detox test -c ios.sim.debug --record-logs all --record-videos all --take-screenshots all --artifacts-location ./files/ios/
+  data: {
+    "id": "8ee28fdc-dc19-99da-8d4f-8d12280f2911",
+    "detoxConfig": {
+      "configurationName": "ios.sim.debug",
+      "apps": {
+        "default": {
+          "type": "ios.app",
+          "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app",
+          "build": "xcodebuild -workspace ios/AuthApp.xcworkspace -scheme AuthApp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build"
+        }
+      },
+      "artifacts": {
+        "rootDir": "./files/ios",
+        "plugins": {
+          "log": {
+            "enabled": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "screenshot": {
+            "enabled": true,
+            "shouldTakeAutomaticSnapshots": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "video": {
+            "enabled": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "instruments": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "uiHierarchy": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          }
+        }
+      },
+      "behavior": {
+        "init": {
+          "keepLockFile": false,
+          "reinstallApp": true,
+          "exposeGlobals": true
+        },
+        "cleanup": {
+          "shutdownDevice": false
+        },
+        "launchApp": "auto"
+      },
+      "cli": {
+        "artifactsLocation": "./files/ios/",
+        "recordLogs": "all",
+        "takeScreenshots": "all",
+        "recordVideos": "all",
+        "configuration": "ios.sim.debug",
+        "start": true
+      },
+      "commands": [
+        {
+          "appName": "default",
+          "build": "xcodebuild -workspace ios/AuthApp.xcworkspace -scheme AuthApp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build"
+        }
+      ],
+      "device": {
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 16 Pro"
+        }
+      },
+      "logger": {
+        "level": "info",
+        "overrideConsole": true,
+        "options": {
+          "showLoggerName": true,
+          "showPid": true,
+          "showLevel": false,
+          "showMetadata": false,
+          "basepath": "/Users/tareqaziz/workspace/reactnative/AuthApp/node_modules/detox/src",
+          "prefixers": {},
+          "stringifiers": {}
+        }
+      },
+      "testRunner": {
+        "retries": 0,
+        "forwardEnv": false,
+        "detached": false,
+        "bail": false,
+        "jest": {
+          "setupTimeout": 120000,
+          "teardownTimeout": 30000,
+          "retryAfterCircusRetries": false,
+          "reportWorkerAssign": true
+        },
+        "args": {
+          "$0": "jest",
+          "_": [],
+          "config": "e2e/jest.config.js",
+          "--": []
+        }
+      },
+      "session": {
+        "autoStart": true,
+        "debugSynchronization": 10000
+      }
+    },
+    "detoxIPCServer": "primary-32475",
+    "testResults": [],
+    "testSessionIndex": 0,
+    "workersCount": 0
+  }
+17:16:23.230 detox[32475] [90mi[39m Server path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + ipc.config.id /tmp/detox.primary-32475
+17:16:23.231 detox[32475] [90mi[39m starting server on  /tmp/detox.primary-32475 
+17:16:23.231 detox[32475] [90mi[39m starting TLS server false
+17:16:23.231 detox[32475] [90mi[39m starting server as Unix || Windows Socket
+17:16:23.233 detox[32475] [90mi[39m Detox server listening on localhost:54553...
+17:16:23.236 detox[32475] [90mi[39m Serialized the session state at: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8ee28fdc-dc19-99da-8d4f-8d12280f2911.detox.json
+17:16:23.237 detox[32475] [90mB[39m jest --config e2e/jest.config.js
+17:16:23.946 detox[32478] [90mi[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+17:16:23.947 detox[32478] [90mi[39m requested connection to  primary-32475 /tmp/detox.primary-32475
+17:16:23.947 detox[32478] [90mi[39m Connecting client on Unix Socket : /tmp/detox.primary-32475
+17:16:23.948 detox[32475] [90mi[39m ## socket connection to server detected ##
+17:16:23.948 detox[32478] [90mi[39m retrying reset
+17:16:23.949 detox[32478] [90mi[39m dispatching event to  primary-32475 /tmp/detox.primary-32475  :  registerContext , { id: 'secondary-32478' }
+17:16:23.950 detox[32475] [90mi[39m received event of :  registerContext { id: 'secondary-32478' }
+17:16:23.950 detox[32475] [90mi[39m dispatching event to socket  :  registerContextDone {
+  testResults: [],
+  testSessionIndex: 0,
+  unsafe_earlyTeardown: undefined
+}
+17:16:23.951 detox[32478] [90mi[39m ## received events ##
+17:16:23.951 detox[32478] [90mi[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+17:16:24.004 detox[32478] [90mB[39m e2e/authFlow.e2e.ts
+17:16:24.012 detox[32478] [90mB[39m set up environment
+17:16:24.012 detox[32478] [90mi[39m dispatching event to  primary-32475 /tmp/detox.primary-32475  :  registerWorker , { workerId: 'w1' }
+17:16:24.013 detox[32475] [90mi[39m received event of :  registerWorker { workerId: 'w1' }
+17:16:24.013 detox[32475] [90mi[39m dispatching event to socket  :  registerWorkerDone { workersCount: 1 }
+17:16:24.013 detox[32475] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-32475  :   sessionStateUpdate { workersCount: 1 }
+17:16:24.013 detox[32478] [90mi[39m ## received events ##
+17:16:24.013 detox[32478] [90mi[39m detected event registerWorkerDone { workersCount: 1 }
+17:16:24.146 detox[32478] [90mi[39m ## received events ##
+17:16:24.146 detox[32478] [90mi[39m detected event sessionStateUpdate { workersCount: 1 }
+17:16:24.149 detox[32475] [90mB[39m connection :54553<->:54570
+17:16:24.150 detox[32478] [90mi[39m opened web socket to: ws://localhost:54553
+17:16:24.151 detox[32475] [90mi[39m get
+  data: {"type":"login","params":{"sessionId":"50a63e91-4d14-d391-a1fd-09b5b447cc14","role":"tester"},"messageId":0}
+17:16:24.151 detox[32478] [90mi[39m send message
+  data: {"type":"login","params":{"sessionId":"50a63e91-4d14-d391-a1fd-09b5b447cc14","role":"tester"},"messageId":0}
+17:16:24.152 detox[32475] [90mi[39m created session 50a63e91-4d14-d391-a1fd-09b5b447cc14
+17:16:24.152 detox[32475] [90mi[39m send
+  data: {
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": false
+    },
+    "messageId": 0
+  }
+17:16:24.152 detox[32475] [90mi[39m tester joined session 50a63e91-4d14-d391-a1fd-09b5b447cc14
+17:16:24.152 detox[32478] [90mi[39m get message
+  data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+   
+17:16:24.338 detox[32475] [90mi[39m received event of :  allocateDevice {
+  deviceConfig: { type: 'ios.simulator', device: { type: 'iPhone 16 Pro' } }
+}
+17:16:24.338 detox[32478] [90mi[39m dispatching event to  primary-32475 /tmp/detox.primary-32475  :  allocateDevice , {
+  deviceConfig: { type: 'ios.simulator', device: { type: 'iPhone 16 Pro' } }
+}
+17:16:24.340 detox[32475] [90mB[39m init
+  args: ()
+17:16:24.342 detox[32475] [90mE[39m init
+17:16:24.342 detox[32475] [90mB[39m allocate
+  data: {
+    "type": "ios.simulator",
+    "device": {
+      "type": "iPhone 16 Pro"
+    }
+  }
+17:16:24.342 detox[32475] [90mi[39m applesimutils --list --byType "iPhone 16 Pro"
+17:16:24.676 detox[32475] [90mi[39m [
+  {
+    "isAvailable" : true,
+    "logPath" : "\/Users\/tareqaziz\/Library\/Logs\/CoreSimulator\/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA",
+    "logPathSize" : 368640,
+    "state" : "Booted",
+    "name" : "iPhone 16 Pro",
+    "dataPathSize" : 1617088512,
+    "deviceType" : {
+      "maxRuntimeVersion" : 4294967295,
+      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Pro.simdevicetype",
+      "maxRuntimeVersionString" : "65535.255.255",
+      "name" : "iPhone 16 Pro",
+      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro",
+      "productFamily" : "iPhone",
+      "modelIdentifier" : "iPhone17,1",
+      "minRuntimeVersionString" : "18.0.0",
+      "minRuntimeVersion" : 1179648
+    },
+    "os" : {
+      "bundlePath" : "\/Library\/Developer\/CoreSimulator\/Volumes\/iOS_22D8075\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS 18.3.simruntime",
+      "buildversion" : "22D8075",
+      "platform" : "iOS",
+      "runtimeRoot" : "\/Library\/Developer\/CoreSimulator\/Volumes\/iOS_22D8075\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS 18.3.simruntime\/Contents\/Resources\/RuntimeRoot",
+      "identifier" : "com.apple.CoreSimulator.SimRuntime.iOS-18-3",
+      "version" : "18.3.1",
+      "isInternal" : false,
+      "isAvailable" : true,
+      "name" : "iOS 18.3",
+      "supportedDeviceTypes" : [
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Pro.simdevicetype",
+          "name" : "iPhone 16 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Pro Max.simdevicetype",
+          "name" : "iPhone 16 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16.simdevicetype",
+          "name" : "iPhone 16",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Plus.simdevicetype",
+          "name" : "iPhone 16 Plus",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16-Plus",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 15 Pro.simdevicetype",
+          "name" : "iPhone 15 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-15-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 15 Pro Max.simdevicetype",
+          "name" : "iPhone 15 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-15-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 15.simdevicetype",
+          "name" : "iPhone 15",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-15",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 15 Plus.simdevicetype",
+          "name" : "iPhone 15 Plus",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-15-Plus",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 14 Pro.simdevicetype",
+          "name" : "iPhone 14 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-14-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 14 Pro Max.simdevicetype",
+          "name" : "iPhone 14 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-14-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 14.simdevicetype",
+          "name" : "iPhone 14",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-14",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 14 Plus.simdevicetype",
+          "name" : "iPhone 14 Plus",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-14-Plus",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone SE (3rd generation).simdevicetype",
+          "name" : "iPhone SE (3rd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-SE-3rd-generation",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 13 Pro.simdevicetype",
+          "name" : "iPhone 13 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-13-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 13 Pro Max.simdevicetype",
+          "name" : "iPhone 13 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-13-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 13.simdevicetype",
+          "name" : "iPhone 13",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-13",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 13 mini.simdevicetype",
+          "name" : "iPhone 13 mini",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-13-mini",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 12 Pro.simdevicetype",
+          "name" : "iPhone 12 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-12-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 12 Pro Max.simdevicetype",
+          "name" : "iPhone 12 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-12-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 12.simdevicetype",
+          "name" : "iPhone 12",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-12",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 12 mini.simdevicetype",
+          "name" : "iPhone 12 mini",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-12-mini",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone SE (2nd generation).simdevicetype",
+          "name" : "iPhone SE (2nd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-SE--2nd-generation-",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 11 Pro.simdevicetype",
+          "name" : "iPhone 11 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 11 Pro Max.simdevicetype",
+          "name" : "iPhone 11 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 11.simdevicetype",
+          "name" : "iPhone 11",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone Xʀ.simdevicetype",
+          "name" : "iPhone Xʀ",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-XR",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone Xs.simdevicetype",
+          "name" : "iPhone Xs",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-XS",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone Xs Max.simdevicetype",
+          "name" : "iPhone Xs Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-XS-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 11-inch (M4) (16GB).simdevicetype",
+          "name" : "iPad Pro 11-inch (M4) (16GB)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-M4-16GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 11-inch (M4).simdevicetype",
+          "name" : "iPad Pro 11-inch (M4)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-M4-8GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 13-inch (M4) (16GB).simdevicetype",
+          "name" : "iPad Pro 13-inch (M4) (16GB)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-13-inch-M4-16GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 13-inch (M4).simdevicetype",
+          "name" : "iPad Pro 13-inch (M4)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-13-inch-M4-8GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air 11-inch (M2).simdevicetype",
+          "name" : "iPad Air 11-inch (M2)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air-11-inch-M2",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air 13-inch (M2).simdevicetype",
+          "name" : "iPad Air 13-inch (M2)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air-13-inch-M2",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad mini (A17 Pro).simdevicetype",
+          "name" : "iPad mini (A17 Pro)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-mini-A17-Pro",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch) (4th generation) (16GB).simdevicetype",
+          "name" : "iPad Pro (11-inch) (4th generation) (16GB)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-4th-generation-16GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch) (4th generation).simdevicetype",
+          "name" : "iPad Pro (11-inch) (4th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-4th-generation-8GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (6th generation) (16GB).simdevicetype",
+          "name" : "iPad Pro (12.9-inch) (6th generation) (16GB)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-12-9-inch-6th-generation-16GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (6th generation).simdevicetype",
+          "name" : "iPad Pro (12.9-inch) (6th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-12-9-inch-6th-generation-8GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad (10th generation).simdevicetype",
+          "name" : "iPad (10th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-10th-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air (5th generation).simdevicetype",
+          "name" : "iPad Air (5th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air-5th-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad mini (6th generation).simdevicetype",
+          "name" : "iPad mini (6th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-mini-6th-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch) (3rd generation).simdevicetype",
+          "name" : "iPad Pro (11-inch) (3rd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-3rd-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (5th generation).simdevicetype",
+          "name" : "iPad Pro (12.9-inch) (5th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-12-9-inch-5th-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad (9th generation).simdevicetype",
+          "name" : "iPad (9th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-9th-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air (4th generation).simdevicetype",
+          "name" : "iPad Air (4th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air--4th-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad (8th generation).simdevicetype",
+          "name" : "iPad (8th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad--8th-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air (3rd generation).simdevicetype",
+          "name" : "iPad Air (3rd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air--3rd-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad mini (5th generation).simdevicetype",
+          "name" : "iPad mini (5th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-mini--5th-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch) (2nd generation).simdevicetype",
+          "name" : "iPad Pro (11-inch) (2nd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--11-inch---2nd-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (4th generation).simdevicetype",
+          "name" : "iPad Pro (12.9-inch) (4th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---4th-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch) (1st generation).simdevicetype",
+          "name" : "iPad Pro (11-inch) (1st generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--11-inch-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (3rd generation).simdevicetype",
+          "name" : "iPad Pro (12.9-inch) (3rd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---3rd-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad (7th generation).simdevicetype",
+          "name" : "iPad (7th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad--7th-generation-",
+          "productFamily" : "iPad"
+        }
+      ]
+    },
+    "dataPath" : "\/Users\/tareqaziz\/Library\/Developer\/CoreSimulator\/Devices\/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA\/data",
+    "lastBootedAt" : "2025-04-22T07:42:07Z",
+    "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro",
+    "udid" : "B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA"
+  }
+]
+
+17:16:24.677 detox[32475] [90mi[39m settled on B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
+  data: {
+    "id": "B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA",
+    "udid": "B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA"
+  }
+17:16:24.677 detox[32475] [90mE[39m allocate
+17:16:24.677 detox[32475] [90mB[39m post-allocate: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
+  data: {
+    "id": "B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA",
+    "udid": "B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA"
+  }
+17:16:24.677 detox[32475] [90mi[39m applesimutils --list --byId B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA --maxResults 1
+17:16:24.824 detox[32475] [90mi[39m [
+  {
+    "isAvailable" : true,
+    "logPath" : "\/Users\/tareqaziz\/Library\/Logs\/CoreSimulator\/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA",
+    "logPathSize" : 368640,
+    "state" : "Booted",
+    "name" : "iPhone 16 Pro",
+    "dataPathSize" : 1617088512,
+    "deviceType" : {
+      "maxRuntimeVersion" : 4294967295,
+      "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Pro.simdevicetype",
+      "maxRuntimeVersionString" : "65535.255.255",
+      "name" : "iPhone 16 Pro",
+      "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro",
+      "productFamily" : "iPhone",
+      "modelIdentifier" : "iPhone17,1",
+      "minRuntimeVersionString" : "18.0.0",
+      "minRuntimeVersion" : 1179648
+    },
+    "os" : {
+      "bundlePath" : "\/Library\/Developer\/CoreSimulator\/Volumes\/iOS_22D8075\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS 18.3.simruntime",
+      "buildversion" : "22D8075",
+      "platform" : "iOS",
+      "runtimeRoot" : "\/Library\/Developer\/CoreSimulator\/Volumes\/iOS_22D8075\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS 18.3.simruntime\/Contents\/Resources\/RuntimeRoot",
+      "identifier" : "com.apple.CoreSimulator.SimRuntime.iOS-18-3",
+      "version" : "18.3.1",
+      "isInternal" : false,
+      "isAvailable" : true,
+      "name" : "iOS 18.3",
+      "supportedDeviceTypes" : [
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Pro.simdevicetype",
+          "name" : "iPhone 16 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Pro Max.simdevicetype",
+          "name" : "iPhone 16 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16.simdevicetype",
+          "name" : "iPhone 16",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Plus.simdevicetype",
+          "name" : "iPhone 16 Plus",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16-Plus",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 15 Pro.simdevicetype",
+          "name" : "iPhone 15 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-15-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 15 Pro Max.simdevicetype",
+          "name" : "iPhone 15 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-15-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 15.simdevicetype",
+          "name" : "iPhone 15",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-15",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 15 Plus.simdevicetype",
+          "name" : "iPhone 15 Plus",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-15-Plus",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 14 Pro.simdevicetype",
+          "name" : "iPhone 14 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-14-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 14 Pro Max.simdevicetype",
+          "name" : "iPhone 14 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-14-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 14.simdevicetype",
+          "name" : "iPhone 14",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-14",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 14 Plus.simdevicetype",
+          "name" : "iPhone 14 Plus",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-14-Plus",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone SE (3rd generation).simdevicetype",
+          "name" : "iPhone SE (3rd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-SE-3rd-generation",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 13 Pro.simdevicetype",
+          "name" : "iPhone 13 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-13-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 13 Pro Max.simdevicetype",
+          "name" : "iPhone 13 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-13-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 13.simdevicetype",
+          "name" : "iPhone 13",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-13",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 13 mini.simdevicetype",
+          "name" : "iPhone 13 mini",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-13-mini",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 12 Pro.simdevicetype",
+          "name" : "iPhone 12 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-12-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 12 Pro Max.simdevicetype",
+          "name" : "iPhone 12 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-12-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 12.simdevicetype",
+          "name" : "iPhone 12",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-12",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 12 mini.simdevicetype",
+          "name" : "iPhone 12 mini",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-12-mini",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone SE (2nd generation).simdevicetype",
+          "name" : "iPhone SE (2nd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-SE--2nd-generation-",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 11 Pro.simdevicetype",
+          "name" : "iPhone 11 Pro",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 11 Pro Max.simdevicetype",
+          "name" : "iPhone 11 Pro Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 11.simdevicetype",
+          "name" : "iPhone 11",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-11",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone Xʀ.simdevicetype",
+          "name" : "iPhone Xʀ",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-XR",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone Xs.simdevicetype",
+          "name" : "iPhone Xs",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-XS",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone Xs Max.simdevicetype",
+          "name" : "iPhone Xs Max",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-XS-Max",
+          "productFamily" : "iPhone"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 11-inch (M4) (16GB).simdevicetype",
+          "name" : "iPad Pro 11-inch (M4) (16GB)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-M4-16GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 11-inch (M4).simdevicetype",
+          "name" : "iPad Pro 11-inch (M4)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-M4-8GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 13-inch (M4) (16GB).simdevicetype",
+          "name" : "iPad Pro 13-inch (M4) (16GB)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-13-inch-M4-16GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro 13-inch (M4).simdevicetype",
+          "name" : "iPad Pro 13-inch (M4)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-13-inch-M4-8GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air 11-inch (M2).simdevicetype",
+          "name" : "iPad Air 11-inch (M2)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air-11-inch-M2",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air 13-inch (M2).simdevicetype",
+          "name" : "iPad Air 13-inch (M2)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air-13-inch-M2",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad mini (A17 Pro).simdevicetype",
+          "name" : "iPad mini (A17 Pro)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-mini-A17-Pro",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch) (4th generation) (16GB).simdevicetype",
+          "name" : "iPad Pro (11-inch) (4th generation) (16GB)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-4th-generation-16GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch) (4th generation).simdevicetype",
+          "name" : "iPad Pro (11-inch) (4th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-4th-generation-8GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (6th generation) (16GB).simdevicetype",
+          "name" : "iPad Pro (12.9-inch) (6th generation) (16GB)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-12-9-inch-6th-generation-16GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (6th generation).simdevicetype",
+          "name" : "iPad Pro (12.9-inch) (6th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-12-9-inch-6th-generation-8GB",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad (10th generation).simdevicetype",
+          "name" : "iPad (10th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-10th-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air (5th generation).simdevicetype",
+          "name" : "iPad Air (5th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air-5th-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad mini (6th generation).simdevicetype",
+          "name" : "iPad mini (6th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-mini-6th-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch) (3rd generation).simdevicetype",
+          "name" : "iPad Pro (11-inch) (3rd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-3rd-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (5th generation).simdevicetype",
+          "name" : "iPad Pro (12.9-inch) (5th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro-12-9-inch-5th-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad (9th generation).simdevicetype",
+          "name" : "iPad (9th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-9th-generation",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air (4th generation).simdevicetype",
+          "name" : "iPad Air (4th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air--4th-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad (8th generation).simdevicetype",
+          "name" : "iPad (8th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad--8th-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Air (3rd generation).simdevicetype",
+          "name" : "iPad Air (3rd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Air--3rd-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad mini (5th generation).simdevicetype",
+          "name" : "iPad mini (5th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-mini--5th-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch) (2nd generation).simdevicetype",
+          "name" : "iPad Pro (11-inch) (2nd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--11-inch---2nd-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (4th generation).simdevicetype",
+          "name" : "iPad Pro (12.9-inch) (4th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---4th-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (11-inch) (1st generation).simdevicetype",
+          "name" : "iPad Pro (11-inch) (1st generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--11-inch-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad Pro (12.9-inch) (3rd generation).simdevicetype",
+          "name" : "iPad Pro (12.9-inch) (3rd generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---3rd-generation-",
+          "productFamily" : "iPad"
+        },
+        {
+          "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPad (7th generation).simdevicetype",
+          "name" : "iPad (7th generation)",
+          "identifier" : "com.apple.CoreSimulator.SimDeviceType.iPad--7th-generation-",
+          "productFamily" : "iPad"
+        }
+      ]
+    },
+    "dataPath" : "\/Users\/tareqaziz\/Library\/Developer\/CoreSimulator\/Devices\/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA\/data",
+    "lastBootedAt" : "2025-04-22T07:42:07Z",
+    "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro",
+    "udid" : "B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA"
+  }
+]
+
+17:16:24.824 detox[32475] [90mE[39m post-allocate: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
+17:16:24.824 detox[32475] [90mi[39m dispatching event to socket  :  allocateDeviceDone {
+  deviceCookie: {
+    id: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+    udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+    type: 'ios.simulator',
+    bootArgs: undefined,
+    headless: undefined
+  }
+}
+17:16:24.825 detox[32478] [90mi[39m ## received events ##
+17:16:24.825 detox[32478] [90mi[39m detected event allocateDeviceDone {
+  deviceCookie: {
+    id: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+    udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+    type: 'ios.simulator'
+  }
+}
+17:16:24.834 detox[32478] [90mB[39m onBootDevice
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA"})
+17:16:24.834 detox[32478] [90mE[39m onBootDevice
+17:16:24.834 detox[32478] [90mB[39m installUtilBinaries
+  args: ()
+17:16:24.834 detox[32478] [90mE[39m installUtilBinaries
+17:16:24.835 detox[32478] [90mB[39m selectApp
+  args: ("default")
+17:16:24.840 detox[32478] [90mE[39m selectApp
+17:16:24.840 detox[32478] [90mB[39m uninstallApp
+  args: ()
+17:16:24.840 detox[32478] [90mB[39m onBeforeUninstallApp
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
+17:16:24.840 detox[32478] [90mE[39m onBeforeUninstallApp
+17:16:24.841 detox[32478] [90mi[39m /usr/bin/xcrun simctl uninstall B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:16:24.841 detox[32478] [90mi[39m Uninstalling com.auth.app...
+17:16:25.074 detox[32478] [90mi[39m com.auth.app uninstalled
+17:16:25.075 detox[32478] [90mE[39m uninstallApp
+17:16:25.075 detox[32478] [90mB[39m selectApp
+  args: ("default")
+17:16:25.075 detox[32478] [90mB[39m terminateApp
+  args: ()
+17:16:25.075 detox[32478] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
+17:16:25.076 detox[32478] [90mE[39m onBeforeTerminateApp
+17:16:25.076 detox[32478] [90mi[39m /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:16:25.076 detox[32478] [90mi[39m Terminating com.auth.app...
+17:16:26.305 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device failed to terminate com.auth.app.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The request to terminate "com.auth.app" failed. found nothing to terminate
+	found nothing to terminate
+
+17:16:26.305 detox[32478] [90mi[39m Terminating com.auth.app...
+17:16:26.454 detox[32478] [90mi[39m "/usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app" failed with error = Error: Command failed: /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device failed to terminate com.auth.app.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The request to terminate "com.auth.app" failed. found nothing to terminate
+	found nothing to terminate
+ (code=3), stdout and stderr:
+
+17:16:26.454 detox[32478] [90mi[39m 
+17:16:26.454 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device failed to terminate com.auth.app.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The request to terminate "com.auth.app" failed. found nothing to terminate
+	found nothing to terminate
+
+17:16:26.454 detox[32478] [90mB[39m onTerminateApp
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
+17:16:26.454 detox[32478] [90mE[39m onTerminateApp
+17:16:26.454 detox[32478] [90mE[39m terminateApp
+17:16:26.455 detox[32478] [90mE[39m selectApp
+17:16:26.455 detox[32478] [90mB[39m installApp
+  args: ()
+17:16:26.455 detox[32478] [90mi[39m /usr/bin/xcrun simctl install B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA "/Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app"
+17:16:26.455 detox[32478] [90mi[39m Installing /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app...
+17:16:26.686 detox[32478] [90mi[39m /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app installed
+17:16:26.686 detox[32478] [90mE[39m installApp
+17:16:26.686 detox[32478] [90mB[39m selectApp
+  args: ("default")
+17:16:26.686 detox[32478] [90mB[39m terminateApp
+  args: ()
+17:16:26.686 detox[32478] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
+17:16:26.686 detox[32478] [90mE[39m onBeforeTerminateApp
+17:16:26.686 detox[32478] [90mi[39m /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:16:26.686 detox[32478] [90mi[39m Terminating com.auth.app...
+17:16:27.848 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device failed to terminate com.auth.app.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The request to terminate "com.auth.app" failed. found nothing to terminate
+	found nothing to terminate
+
+17:16:27.849 detox[32478] [90mi[39m Terminating com.auth.app...
+17:16:28.015 detox[32478] [90mi[39m "/usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app" failed with error = Error: Command failed: /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device failed to terminate com.auth.app.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The request to terminate "com.auth.app" failed. found nothing to terminate
+	found nothing to terminate
+ (code=3), stdout and stderr:
+
+17:16:28.015 detox[32478] [90mi[39m 
+17:16:28.015 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device failed to terminate com.auth.app.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The request to terminate "com.auth.app" failed. found nothing to terminate
+	found nothing to terminate
+
+17:16:28.015 detox[32478] [90mB[39m onTerminateApp
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
+17:16:28.015 detox[32478] [90mE[39m onTerminateApp
+17:16:28.015 detox[32478] [90mE[39m terminateApp
+17:16:28.015 detox[32478] [90mE[39m selectApp
+17:16:28.015 detox[32478] [90mE[39m set up environment
+17:16:28.165 detox[32478] [90mi[39m authFlow.e2e.ts is assigned to B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA (iPhone 16 Pro)
+17:16:28.166 detox[32478] [90mB[39m run the tests
+17:16:28.166 detox[32478] [90mB[39m onRunDescribeStart
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+17:16:28.166 detox[32478] [90mE[39m onRunDescribeStart
+17:16:28.166 detox[32478] [90mB[39m AuthApp: Signup → Login → Logout flows
+17:16:28.166 detox[32478] [90mB[39m onRunDescribeStart
+  args: ({"name":"AuthApp: Signup → Login → Logout flows"})
+17:16:28.166 detox[32478] [90mE[39m onRunDescribeStart
+17:16:28.167 detox[32478] [90mB[39m beforeAll
+17:16:28.170 detox[32478] [90mB[39m launchApp
+  args: ({"delete":true})
+17:16:28.171 detox[32478] [90mB[39m terminateApp
+  args: ("com.auth.app")
+17:16:28.171 detox[32478] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
+17:16:28.171 detox[32478] [90mE[39m onBeforeTerminateApp
+17:16:28.171 detox[32478] [90mi[39m /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:16:28.171 detox[32478] [90mi[39m Terminating com.auth.app...
+17:16:29.306 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device failed to terminate com.auth.app.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The request to terminate "com.auth.app" failed. found nothing to terminate
+	found nothing to terminate
+
+17:16:29.307 detox[32478] [90mi[39m Terminating com.auth.app...
+17:16:29.481 detox[32478] [90mi[39m "/usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app" failed with error = Error: Command failed: /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device failed to terminate com.auth.app.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The request to terminate "com.auth.app" failed. found nothing to terminate
+	found nothing to terminate
+ (code=3), stdout and stderr:
+
+17:16:29.481 detox[32478] [90mi[39m 
+17:16:29.481 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device failed to terminate com.auth.app.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The request to terminate "com.auth.app" failed. found nothing to terminate
+	found nothing to terminate
+
+17:16:29.481 detox[32478] [90mB[39m onTerminateApp
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
+17:16:29.482 detox[32478] [90mE[39m onTerminateApp
+17:16:29.482 detox[32478] [90mE[39m terminateApp
+17:16:29.482 detox[32478] [90mB[39m uninstallApp
+  args: ()
+17:16:29.482 detox[32478] [90mB[39m onBeforeUninstallApp
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
+17:16:29.482 detox[32478] [90mE[39m onBeforeUninstallApp
+17:16:29.482 detox[32478] [90mi[39m /usr/bin/xcrun simctl uninstall B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:16:29.482 detox[32478] [90mi[39m Uninstalling com.auth.app...
+17:16:29.640 detox[32478] [90mi[39m com.auth.app uninstalled
+17:16:29.640 detox[32478] [90mE[39m uninstallApp
+17:16:29.640 detox[32478] [90mB[39m installApp
+  args: ()
+17:16:29.640 detox[32478] [90mi[39m /usr/bin/xcrun simctl install B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA "/Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app"
+17:16:29.640 detox[32478] [90mi[39m Installing /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app...
+17:16:29.888 detox[32478] [90mi[39m /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app installed
+17:16:29.888 detox[32478] [90mE[39m installApp
+17:16:29.889 detox[32478] [90mB[39m onBeforeLaunchApp
+  args: ({"bundleId":"com.auth.app","deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","launchArgs":{"detoxServer":"ws://localhost:54553","detoxSessionId":"50a63e91-4d14-d391-a1fd-09b5b447cc14"}})
+17:16:29.889 detox[32478] [90mi[39m starting SimulatorLogRecording {
+  udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+  bundleId: 'com.auth.app'
+}
+17:16:29.890 detox[32478] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:16:30.073 detox[32478] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app
+
+17:16:30.074 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\""
+17:16:30.126 detox[32478] [90mE[39m onBeforeLaunchApp
+17:16:30.126 detox[32478] [90mi[39m SIMCTL_CHILD_GULGeneratedClassDisposeDisabled=YES SIMCTL_CHILD_DYLD_INSERT_LIBRARIES="/Users/tareqaziz/Library/Detox/ios/framework/d44facb2579602593708b7c06b1ef949ed4fff78/Detox.framework/Detox" /usr/bin/xcrun simctl launch B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app --args -detoxServer ws://localhost:54553 -detoxSessionId 50a63e91-4d14-d391-a1fd-09b5b447cc14 -detoxDebugVisibility YES -detoxDisableHierarchyDump YES
+17:16:30.126 detox[32478] [90mi[39m Launching com.auth.app...
+17:16:30.388 detox[32478] [90mi[39m com.auth.app: 32581
+
+17:16:30.388 detox[32478] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:16:30.560 detox[32478] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app
+
+17:16:30.566 detox[32478] [90mi[39m com.auth.app launched. To watch simulator logs, run:
+        /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate 'process == "AuthApp"'
+17:16:30.566 detox[32478] [90mB[39m onLaunchApp
+  args: ({"bundleId":"com.auth.app","deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","launchArgs":{"detoxServer":"ws://localhost:54553","detoxSessionId":"50a63e91-4d14-d391-a1fd-09b5b447cc14","detoxDebugVisibility":"YES","detoxDisableHierarchyDump":"YES"},"pid":32581})
+17:16:30.566 detox[32478] [90mE[39m onLaunchApp
+17:16:31.031 detox[32475] [90mB[39m connection :54553<->:54684
+17:16:31.723 detox[32475] [90mi[39m get
+  data: {"params":{"sessionId":"50a63e91-4d14-d391-a1fd-09b5b447cc14","role":"app"},"type":"login","messageId":0}
+17:16:31.724 detox[32475] [90mi[39m send
+  data: {
+    "params": {
+      "testerConnected": true,
+      "appConnected": true
+    },
+    "type": "loginSuccess",
+    "messageId": 0
+  }
+17:16:31.724 detox[32475] [90mi[39m app joined session 50a63e91-4d14-d391-a1fd-09b5b447cc14
+17:16:31.724 detox[32475] [90mi[39m send
+  data: {
+    "type": "appConnected"
+  }
+17:16:31.725 detox[32478] [90mi[39m get message
+  data: {"type":"appConnected"}
+   
+17:16:31.726 detox[32478] [90mi[39m send message
+  data: {"type":"isReady","params":{},"messageId":-1000}
+17:16:31.727 detox[32475] [90mi[39m get
+  data: {"type":"isReady","params":{},"messageId":-1000}
+17:16:31.728 detox[32475] [90mi[39m send
+  data: {
+    "type": "isReady",
+    "params": {},
+    "messageId": -1000
+  }
+17:16:33.311 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"ready","messageId":-1000}
+17:16:33.312 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "ready",
+    "messageId": -1000
+  }
+17:16:33.313 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"ready","messageId":-1000}
+17:16:33.313 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "ready",
+    "messageId": -1000
+  }
+17:16:33.313 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"ready","messageId":-1000}
+   
+17:16:33.314 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"ready","messageId":-1000}
+17:16:33.314 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "ready",
+    "messageId": -1000
+  }
+17:16:33.316 detox[32478] [90mi[39m send message
+  data: {"type":"waitForActive","params":{},"messageId":1}
+17:16:33.317 detox[32475] [90mi[39m get
+  data: {"type":"waitForActive","params":{},"messageId":1}
+17:16:33.317 detox[32475] [90mi[39m send
+  data: {
+    "type": "waitForActive",
+    "params": {},
+    "messageId": 1
+  }
+17:16:33.317 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"ready","messageId":-1000}
+   
+17:16:33.317 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"ready","messageId":-1000}
+   
+17:16:33.323 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"waitForActiveDone","messageId":1}
+17:16:33.323 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "waitForActiveDone",
+    "messageId": 1
+  }
+17:16:33.323 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"waitForActiveDone","messageId":1}
+   
+17:16:33.323 detox[32478] [90mB[39m onAppReady
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app","pid":32581})
+17:16:33.323 detox[32478] [90mE[39m onAppReady
+17:16:33.323 detox[32478] [90mE[39m launchApp
+17:16:33.324 detox[32478] [90mE[39m beforeAll
+17:16:33.325 detox[32478] [90mB[39m 1. Signup: empty → invalid → short pw → success → home
+17:16:33.325 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 1. Signup: empty → invalid → short pw → success → home
+17:16:33.326 detox[32478] [90mB[39m onTestStart
+  args: ({"title":"1. Signup: empty → invalid → short pw → success → home","fullName":"AuthApp: Signup → Login → Logout flows 1. Signup: empty → invalid → short pw → success → home","status":"running","invocations":1})
+17:16:33.326 detox[32478] [90mi[39m stopping SimulatorLogRecording
+17:16:33.381 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app"
+17:16:33.395 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\"" exited with code #0
+17:16:33.397 detox[32478] [90mi[39m starting SimulatorLogRecording
+17:16:33.400 detox[32478] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:16:33.578 detox[32478] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app
+
+17:16:33.579 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\""
+17:16:33.630 detox[32478] [90mi[39m starting SimulatorScreenshot
+17:16:33.630 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8d77e18c-3d4a-4c40-b937-ad15c5d94b05.detox.png"
+17:16:33.631 detox[32478] [90mi[39m starting SimulatorVideoRecording
+17:16:33.631 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b664847f-0d27-4ec9-a307-4a06a8862e72.detox.mp4
+17:16:33.889 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8d77e18c-3d4a-4c40-b937-ad15c5d94b05.detox.png
+
+17:16:33.889 detox[32478] [90mi[39m stopping SimulatorScreenshot
+17:16:33.889 detox[32478] [90mE[39m onTestStart
+17:16:33.889 detox[32478] [90mB[39m beforeEach
+17:16:33.889 detox[32478] [90mE[39m beforeEach
+17:16:33.890 detox[32478] [90mB[39m test_fn
+17:16:33.891 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"gotoSignup","isRegex":false}},"messageId":2}
+17:16:33.891 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "tap",
+      "predicate": {
+        "type": "id",
+        "value": "gotoSignup",
+        "isRegex": false
+      }
+    },
+    "messageId": 2
+  }
+17:16:33.891 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"gotoSignup","isRegex":false}},"messageId":2}
+17:16:33.892 detox[32478] [90mB[39m tap
+  data: {
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "gotoSignup",
+      "isRegex": false
+    }
+  }
+17:16:33.958 detox[32478] [90mi[39m Recording started
+
+17:16:34.894 detox[32475] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":2}
+17:16:34.894 detox[32475] [90mi[39m send
+  data: {
+    "type": "invokeResult",
+    "params": {},
+    "messageId": 2
+  }
+17:16:34.895 detox[32478] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":2}
+   
+17:16:34.896 detox[32478] [90mE[39m tap
+17:16:34.897 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupName","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":3}
+17:16:34.898 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupName","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":3}
+17:16:34.898 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "expectation",
+      "predicate": {
+        "type": "id",
+        "value": "signupName",
+        "isRegex": false
+      },
+      "expectation": "toBeVisible",
+      "timeout": 5000
+    },
+    "messageId": 3
+  }
+17:16:34.898 detox[32478] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "signupName",
+      "isRegex": false
+    },
+    "expectation": "toBeVisible",
+    "timeout": 5000
+  }
+17:16:34.941 detox[32475] [90mi[39m get
+  data: {"type":"invokeResult","messageId":3,"params":{}}
+17:16:34.941 detox[32475] [90mi[39m send
+  data: {
+    "type": "invokeResult",
+    "messageId": 3,
+    "params": {}
+  }
+17:16:34.942 detox[32478] [90mi[39m get message
+  data: {"type":"invokeResult","messageId":3,"params":{}}
+   
+17:16:34.942 detox[32478] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:16:34.944 detox[32478] [90mB[39m takeScreenshot
+  args: ("01_SignupScreen")
+17:16:34.945 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe4f90ad-d3d4-4b52-9a84-17c198074da1.detox.png"
+17:16:35.228 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe4f90ad-d3d4-4b52-9a84-17c198074da1.detox.png
+
+17:16:35.228 detox[32478] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"01_SignupScreen","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe4f90ad-d3d4-4b52-9a84-17c198074da1.detox.png"})
+17:16:35.228 detox[32478] [90mi[39m starting FileArtifact
+17:16:35.228 detox[32478] [90mi[39m stopping FileArtifact
+17:16:35.229 detox[32478] [90mE[39m onCreateExternalArtifact
+17:16:35.229 detox[32478] [90mE[39m takeScreenshot
+17:16:35.229 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":4}
+17:16:35.229 detox[32478] [90mB[39m tap
+  data: {
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "signupButton",
+      "isRegex": false
+    }
+  }
+17:16:35.230 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":4}
+17:16:35.230 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "tap",
+      "predicate": {
+        "type": "id",
+        "value": "signupButton",
+        "isRegex": false
+      }
+    },
+    "messageId": 4
+  }
+17:16:35.733 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":4}
+17:16:35.734 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "invokeResult",
+    "messageId": 4
+  }
+17:16:35.735 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":4}
+   
+17:16:35.735 detox[32478] [90mE[39m tap
+17:16:35.737 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["All fields are required"]},"messageId":5}
+17:16:35.739 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["All fields are required"]},"messageId":5}
+17:16:35.739 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "expectation",
+      "predicate": {
+        "type": "id",
+        "value": "signupError",
+        "isRegex": false
+      },
+      "expectation": "toHaveText",
+      "params": [
+        "All fields are required"
+      ]
+    },
+    "messageId": 5
+  }
+17:16:35.739 detox[32478] [90mB[39m expect element to have text: "All fields are required"
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "signupError",
+      "isRegex": false
+    },
+    "expectation": "toHaveText",
+    "params": [
+      "All fields are required"
+    ]
+  }
+17:16:35.744 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":5}
+17:16:35.744 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "invokeResult",
+    "messageId": 5
+  }
+17:16:35.745 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":5}
+   
+17:16:35.745 detox[32478] [90mE[39m expect element to have text: "All fields are required"
+17:16:35.746 detox[32478] [90mB[39m takeScreenshot
+  args: ("02_Signup_Error_Required")
+17:16:35.746 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6cc58b9e-f5dd-48f3-b225-60f5f2bcbe90.detox.png"
+17:16:36.013 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6cc58b9e-f5dd-48f3-b225-60f5f2bcbe90.detox.png
+
+17:16:36.013 detox[32478] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"02_Signup_Error_Required","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6cc58b9e-f5dd-48f3-b225-60f5f2bcbe90.detox.png"})
+17:16:36.013 detox[32478] [90mi[39m starting FileArtifact
+17:16:36.013 detox[32478] [90mi[39m stopping FileArtifact
+17:16:36.013 detox[32478] [90mE[39m onCreateExternalArtifact
+17:16:36.013 detox[32478] [90mE[39m takeScreenshot
+17:16:36.014 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["Test User"],"predicate":{"type":"id","value":"signupName","isRegex":false}},"messageId":6}
+17:16:36.014 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "Test User"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "signupName",
+        "isRegex": false
+      }
+    },
+    "messageId": 6
+  }
+17:16:36.014 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["Test User"],"predicate":{"type":"id","value":"signupName","isRegex":false}},"messageId":6}
+17:16:36.014 detox[32478] [90mB[39m type input text: "Test User"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "Test User"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "signupName",
+      "isRegex": false
+    }
+  }
+17:16:37.583 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":6,"type":"invokeResult"}
+17:16:37.584 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 6,
+    "type": "invokeResult"
+  }
+17:16:37.585 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":6,"type":"invokeResult"}
+   
+17:16:37.586 detox[32478] [90mE[39m type input text: "Test User"
+17:16:37.586 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["invalid-email"],"predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":7}
+17:16:37.587 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["invalid-email"],"predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":7}
+17:16:37.587 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "invalid-email"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "signupEmail",
+        "isRegex": false
+      }
+    },
+    "messageId": 7
+  }
+17:16:37.587 detox[32478] [90mB[39m type input text: "invalid-email"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "invalid-email"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "signupEmail",
+      "isRegex": false
+    }
+  }
+17:16:39.126 detox[32475] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":7}
+17:16:39.127 detox[32475] [90mi[39m send
+  data: {
+    "type": "invokeResult",
+    "params": {},
+    "messageId": 7
+  }
+17:16:39.127 detox[32478] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":7}
+   
+17:16:39.127 detox[32478] [90mE[39m type input text: "invalid-email"
+17:16:39.128 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":8}
+17:16:39.128 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "password"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "signupPassword",
+        "isRegex": false
+      }
+    },
+    "messageId": 8
+  }
+17:16:39.128 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":8}
+17:16:39.128 detox[32478] [90mB[39m type input text: "password"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "password"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "signupPassword",
+      "isRegex": false
+    }
+  }
+17:16:40.313 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":8}
+17:16:40.314 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "invokeResult",
+    "messageId": 8
+  }
+17:16:40.315 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":8}
+   
+17:16:40.316 detox[32478] [90mE[39m type input text: "password"
+17:16:40.317 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":9}
+17:16:40.318 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":9}
+17:16:40.318 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "tap",
+      "predicate": {
+        "type": "id",
+        "value": "signupButton",
+        "isRegex": false
+      }
+    },
+    "messageId": 9
+  }
+17:16:40.318 detox[32478] [90mB[39m tap
+  data: {
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "signupButton",
+      "isRegex": false
+    }
+  }
+17:16:40.998 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":9,"type":"invokeResult"}
+17:16:40.998 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 9,
+    "type": "invokeResult"
+  }
+17:16:40.999 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":9,"type":"invokeResult"}
+   
+17:16:41.000 detox[32478] [90mE[39m tap
+17:16:41.004 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["Invalid email format"]},"messageId":10}
+17:16:41.005 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["Invalid email format"]},"messageId":10}
+17:16:41.005 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "expectation",
+      "predicate": {
+        "type": "id",
+        "value": "signupError",
+        "isRegex": false
+      },
+      "expectation": "toHaveText",
+      "params": [
+        "Invalid email format"
+      ]
+    },
+    "messageId": 10
+  }
+17:16:41.005 detox[32478] [90mB[39m expect element to have text: "Invalid email format"
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "signupError",
+      "isRegex": false
+    },
+    "expectation": "toHaveText",
+    "params": [
+      "Invalid email format"
+    ]
+  }
+17:16:41.012 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":10,"type":"invokeResult"}
+17:16:41.012 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 10,
+    "type": "invokeResult"
+  }
+17:16:41.012 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":10,"type":"invokeResult"}
+   
+17:16:41.012 detox[32478] [90mE[39m expect element to have text: "Invalid email format"
+17:16:41.013 detox[32478] [90mB[39m takeScreenshot
+  args: ("03_Signup_Error_InvalidEmail")
+17:16:41.013 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d6f6d7b-b8d4-427d-a70d-97b7ff8d49f2.detox.png"
+17:16:41.341 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d6f6d7b-b8d4-427d-a70d-97b7ff8d49f2.detox.png
+
+17:16:41.341 detox[32478] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"03_Signup_Error_InvalidEmail","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d6f6d7b-b8d4-427d-a70d-97b7ff8d49f2.detox.png"})
+17:16:41.341 detox[32478] [90mi[39m starting FileArtifact
+17:16:41.342 detox[32478] [90mi[39m stopping FileArtifact
+17:16:41.342 detox[32478] [90mE[39m onCreateExternalArtifact
+17:16:41.342 detox[32478] [90mE[39m takeScreenshot
+17:16:41.342 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":11}
+17:16:41.343 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":11}
+17:16:41.343 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "clearText",
+      "predicate": {
+        "type": "id",
+        "value": "signupEmail",
+        "isRegex": false
+      }
+    },
+    "messageId": 11
+  }
+17:16:41.343 detox[32478] [90mB[39m clear input text
+  data: {
+    "type": "action",
+    "action": "clearText",
+    "predicate": {
+      "type": "id",
+      "value": "signupEmail",
+      "isRegex": false
+    }
+  }
+17:16:42.357 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":11}
+17:16:42.357 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "invokeResult",
+    "messageId": 11
+  }
+17:16:42.358 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":11}
+   
+17:16:42.358 detox[32478] [90mE[39m clear input text
+17:16:42.359 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["test@example.com"],"predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":12}
+17:16:42.360 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["test@example.com"],"predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":12}
+17:16:42.360 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "test@example.com"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "signupEmail",
+        "isRegex": false
+      }
+    },
+    "messageId": 12
+  }
+17:16:42.360 detox[32478] [90mB[39m type input text: "test@example.com"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "test@example.com"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "signupEmail",
+      "isRegex": false
+    }
+  }
+17:16:43.717 detox[32475] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":12}
+17:16:43.718 detox[32475] [90mi[39m send
+  data: {
+    "type": "invokeResult",
+    "params": {},
+    "messageId": 12
+  }
+17:16:43.722 detox[32478] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":12}
+   
+17:16:43.723 detox[32478] [90mE[39m type input text: "test@example.com"
+17:16:43.723 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":13}
+17:16:43.724 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":13}
+17:16:43.724 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "clearText",
+      "predicate": {
+        "type": "id",
+        "value": "signupPassword",
+        "isRegex": false
+      }
+    },
+    "messageId": 13
+  }
+17:16:43.724 detox[32478] [90mB[39m clear input text
+  data: {
+    "type": "action",
+    "action": "clearText",
+    "predicate": {
+      "type": "id",
+      "value": "signupPassword",
+      "isRegex": false
+    }
+  }
+17:16:44.762 detox[32475] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":13}
+17:16:44.763 detox[32475] [90mi[39m send
+  data: {
+    "type": "invokeResult",
+    "params": {},
+    "messageId": 13
+  }
+17:16:44.764 detox[32478] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":13}
+   
+17:16:44.764 detox[32478] [90mE[39m clear input text
+17:16:44.765 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["123"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":14}
+17:16:44.766 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["123"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":14}
+17:16:44.766 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "123"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "signupPassword",
+        "isRegex": false
+      }
+    },
+    "messageId": 14
+  }
+17:16:44.766 detox[32478] [90mB[39m type input text: "123"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "123"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "signupPassword",
+      "isRegex": false
+    }
+  }
+17:16:45.396 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":14}
+17:16:45.396 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "invokeResult",
+    "messageId": 14
+  }
+17:16:45.397 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":14}
+   
+17:16:45.398 detox[32478] [90mE[39m type input text: "123"
+17:16:45.398 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":15}
+17:16:45.399 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":15}
+17:16:45.399 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "tap",
+      "predicate": {
+        "type": "id",
+        "value": "signupButton",
+        "isRegex": false
+      }
+    },
+    "messageId": 15
+  }
+17:16:45.399 detox[32478] [90mB[39m tap
+  data: {
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "signupButton",
+      "isRegex": false
+    }
+  }
+17:16:46.081 detox[32475] [90mi[39m get
+  data: {"messageId":15,"params":{},"type":"invokeResult"}
+17:16:46.081 detox[32475] [90mi[39m send
+  data: {
+    "messageId": 15,
+    "params": {},
+    "type": "invokeResult"
+  }
+17:16:46.082 detox[32478] [90mi[39m get message
+  data: {"messageId":15,"params":{},"type":"invokeResult"}
+   
+17:16:46.082 detox[32478] [90mE[39m tap
+17:16:46.083 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["Password must be greater than or equal to 6 characters"]},"messageId":16}
+17:16:46.084 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["Password must be greater than or equal to 6 characters"]},"messageId":16}
+17:16:46.084 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "expectation",
+      "predicate": {
+        "type": "id",
+        "value": "signupError",
+        "isRegex": false
+      },
+      "expectation": "toHaveText",
+      "params": [
+        "Password must be greater than or equal to 6 characters"
+      ]
+    },
+    "messageId": 16
+  }
+17:16:46.085 detox[32478] [90mB[39m expect element to have text: "Password must be greater than or equal to 6 characters"
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "signupError",
+      "isRegex": false
+    },
+    "expectation": "toHaveText",
+    "params": [
+      "Password must be greater than or equal to 6 characters"
+    ]
+  }
+17:16:46.090 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":16}
+17:16:46.091 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "invokeResult",
+    "messageId": 16
+  }
+17:16:46.091 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":16}
+   
+17:16:46.091 detox[32478] [90mE[39m expect element to have text: "Password must be greater than or equal to 6 characters"
+17:16:46.092 detox[32478] [90mB[39m takeScreenshot
+  args: ("04_Signup_Error_ShortPassword")
+17:16:46.092 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33566950-c33a-4e78-aa8a-043fa9e9b7e0.detox.png"
+17:16:46.364 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33566950-c33a-4e78-aa8a-043fa9e9b7e0.detox.png
+
+17:16:46.364 detox[32478] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"04_Signup_Error_ShortPassword","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33566950-c33a-4e78-aa8a-043fa9e9b7e0.detox.png"})
+17:16:46.364 detox[32478] [90mi[39m starting FileArtifact
+17:16:46.364 detox[32478] [90mi[39m stopping FileArtifact
+17:16:46.364 detox[32478] [90mE[39m onCreateExternalArtifact
+17:16:46.364 detox[32478] [90mE[39m takeScreenshot
+17:16:46.365 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":17}
+17:16:46.365 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "clearText",
+      "predicate": {
+        "type": "id",
+        "value": "signupPassword",
+        "isRegex": false
+      }
+    },
+    "messageId": 17
+  }
+17:16:46.365 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":17}
+17:16:46.365 detox[32478] [90mB[39m clear input text
+  data: {
+    "type": "action",
+    "action": "clearText",
+    "predicate": {
+      "type": "id",
+      "value": "signupPassword",
+      "isRegex": false
+    }
+  }
+17:16:46.939 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":17}
+17:16:46.939 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "invokeResult",
+    "messageId": 17
+  }
+17:16:46.940 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":17}
+   
+17:16:46.941 detox[32478] [90mE[39m clear input text
+17:16:46.942 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":18}
+17:16:46.942 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "password"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "signupPassword",
+        "isRegex": false
+      }
+    },
+    "messageId": 18
+  }
+17:16:46.942 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":18}
+17:16:46.942 detox[32478] [90mB[39m type input text: "password"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "password"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "signupPassword",
+      "isRegex": false
+    }
+  }
+17:16:47.862 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":18}
+17:16:47.862 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "invokeResult",
+    "messageId": 18
+  }
+17:16:47.866 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":18}
+   
+17:16:47.868 detox[32478] [90mE[39m type input text: "password"
+17:16:47.869 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":19}
+17:16:47.869 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":19}
+17:16:47.870 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "tap",
+      "predicate": {
+        "type": "id",
+        "value": "signupButton",
+        "isRegex": false
+      }
+    },
+    "messageId": 19
+  }
+17:16:47.873 detox[32478] [90mB[39m tap
+  data: {
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "signupButton",
+      "isRegex": false
+    }
+  }
+17:16:48.894 detox[32475] [90mi[39m get
+  data: {"messageId":19,"type":"invokeResult","params":{}}
+17:16:48.894 detox[32475] [90mi[39m send
+  data: {
+    "messageId": 19,
+    "type": "invokeResult",
+    "params": {}
+  }
+17:16:48.895 detox[32478] [90mi[39m get message
+  data: {"messageId":19,"type":"invokeResult","params":{}}
+   
+17:16:48.896 detox[32478] [90mE[39m tap
+17:16:48.898 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"welcomeText","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":20}
+17:16:48.899 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"welcomeText","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":20}
+17:16:48.899 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "expectation",
+      "predicate": {
+        "type": "id",
+        "value": "welcomeText",
+        "isRegex": false
+      },
+      "expectation": "toBeVisible",
+      "timeout": 5000
+    },
+    "messageId": 20
+  }
+17:16:48.899 detox[32478] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "welcomeText",
+      "isRegex": false
+    },
+    "expectation": "toBeVisible",
+    "timeout": 5000
+  }
+17:16:48.958 detox[32475] [90mi[39m get
+  data: {"messageId":20,"params":{},"type":"invokeResult"}
+17:16:48.958 detox[32475] [90mi[39m send
+  data: {
+    "messageId": 20,
+    "params": {},
+    "type": "invokeResult"
+  }
+17:16:48.959 detox[32478] [90mi[39m get message
+  data: {"messageId":20,"params":{},"type":"invokeResult"}
+   
+17:16:48.959 detox[32478] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:16:48.960 detox[32478] [90mB[39m takeScreenshot
+  args: ("05_Home_After_Signup")
+17:16:48.961 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4d4d8482-d260-4144-b5a7-384177715706.detox.png"
+17:16:49.258 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4d4d8482-d260-4144-b5a7-384177715706.detox.png
+
+17:16:49.258 detox[32478] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"05_Home_After_Signup","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4d4d8482-d260-4144-b5a7-384177715706.detox.png"})
+17:16:49.258 detox[32478] [90mi[39m starting FileArtifact
+17:16:49.258 detox[32478] [90mi[39m stopping FileArtifact
+17:16:49.258 detox[32478] [90mE[39m onCreateExternalArtifact
+17:16:49.258 detox[32478] [90mE[39m takeScreenshot
+17:16:49.259 detox[32478] [90mE[39m test_fn
+17:16:49.259 detox[32478] [90mB[39m onTestDone
+  args: ({"title":"1. Signup: empty → invalid → short pw → success → home","fullName":"AuthApp: Signup → Login → Logout flows 1. Signup: empty → invalid → short pw → success → home","status":"passed","invocations":1})
+17:16:49.260 detox[32478] [90mi[39m starting SimulatorScreenshot
+17:16:49.260 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/d1db593e-806f-47cd-887b-9a4119aaeafe.detox.png"
+17:16:49.260 detox[32478] [90mi[39m stopping SimulatorVideoRecording
+17:16:49.262 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b664847f-0d27-4ec9-a307-4a06a8862e72.detox.mp4
+17:16:49.288 detox[32478] [90mi[39m Recording completed. Writing to disk.
+
+Wrote video to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b664847f-0d27-4ec9-a307-4a06a8862e72.detox.mp4
+
+17:16:49.289 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b664847f-0d27-4ec9-a307-4a06a8862e72.detox.mp4 exited with code #0
+17:16:49.290 detox[32478] [90mi[39m saving SimulatorVideoRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/test.mp4
+17:16:49.290 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b664847f-0d27-4ec9-a307-4a06a8862e72.detox.mp4" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/test.mp4
+17:16:49.471 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/d1db593e-806f-47cd-887b-9a4119aaeafe.detox.png
+
+17:16:49.471 detox[32478] [90mi[39m stopping SimulatorScreenshot
+17:16:49.472 detox[32478] [90mi[39m stopping SimulatorLogRecording
+17:16:49.472 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testStart.png
+17:16:49.472 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8d77e18c-3d4a-4c40-b937-ad15c5d94b05.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testStart.png
+17:16:49.472 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/01_SignupScreen.png
+17:16:49.472 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe4f90ad-d3d4-4b52-9a84-17c198074da1.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/01_SignupScreen.png
+17:16:49.473 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/02_Signup_Error_Required.png
+17:16:49.473 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6cc58b9e-f5dd-48f3-b225-60f5f2bcbe90.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/02_Signup_Error_Required.png
+17:16:49.473 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/03_Signup_Error_InvalidEmail.png
+17:16:49.473 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d6f6d7b-b8d4-427d-a70d-97b7ff8d49f2.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/03_Signup_Error_InvalidEmail.png
+17:16:49.474 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/04_Signup_Error_ShortPassword.png
+17:16:49.474 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33566950-c33a-4e78-aa8a-043fa9e9b7e0.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/04_Signup_Error_ShortPassword.png
+17:16:49.474 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/05_Home_After_Signup.png
+17:16:49.474 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4d4d8482-d260-4144-b5a7-384177715706.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/05_Home_After_Signup.png
+17:16:49.475 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testDone.png
+17:16:49.475 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/d1db593e-806f-47cd-887b-9a4119aaeafe.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testDone.png
+17:16:49.524 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app"
+17:16:49.535 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\"" exited with code #0
+17:16:49.535 detox[32478] [90mE[39m onTestDone
+17:16:49.535 detox[32478] [90mE[39m 1. Signup: empty → invalid → short pw → success → home
+17:16:49.535 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 1. Signup: empty → invalid → short pw → success → home [OK]
+17:16:49.537 detox[32478] [90mB[39m 2. Logout → Login: invalid email → bad creds → success
+17:16:49.537 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 2. Logout → Login: invalid email → bad creds → success
+17:16:49.537 detox[32478] [90mB[39m onTestStart
+  args: ({"title":"2. Logout → Login: invalid email → bad creds → success","fullName":"AuthApp: Signup → Login → Logout flows 2. Logout → Login: invalid email → bad creds → success","status":"running","invocations":1})
+17:16:49.537 detox[32478] [90mi[39m starting SimulatorLogRecording
+17:16:49.537 detox[32478] [90mi[39m saving SimulatorLogRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/device.log
+17:16:49.537 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6a1f352a-e117-4063-b8b2-dc448de8fbb3.detox.log" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/device.log
+17:16:49.538 detox[32478] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:16:49.539 detox[32478] [90mi[39m saving SimulatorLogRecording to: files/ios/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA 2025-04-22 11-16-49Z.startup.log
+17:16:49.539 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f84516b6-d60e-44b3-8ce5-d239a98f0d23.detox.log" to files/ios/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA 2025-04-22 11-16-49Z.startup.log
+17:16:49.696 detox[32478] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app
+
+17:16:49.697 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\""
+17:16:49.747 detox[32478] [90mi[39m starting SimulatorScreenshot
+17:16:49.747 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/deb621a4-b7d9-4745-bcdb-db59bf33424a.detox.png"
+17:16:49.748 detox[32478] [90mi[39m starting SimulatorVideoRecording
+17:16:49.748 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/e455c5df-d68b-4454-8283-ec68d2a89cd2.detox.mp4
+17:16:49.971 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/deb621a4-b7d9-4745-bcdb-db59bf33424a.detox.png
+
+17:16:49.971 detox[32478] [90mi[39m stopping SimulatorScreenshot
+17:16:49.971 detox[32478] [90mE[39m onTestStart
+17:16:49.971 detox[32478] [90mB[39m beforeEach
+17:16:49.971 detox[32478] [90mE[39m beforeEach
+17:16:49.971 detox[32478] [90mB[39m test_fn
+17:16:49.972 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"logoutButton","isRegex":false}},"messageId":21}
+17:16:49.972 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "tap",
+      "predicate": {
+        "type": "id",
+        "value": "logoutButton",
+        "isRegex": false
+      }
+    },
+    "messageId": 21
+  }
+17:16:49.972 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"logoutButton","isRegex":false}},"messageId":21}
+17:16:49.972 detox[32478] [90mB[39m tap
+  data: {
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "logoutButton",
+      "isRegex": false
+    }
+  }
+17:16:50.040 detox[32478] [90mi[39m Recording started
+
+17:16:50.943 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":21}
+17:16:50.943 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "invokeResult",
+    "messageId": 21
+  }
+17:16:50.945 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":21}
+   
+17:16:50.946 detox[32478] [90mE[39m tap
+17:16:50.947 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginButton","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":22}
+17:16:50.947 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "expectation",
+      "predicate": {
+        "type": "id",
+        "value": "loginButton",
+        "isRegex": false
+      },
+      "expectation": "toBeVisible",
+      "timeout": 5000
+    },
+    "messageId": 22
+  }
+17:16:50.947 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginButton","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":22}
+17:16:50.947 detox[32478] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "loginButton",
+      "isRegex": false
+    },
+    "expectation": "toBeVisible",
+    "timeout": 5000
+  }
+17:16:51.008 detox[32475] [90mi[39m get
+  data: {"messageId":22,"params":{},"type":"invokeResult"}
+17:16:51.009 detox[32475] [90mi[39m send
+  data: {
+    "messageId": 22,
+    "params": {},
+    "type": "invokeResult"
+  }
+17:16:51.011 detox[32478] [90mi[39m get message
+  data: {"messageId":22,"params":{},"type":"invokeResult"}
+   
+17:16:51.011 detox[32478] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:16:51.013 detox[32478] [90mB[39m takeScreenshot
+  args: ("06_Login_After_Logout")
+17:16:51.014 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0cbcf80c-4e65-4100-b5ef-ab35c1b92a61.detox.png"
+17:16:51.283 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0cbcf80c-4e65-4100-b5ef-ab35c1b92a61.detox.png
+
+17:16:51.283 detox[32478] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"06_Login_After_Logout","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0cbcf80c-4e65-4100-b5ef-ab35c1b92a61.detox.png"})
+17:16:51.283 detox[32478] [90mi[39m starting FileArtifact
+17:16:51.283 detox[32478] [90mi[39m stopping FileArtifact
+17:16:51.283 detox[32478] [90mE[39m onCreateExternalArtifact
+17:16:51.283 detox[32478] [90mE[39m takeScreenshot
+17:16:51.283 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["bad-email"],"predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":23}
+17:16:51.284 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["bad-email"],"predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":23}
+17:16:51.284 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "bad-email"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "loginEmail",
+        "isRegex": false
+      }
+    },
+    "messageId": 23
+  }
+17:16:51.284 detox[32478] [90mB[39m type input text: "bad-email"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "bad-email"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "loginEmail",
+      "isRegex": false
+    }
+  }
+17:16:52.609 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":23,"type":"invokeResult"}
+17:16:52.609 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 23,
+    "type": "invokeResult"
+  }
+17:16:52.610 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":23,"type":"invokeResult"}
+   
+17:16:52.611 detox[32478] [90mE[39m type input text: "bad-email"
+17:16:52.612 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":24}
+17:16:52.613 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":24}
+17:16:52.613 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "password"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "loginPassword",
+        "isRegex": false
+      }
+    },
+    "messageId": 24
+  }
+17:16:52.613 detox[32478] [90mB[39m type input text: "password"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "password"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "loginPassword",
+      "isRegex": false
+    }
+  }
+17:16:53.861 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":24,"type":"invokeResult"}
+17:16:53.863 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 24,
+    "type": "invokeResult"
+  }
+17:16:53.864 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":24,"type":"invokeResult"}
+   
+17:16:53.864 detox[32478] [90mE[39m type input text: "password"
+17:16:53.866 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":25}
+17:16:53.866 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "tap",
+      "predicate": {
+        "type": "id",
+        "value": "loginButton",
+        "isRegex": false
+      }
+    },
+    "messageId": 25
+  }
+17:16:53.866 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":25}
+17:16:53.866 detox[32478] [90mB[39m tap
+  data: {
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "loginButton",
+      "isRegex": false
+    }
+  }
+17:16:54.545 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":25,"type":"invokeResult"}
+17:16:54.545 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 25,
+    "type": "invokeResult"
+  }
+17:16:54.546 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":25,"type":"invokeResult"}
+   
+17:16:54.546 detox[32478] [90mE[39m tap
+17:16:54.547 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginError","isRegex":false},"expectation":"toHaveText","params":["Invalid email format"]},"messageId":26}
+17:16:54.547 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginError","isRegex":false},"expectation":"toHaveText","params":["Invalid email format"]},"messageId":26}
+17:16:54.547 detox[32478] [90mB[39m expect element to have text: "Invalid email format"
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "loginError",
+      "isRegex": false
+    },
+    "expectation": "toHaveText",
+    "params": [
+      "Invalid email format"
+    ]
+  }
+17:16:54.548 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "expectation",
+      "predicate": {
+        "type": "id",
+        "value": "loginError",
+        "isRegex": false
+      },
+      "expectation": "toHaveText",
+      "params": [
+        "Invalid email format"
+      ]
+    },
+    "messageId": 26
+  }
+17:16:54.552 detox[32475] [90mi[39m get
+  data: {"messageId":26,"type":"invokeResult","params":{}}
+17:16:54.552 detox[32475] [90mi[39m send
+  data: {
+    "messageId": 26,
+    "type": "invokeResult",
+    "params": {}
+  }
+17:16:54.553 detox[32478] [90mi[39m get message
+  data: {"messageId":26,"type":"invokeResult","params":{}}
+   
+17:16:54.553 detox[32478] [90mE[39m expect element to have text: "Invalid email format"
+17:16:54.553 detox[32478] [90mB[39m takeScreenshot
+  args: ("07_Login_Error_InvalidEmail")
+17:16:54.553 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a904969-d63b-46d3-9ac3-33ff0d67d1e6.detox.png"
+17:16:54.837 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a904969-d63b-46d3-9ac3-33ff0d67d1e6.detox.png
+
+17:16:54.837 detox[32478] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"07_Login_Error_InvalidEmail","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a904969-d63b-46d3-9ac3-33ff0d67d1e6.detox.png"})
+17:16:54.838 detox[32478] [90mi[39m starting FileArtifact
+17:16:54.838 detox[32478] [90mi[39m stopping FileArtifact
+17:16:54.838 detox[32478] [90mE[39m onCreateExternalArtifact
+17:16:54.838 detox[32478] [90mE[39m takeScreenshot
+17:16:54.838 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":27}
+17:16:54.838 detox[32478] [90mB[39m clear input text
+  data: {
+    "type": "action",
+    "action": "clearText",
+    "predicate": {
+      "type": "id",
+      "value": "loginEmail",
+      "isRegex": false
+    }
+  }
+17:16:54.839 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":27}
+17:16:54.839 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "clearText",
+      "predicate": {
+        "type": "id",
+        "value": "loginEmail",
+        "isRegex": false
+      }
+    },
+    "messageId": 27
+  }
+17:16:55.857 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":27,"type":"invokeResult"}
+17:16:55.858 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 27,
+    "type": "invokeResult"
+  }
+17:16:55.858 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":27,"type":"invokeResult"}
+   
+17:16:55.859 detox[32478] [90mE[39m clear input text
+17:16:55.860 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["test@example.com"],"predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":28}
+17:16:55.860 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["test@example.com"],"predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":28}
+17:16:55.861 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "test@example.com"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "loginEmail",
+        "isRegex": false
+      }
+    },
+    "messageId": 28
+  }
+17:16:55.861 detox[32478] [90mB[39m type input text: "test@example.com"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "test@example.com"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "loginEmail",
+      "isRegex": false
+    }
+  }
+17:16:57.232 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":28,"type":"invokeResult"}
+17:16:57.232 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 28,
+    "type": "invokeResult"
+  }
+17:16:57.233 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":28,"type":"invokeResult"}
+   
+17:16:57.234 detox[32478] [90mE[39m type input text: "test@example.com"
+17:16:57.235 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":29}
+17:16:57.235 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":29}
+17:16:57.236 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "clearText",
+      "predicate": {
+        "type": "id",
+        "value": "loginPassword",
+        "isRegex": false
+      }
+    },
+    "messageId": 29
+  }
+17:16:57.236 detox[32478] [90mB[39m clear input text
+  data: {
+    "type": "action",
+    "action": "clearText",
+    "predicate": {
+      "type": "id",
+      "value": "loginPassword",
+      "isRegex": false
+    }
+  }
+17:16:58.249 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":29,"type":"invokeResult"}
+17:16:58.249 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 29,
+    "type": "invokeResult"
+  }
+17:16:58.249 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":29,"type":"invokeResult"}
+   
+17:16:58.250 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["wrongpassword"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":30}
+17:16:58.250 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "wrongpassword"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "loginPassword",
+        "isRegex": false
+      }
+    },
+    "messageId": 30
+  }
+17:16:58.250 detox[32478] [90mE[39m clear input text
+17:16:58.250 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["wrongpassword"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":30}
+17:16:58.250 detox[32478] [90mB[39m type input text: "wrongpassword"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "wrongpassword"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "loginPassword",
+      "isRegex": false
+    }
+  }
+17:16:59.465 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":30}
+17:16:59.465 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "invokeResult",
+    "messageId": 30
+  }
+17:16:59.466 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":30}
+   
+17:16:59.467 detox[32478] [90mE[39m type input text: "wrongpassword"
+17:16:59.468 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":31}
+17:16:59.468 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "tap",
+      "predicate": {
+        "type": "id",
+        "value": "loginButton",
+        "isRegex": false
+      }
+    },
+    "messageId": 31
+  }
+17:16:59.468 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":31}
+17:16:59.468 detox[32478] [90mB[39m tap
+  data: {
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "loginButton",
+      "isRegex": false
+    }
+  }
+17:17:00.146 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":31,"type":"invokeResult"}
+17:17:00.147 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 31,
+    "type": "invokeResult"
+  }
+17:17:00.147 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":31,"type":"invokeResult"}
+   
+17:17:00.148 detox[32478] [90mE[39m tap
+17:17:00.149 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginError","isRegex":false},"expectation":"toHaveText","params":["Incorrect credentials"]},"messageId":32}
+17:17:00.150 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginError","isRegex":false},"expectation":"toHaveText","params":["Incorrect credentials"]},"messageId":32}
+17:17:00.150 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "expectation",
+      "predicate": {
+        "type": "id",
+        "value": "loginError",
+        "isRegex": false
+      },
+      "expectation": "toHaveText",
+      "params": [
+        "Incorrect credentials"
+      ]
+    },
+    "messageId": 32
+  }
+17:17:00.151 detox[32478] [90mB[39m expect element to have text: "Incorrect credentials"
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "loginError",
+      "isRegex": false
+    },
+    "expectation": "toHaveText",
+    "params": [
+      "Incorrect credentials"
+    ]
+  }
+17:17:00.155 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":32,"type":"invokeResult"}
+17:17:00.155 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 32,
+    "type": "invokeResult"
+  }
+17:17:00.156 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":32,"type":"invokeResult"}
+   
+17:17:00.156 detox[32478] [90mE[39m expect element to have text: "Incorrect credentials"
+17:17:00.156 detox[32478] [90mB[39m takeScreenshot
+  args: ("08_Login_Error_WrongCreds")
+17:17:00.156 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aaeb8c97-7143-418b-a832-64d2709e636c.detox.png"
+17:17:00.423 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aaeb8c97-7143-418b-a832-64d2709e636c.detox.png
+
+17:17:00.423 detox[32478] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"08_Login_Error_WrongCreds","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aaeb8c97-7143-418b-a832-64d2709e636c.detox.png"})
+17:17:00.423 detox[32478] [90mi[39m starting FileArtifact
+17:17:00.423 detox[32478] [90mi[39m stopping FileArtifact
+17:17:00.423 detox[32478] [90mE[39m onCreateExternalArtifact
+17:17:00.423 detox[32478] [90mE[39m takeScreenshot
+17:17:00.423 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":33}
+17:17:00.424 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":33}
+17:17:00.424 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "clearText",
+      "predicate": {
+        "type": "id",
+        "value": "loginPassword",
+        "isRegex": false
+      }
+    },
+    "messageId": 33
+  }
+17:17:00.424 detox[32478] [90mB[39m clear input text
+  data: {
+    "type": "action",
+    "action": "clearText",
+    "predicate": {
+      "type": "id",
+      "value": "loginPassword",
+      "isRegex": false
+    }
+  }
+17:17:01.007 detox[32475] [90mi[39m get
+  data: {"messageId":33,"type":"invokeResult","params":{}}
+17:17:01.008 detox[32475] [90mi[39m send
+  data: {
+    "messageId": 33,
+    "type": "invokeResult",
+    "params": {}
+  }
+17:17:01.008 detox[32478] [90mi[39m get message
+  data: {"messageId":33,"type":"invokeResult","params":{}}
+   
+17:17:01.009 detox[32478] [90mE[39m clear input text
+17:17:01.010 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":34}
+17:17:01.010 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "typeText",
+      "params": [
+        "password"
+      ],
+      "predicate": {
+        "type": "id",
+        "value": "loginPassword",
+        "isRegex": false
+      }
+    },
+    "messageId": 34
+  }
+17:17:01.010 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":34}
+17:17:01.012 detox[32478] [90mB[39m type input text: "password"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "password"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "loginPassword",
+      "isRegex": false
+    }
+  }
+17:17:01.934 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":34,"type":"invokeResult"}
+17:17:01.934 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 34,
+    "type": "invokeResult"
+  }
+17:17:01.935 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":34,"type":"invokeResult"}
+   
+17:17:01.935 detox[32478] [90mE[39m type input text: "password"
+17:17:01.936 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":35}
+17:17:01.937 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":35}
+17:17:01.937 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "tap",
+      "predicate": {
+        "type": "id",
+        "value": "loginButton",
+        "isRegex": false
+      }
+    },
+    "messageId": 35
+  }
+17:17:01.937 detox[32478] [90mB[39m tap
+  data: {
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "loginButton",
+      "isRegex": false
+    }
+  }
+17:17:02.958 detox[32475] [90mi[39m get
+  data: {"params":{},"messageId":35,"type":"invokeResult"}
+17:17:02.958 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "messageId": 35,
+    "type": "invokeResult"
+  }
+17:17:02.958 detox[32478] [90mi[39m get message
+  data: {"params":{},"messageId":35,"type":"invokeResult"}
+   
+17:17:02.959 detox[32478] [90mE[39m tap
+17:17:02.960 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"welcomeText","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":36}
+17:17:02.960 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "expectation",
+      "predicate": {
+        "type": "id",
+        "value": "welcomeText",
+        "isRegex": false
+      },
+      "expectation": "toBeVisible",
+      "timeout": 5000
+    },
+    "messageId": 36
+  }
+17:17:02.960 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"welcomeText","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":36}
+17:17:02.961 detox[32478] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "welcomeText",
+      "isRegex": false
+    },
+    "expectation": "toBeVisible",
+    "timeout": 5000
+  }
+17:17:02.987 detox[32475] [90mi[39m get
+  data: {"type":"invokeResult","messageId":36,"params":{}}
+17:17:02.987 detox[32475] [90mi[39m send
+  data: {
+    "type": "invokeResult",
+    "messageId": 36,
+    "params": {}
+  }
+17:17:02.988 detox[32478] [90mi[39m get message
+  data: {"type":"invokeResult","messageId":36,"params":{}}
+   
+17:17:02.988 detox[32478] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:17:02.989 detox[32478] [90mB[39m takeScreenshot
+  args: ("09_Home_After_Login")
+17:17:02.989 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cac0a45a-53bf-46e7-8de3-bb072b9904d5.detox.png"
+17:17:03.273 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cac0a45a-53bf-46e7-8de3-bb072b9904d5.detox.png
+
+17:17:03.273 detox[32478] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"09_Home_After_Login","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cac0a45a-53bf-46e7-8de3-bb072b9904d5.detox.png"})
+17:17:03.273 detox[32478] [90mi[39m starting FileArtifact
+17:17:03.273 detox[32478] [90mi[39m stopping FileArtifact
+17:17:03.273 detox[32478] [90mE[39m onCreateExternalArtifact
+17:17:03.273 detox[32478] [90mE[39m takeScreenshot
+17:17:03.274 detox[32478] [90mE[39m test_fn
+17:17:03.274 detox[32478] [90mB[39m onTestDone
+  args: ({"title":"2. Logout → Login: invalid email → bad creds → success","fullName":"AuthApp: Signup → Login → Logout flows 2. Logout → Login: invalid email → bad creds → success","status":"passed","invocations":1})
+17:17:03.274 detox[32478] [90mi[39m starting SimulatorScreenshot
+17:17:03.274 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3e1057fc-16fb-4b8d-b4ad-2d3a4e4af38b.detox.png"
+17:17:03.275 detox[32478] [90mi[39m stopping SimulatorVideoRecording
+17:17:03.276 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/e455c5df-d68b-4454-8283-ec68d2a89cd2.detox.mp4
+17:17:03.283 detox[32478] [90mi[39m Recording completed. Writing to disk.
+
+Wrote video to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/e455c5df-d68b-4454-8283-ec68d2a89cd2.detox.mp4
+
+17:17:03.285 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/e455c5df-d68b-4454-8283-ec68d2a89cd2.detox.mp4 exited with code #0
+17:17:03.285 detox[32478] [90mi[39m saving SimulatorVideoRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/test.mp4
+17:17:03.285 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/e455c5df-d68b-4454-8283-ec68d2a89cd2.detox.mp4" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/test.mp4
+17:17:03.493 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3e1057fc-16fb-4b8d-b4ad-2d3a4e4af38b.detox.png
+
+17:17:03.493 detox[32478] [90mi[39m stopping SimulatorScreenshot
+17:17:03.493 detox[32478] [90mi[39m stopping SimulatorLogRecording
+17:17:03.493 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testStart.png
+17:17:03.493 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/deb621a4-b7d9-4745-bcdb-db59bf33424a.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testStart.png
+17:17:03.494 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testDone.png
+17:17:03.494 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3e1057fc-16fb-4b8d-b4ad-2d3a4e4af38b.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testDone.png
+17:17:03.495 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/06_Login_After_Logout.png
+17:17:03.495 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0cbcf80c-4e65-4100-b5ef-ab35c1b92a61.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/06_Login_After_Logout.png
+17:17:03.495 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/07_Login_Error_InvalidEmail.png
+17:17:03.495 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a904969-d63b-46d3-9ac3-33ff0d67d1e6.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/07_Login_Error_InvalidEmail.png
+17:17:03.496 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/08_Login_Error_WrongCreds.png
+17:17:03.496 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aaeb8c97-7143-418b-a832-64d2709e636c.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/08_Login_Error_WrongCreds.png
+17:17:03.496 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/09_Home_After_Login.png
+17:17:03.497 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cac0a45a-53bf-46e7-8de3-bb072b9904d5.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/09_Home_After_Login.png
+17:17:03.546 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app"
+17:17:03.555 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\"" exited with code #0
+17:17:03.555 detox[32478] [90mE[39m onTestDone
+17:17:03.555 detox[32478] [90mE[39m 2. Logout → Login: invalid email → bad creds → success
+17:17:03.555 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 2. Logout → Login: invalid email → bad creds → success [OK]
+17:17:03.556 detox[32478] [90mB[39m 3. Final logout → back to Login
+17:17:03.556 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 3. Final logout → back to Login
+17:17:03.557 detox[32478] [90mB[39m onTestStart
+  args: ({"title":"3. Final logout → back to Login","fullName":"AuthApp: Signup → Login → Logout flows 3. Final logout → back to Login","status":"running","invocations":1})
+17:17:03.557 detox[32478] [90mi[39m starting SimulatorLogRecording
+17:17:03.557 detox[32478] [90mi[39m saving SimulatorLogRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/device.log
+17:17:03.557 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0a101fbf-5506-461b-9a05-834eeb56c0b5.detox.log" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/device.log
+17:17:03.557 detox[32478] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:17:03.714 detox[32478] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app
+
+17:17:03.715 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\""
+17:17:03.766 detox[32478] [90mi[39m starting SimulatorScreenshot
+17:17:03.766 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/00da4040-767d-4253-aa5e-75823fbde7b9.detox.png"
+17:17:03.767 detox[32478] [90mi[39m starting SimulatorVideoRecording
+17:17:03.767 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/9f5c7dc2-1b5f-4766-b44b-0e94a147277e.detox.mp4
+17:17:03.991 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/00da4040-767d-4253-aa5e-75823fbde7b9.detox.png
+
+17:17:03.991 detox[32478] [90mi[39m stopping SimulatorScreenshot
+17:17:03.991 detox[32478] [90mE[39m onTestStart
+17:17:03.991 detox[32478] [90mB[39m beforeEach
+17:17:03.991 detox[32478] [90mE[39m beforeEach
+17:17:03.992 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"logoutButton","isRegex":false}},"messageId":37}
+17:17:03.992 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "action",
+      "action": "tap",
+      "predicate": {
+        "type": "id",
+        "value": "logoutButton",
+        "isRegex": false
+      }
+    },
+    "messageId": 37
+  }
+17:17:03.992 detox[32478] [90mB[39m test_fn
+17:17:03.992 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"logoutButton","isRegex":false}},"messageId":37}
+17:17:03.992 detox[32478] [90mB[39m tap
+  data: {
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "logoutButton",
+      "isRegex": false
+    }
+  }
+17:17:04.077 detox[32478] [90mi[39m Recording started
+
+17:17:04.979 detox[32475] [90mi[39m get
+  data: {"messageId":37,"type":"invokeResult","params":{}}
+17:17:04.980 detox[32475] [90mi[39m send
+  data: {
+    "messageId": 37,
+    "type": "invokeResult",
+    "params": {}
+  }
+17:17:04.982 detox[32478] [90mi[39m get message
+  data: {"messageId":37,"type":"invokeResult","params":{}}
+   
+17:17:04.982 detox[32478] [90mE[39m tap
+17:17:04.984 detox[32475] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginButton","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":38}
+17:17:04.984 detox[32475] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "type": "expectation",
+      "predicate": {
+        "type": "id",
+        "value": "loginButton",
+        "isRegex": false
+      },
+      "expectation": "toBeVisible",
+      "timeout": 5000
+    },
+    "messageId": 38
+  }
+17:17:04.984 detox[32478] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginButton","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":38}
+17:17:04.984 detox[32478] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "loginButton",
+      "isRegex": false
+    },
+    "expectation": "toBeVisible",
+    "timeout": 5000
+  }
+17:17:05.048 detox[32475] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":38}
+17:17:05.049 detox[32475] [90mi[39m send
+  data: {
+    "type": "invokeResult",
+    "params": {},
+    "messageId": 38
+  }
+17:17:05.050 detox[32478] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":38}
+   
+17:17:05.050 detox[32478] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:17:05.051 detox[32478] [90mB[39m takeScreenshot
+  args: ("10_Login_Final")
+17:17:05.051 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cc91dc6c-405d-4324-a3e4-7f4d2dd2105c.detox.png"
+17:17:05.327 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cc91dc6c-405d-4324-a3e4-7f4d2dd2105c.detox.png
+
+17:17:05.328 detox[32478] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"10_Login_Final","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cc91dc6c-405d-4324-a3e4-7f4d2dd2105c.detox.png"})
+17:17:05.328 detox[32478] [90mi[39m starting FileArtifact
+17:17:05.328 detox[32478] [90mi[39m stopping FileArtifact
+17:17:05.328 detox[32478] [90mE[39m onCreateExternalArtifact
+17:17:05.328 detox[32478] [90mE[39m takeScreenshot
+17:17:05.328 detox[32478] [90mE[39m test_fn
+17:17:05.328 detox[32478] [90mB[39m onTestDone
+  args: ({"title":"3. Final logout → back to Login","fullName":"AuthApp: Signup → Login → Logout flows 3. Final logout → back to Login","status":"passed","invocations":1})
+17:17:05.328 detox[32478] [90mi[39m starting SimulatorScreenshot
+17:17:05.329 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3b14b03-0e0d-4cc8-8c09-42d069dd1213.detox.png"
+17:17:05.329 detox[32478] [90mi[39m stopping SimulatorVideoRecording
+17:17:05.329 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/9f5c7dc2-1b5f-4766-b44b-0e94a147277e.detox.mp4
+17:17:05.353 detox[32478] [90mi[39m Recording completed. Writing to disk.
+
+Wrote video to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/9f5c7dc2-1b5f-4766-b44b-0e94a147277e.detox.mp4
+
+17:17:05.355 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/9f5c7dc2-1b5f-4766-b44b-0e94a147277e.detox.mp4 exited with code #0
+17:17:05.355 detox[32478] [90mi[39m saving SimulatorVideoRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/test.mp4
+17:17:05.355 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/9f5c7dc2-1b5f-4766-b44b-0e94a147277e.detox.mp4" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/test.mp4
+17:17:05.549 detox[32478] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3b14b03-0e0d-4cc8-8c09-42d069dd1213.detox.png
+
+17:17:05.550 detox[32478] [90mi[39m stopping SimulatorScreenshot
+17:17:05.550 detox[32478] [90mi[39m stopping SimulatorLogRecording
+17:17:05.550 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testStart.png
+17:17:05.550 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/00da4040-767d-4253-aa5e-75823fbde7b9.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testStart.png
+17:17:05.550 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testDone.png
+17:17:05.550 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3b14b03-0e0d-4cc8-8c09-42d069dd1213.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testDone.png
+17:17:05.551 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/10_Login_Final.png
+17:17:05.551 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cc91dc6c-405d-4324-a3e4-7f4d2dd2105c.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/10_Login_Final.png
+17:17:05.602 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app"
+17:17:05.612 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\"" exited with code #0
+17:17:05.612 detox[32478] [90mE[39m onTestDone
+17:17:05.612 detox[32478] [90mE[39m 3. Final logout → back to Login
+17:17:05.612 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 3. Final logout → back to Login [OK]
+17:17:05.613 detox[32478] [90mB[39m onRunDescribeFinish
+  args: ({"name":"AuthApp: Signup → Login → Logout flows"})
+17:17:05.613 detox[32478] [90mE[39m onRunDescribeFinish
+17:17:05.613 detox[32478] [90mE[39m AuthApp: Signup → Login → Logout flows
+17:17:05.613 detox[32478] [90mB[39m onRunDescribeFinish
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+17:17:05.613 detox[32478] [90mE[39m onRunDescribeFinish
+17:17:05.613 detox[32478] [90mE[39m run the tests
+17:17:05.615 detox[32478] [90mB[39m tear down environment
+17:17:05.615 detox[32478] [90mB[39m onBeforeCleanup
+  args: ()
+17:17:05.615 detox[32478] [90mi[39m saving SimulatorLogRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/device.log
+17:17:05.616 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4e2eb09c-d0a4-40d4-936e-5bc47bef31a5.detox.log" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/device.log
+17:17:05.616 detox[32478] [90mi[39m saving FileArtifact to: files/ios/detox_pid_32478.json.log { append: true }
+17:17:05.616 detox[32478] [90mi[39m saving FileArtifact to: files/ios/detox_pid_32478.log { append: true }
+17:17:05.616 detox[32478] [90mE[39m onBeforeCleanup
+17:17:05.618 detox[32475] [90mi[39m get
+  data: {"type":"cleanup","params":{"stopRunner":true},"messageId":-49642}
+17:17:05.618 detox[32475] [90mi[39m send
+  data: {
+    "type": "cleanup",
+    "params": {
+      "stopRunner": true
+    },
+    "messageId": -49642
+  }
+17:17:05.618 detox[32478] [90mi[39m send message
+  data: {"type":"cleanup","params":{"stopRunner":true},"messageId":-49642}
+17:17:05.619 detox[32475] [90mi[39m get
+  data: {"params":{},"type":"cleanupDone","messageId":-49642}
+17:17:05.620 detox[32475] [90mi[39m send
+  data: {
+    "params": {},
+    "type": "cleanupDone",
+    "messageId": -49642
+  }
+17:17:05.620 detox[32478] [90mi[39m get message
+  data: {"params":{},"type":"cleanupDone","messageId":-49642}
+   
+17:17:05.621 detox[32475] [90mi[39m tester exited session 50a63e91-4d14-d391-a1fd-09b5b447cc14
+17:17:05.621 detox[32475] [90mi[39m send
+  data: {
+    "type": "testerDisconnected",
+    "messageId": -1
+  }
+17:17:05.621 detox[32475] [90mE[39m connection :54553<->:54570
+17:17:05.621 detox[32478] [90mi[39m dispatching event to  primary-32475 /tmp/detox.primary-32475  :  deallocateDevice , {
+  deviceCookie: {
+    id: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+    udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+    type: 'ios.simulator'
+  }
+}
+17:17:05.622 detox[32475] [90mi[39m received event of :  deallocateDevice {
+  deviceCookie: {
+    id: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+    udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+    type: 'ios.simulator'
+  }
+}
+17:17:05.622 detox[32475] [90mB[39m free: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
+  data: {}
+17:17:05.623 detox[32475] [90mE[39m free: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
+17:17:05.623 detox[32475] [90mi[39m dispatching event to socket  :  deallocateDeviceDone {}
+17:17:05.623 detox[32478] [90mi[39m ## received events ##
+17:17:05.624 detox[32478] [90mi[39m detected event deallocateDeviceDone {}
+17:17:05.624 detox[32478] [90mE[39m tear down environment
+17:17:05.624 detox[32478] [90mE[39m e2e/authFlow.e2e.ts
+17:17:05.627 detox[32475] [90mi[39m received event of :  reportTestResults {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/tareqaziz/workspace/reactnative/AuthApp/e2e/authFlow.e2e.ts',
+      isPermanentFailure: false
+    }
+  ]
+}
+17:17:05.627 detox[32475] [90mi[39m dispatching event to socket  :  reportTestResultsDone {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/tareqaziz/workspace/reactnative/AuthApp/e2e/authFlow.e2e.ts',
+      isPermanentFailure: false
+    }
+  ]
+}
+17:17:05.627 detox[32475] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-32475  :   sessionStateUpdate {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/tareqaziz/workspace/reactnative/AuthApp/e2e/authFlow.e2e.ts',
+      isPermanentFailure: false
+    }
+  ]
+}
+17:17:05.627 detox[32478] [90mi[39m dispatching event to  primary-32475 /tmp/detox.primary-32475  :  reportTestResults , {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/tareqaziz/workspace/reactnative/AuthApp/e2e/authFlow.e2e.ts',
+      testExecError: undefined,
+      isPermanentFailure: false
+    }
+  ]
+}
+17:17:05.627 detox[32478] [90mi[39m ## received events ##
+17:17:05.627 detox[32478] [90mi[39m detected event reportTestResultsDone {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/tareqaziz/workspace/reactnative/AuthApp/e2e/authFlow.e2e.ts',
+      isPermanentFailure: false
+    }
+  ]
+}
+17:17:05.629 detox[32475] [90mi[39m socket disconnected secondary-32478
+17:17:05.629 detox[32478] [90mi[39m connection closed primary-32475 /tmp/detox.primary-32475 0 tries remaining of 0
+17:17:05.629 detox[32478] [90mi[39m secondary-32478 exceeded connection rety amount of  or stopRetrying flag set.
+17:17:05.734 detox[32475] [90mE[39m jest --config e2e/jest.config.js
+17:17:05.734 detox[32475] [90mB[39m cleanup
+  args: ()
+17:17:05.735 detox[32475] [90mE[39m cleanup
+17:17:05.735 detox[32475] [90mi[39m Detox server has been closed gracefully
+17:17:05.736 detox[32475] [90mi[39m app exited session 50a63e91-4d14-d391-a1fd-09b5b447cc14
+17:17:05.736 detox[32475] [90mE[39m connection :54553<->:54684
+17:17:05.737 detox[32475] [90mE[39m node_modules/.bin/detox test -c ios.sim.debug --record-logs all --record-videos all --take-screenshots all --artifacts-location ./files/ios/
