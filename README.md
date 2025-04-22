@@ -28,32 +28,36 @@ npx react-native run-ios   # or run-android
 
 ## Bonus features
 1. Added Detox for visual testing
-2. Automatic screenshots and video generation (FFMPEG Must be installed.)
+2. Automatic screenshots and video generation (FFMPEG Must be installed) while testing using detox. 
 
 ### iOS Screenshots
 
-| 01_SignupScreen.png<br>![](files/ios/01_SignupScreen.png) | 02_Signup_Error_Required.png<br>![](files/ios/02_Signup_Error_Required.png) | 03_Signup_Error_InvalidEmail.png<br>![](files/ios/03_Signup_Error_InvalidEmail.png) | 04_Signup_Error_ShortPassword.png<br>![](files/ios/04_Signup_Error_ShortPassword.png) |
+| 01_SignupScreen.png<br><img src="files/ios/01_SignupScreen.png" width="200" /> | 02_Signup_Error_Required.png<br><img src="files/ios/02_Signup_Error_Required.png" width="200" /> | 03_Signup_Error_InvalidEmail.png<br><img src="files/ios/03_Signup_Error_InvalidEmail.png" width="200" /> | 04_Signup_Error_ShortPassword.png<br><img src="files/ios/04_Signup_Error_ShortPassword.png" width="200" /> |
 |:---:|:---:|:---:|:---:|
-| 05_Home_After_Signup.png<br>![](files/ios/05_Home_After_Signup.png) | 06_Login_After_Logout.png<br>![](files/ios/06_Login_After_Logout.png) | 07_Login_Error_InvalidEmail.png<br>![](files/ios/07_Login_Error_InvalidEmail.png) | 08_Login_Error_WrongCreds.png<br>![](files/ios/08_Login_Error_WrongCreds.png) |
-| 09_Home_After_Login.png<br>![](files/ios/09_Home_After_Login.png) | 10_Login_Final.png<br>![](files/ios/10_Login_Final.png) |  |  |
+| 05_Home_After_Signup.png<br><img src="files/ios/05_Home_After_Signup.png" width="200" /> | 06_Login_After_Logout.png<br><img src="files/ios/06_Login_After_Logout.png" width="200" /> | 07_Login_Error_InvalidEmail.png<br><img src="files/ios/07_Login_Error_InvalidEmail.png" width="200" /> | 08_Login_Error_WrongCreds.png<br><img src="files/ios/08_Login_Error_WrongCreds.png" width="200" /> |
+| 09_Home_After_Login.png<br><img src="files/ios/09_Home_After_Login.png" width="200" /> | 10_Login_Final.png<br><img src="files/ios/10_Login_Final.png" width="200" /> |  |  |
 
 ---
 
-#### iOS Flow Video
+#### iOS Flow Preview
 
-![iOS Flow Preview](files/ios/ios.gif) 
+<p align="center">
+  <img src="files/ios/ios.gif" width="400" alt="iOS Flow Preview" />
+</p>
 
 ---
 
 ### Android Screenshots
 
-| 01_SignupScreen.png<br>![](files/android/01_SignupScreen.png) | 02_Signup_Error_Required.png<br>![](files/android/02_Signup_Error_Required.png) | 03_Signup_Error_InvalidEmail.png<br>![](files/android/03_Signup_Error_InvalidEmail.png) | 04_Signup_Error_ShortPassword.png<br>![](files/android/04_Signup_Error_ShortPassword.png) |
+| 01_SignupScreen.png<br><img src="files/android/01_SignupScreen.png" width="200" /> | 02_Signup_Error_Required.png<br><img src="files/android/02_Signup_Error_Required.png" width="200" /> | 03_Signup_Error_InvalidEmail.png<br><img src="files/android/03_Signup_Error_InvalidEmail.png" width="200" /> | 04_Signup_Error_ShortPassword.png<br><img src="files/android/04_Signup_Error_ShortPassword.png" width="200" /> |
 |:---:|:---:|:---:|:---:|
-| 05_Home_After_Signup.png<br>![](files/android/05_Home_After_Signup.png) | 06_Login_After_Logout.png<br>![](files/android/06_Login_After_Logout.png) | 07_Login_Error_InvalidEmail.png<br>![](files/android/07_Login_Error_InvalidEmail.png) | 08_Login_Error_WrongCreds.png<br>![](files/android/08_Login_Error_WrongCreds.png) |
-| 09_Home_After_Login.png<br>![](files/android/09_Home_After_Login.png) | 10_Login_Final.png<br>![](files/android/10_Login_Final.png) |  |  |
+| 05_Home_After_Signup.png<br><img src="files/android/05_Home_After_Signup.png" width="200" /> | 06_Login_After_Logout.png<br><img src="files/android/06_Login_After_Logout.png" width="200" /> | 07_Login_Error_InvalidEmail.png<br><img src="files/android/07_Login_Error_InvalidEmail.png" width="200" /> | 08_Login_Error_WrongCreds.png<br><img src="files/android/08_Login_Error_WrongCreds.png" width="200" /> |
+| 09_Home_After_Login.png<br><img src="files/android/09_Home_After_Login.png" width="200" /> | 10_Login_Final.png<br><img src="files/android/10_Login_Final.png" width="200" /> |  |  |
 
 ---
 
-#### Android Flow Video
+#### Android Flow Preview
 
-![Android Flow Preview](files/android/android.gif) 
+<p align="center">
+  <img src="files/android/android.gif" width="400" alt="Android Flow Preview" />
+</p>
