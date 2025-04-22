@@ -41,9 +41,7 @@ npx react-native run-ios   # or run-android
 
 #### iOS Flow Video
 
-<video src="./files/ios/ios.mp4" controls width="300">
-  Your browser does not support HTML5 video.
-</video>
+![iOS Flow Preview](files/ios/ios.gif) 
 
 ---
 
@@ -58,6 +56,4 @@ npx react-native run-ios   # or run-android
 
 #### Android Flow Video
 
-<video src="./files/android/android.mp4" controls width="300">
-  Your browser does not support HTML5 video.
-</video>
+![Android Flow Preview](files/android/android.gif) 

@@ -1,21 +1,51 @@
 buildscript {
     ext {
         buildToolsVersion = "34.0.0"
-        minSdkVersion = 23
+        minSdkVersion = 26
         compileSdkVersion = 34
         targetSdkVersion = 34
         ndkVersion = "26.1.10909125"
-        kotlinVersion = "1.9.24"
+        kotlinVersion = '2.0.21'
     }
     repositories {
         google()
         mavenCentral()
+        maven {
+            url "$rootDir/../node_modules/detox/Detox-android"
+        }
     }
     dependencies {
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
     }
 }
+
+subprojects {
+    // Apply common configurations to all sub-projects
+    afterEvaluate { project ->
+        if (project.hasProperty("android")) {
+            project.android {
+                buildToolsVersion = rootProject.ext.buildToolsVersion
+            }
+        }
+    }
+}
+
+subprojects { subproj ->
+    // only target the detox module
+    if (subproj.name == "detox") {
+        subproj.afterEvaluate {
+            // configure every KotlinCompile task
+            tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+                kotlinOptions {
+                    // opt into ExperimentalStdlibApi so Detox's own code compiles
+                    freeCompilerArgs += "-Xopt-in=kotlin.ExperimentalStdlibApi"
+                }
+            }
+        }
+    }
+}
+
 
 apply plugin: "com.facebook.react.rootproject"

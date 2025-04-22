@@ -77,6 +77,8 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
+    flavorDimensions "detox"
+
     namespace "com.auth.app"
     defaultConfig {
         applicationId "com.auth.app"
@@ -84,6 +86,10 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+
+        testBuildType System.getProperty('testBuildType', 'debug')
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        missingDimensionStrategy "detox", "full"
     }
     signingConfigs {
         debug {
@@ -103,13 +109,32 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            proguardFile "${rootProject.projectDir}/../node_modules/detox/android/detox/proguard-rules-app.pro"
         }
+    }
+}
+
+configurations {
+    all {
+        exclude group: 'com.genymobile', module: 'genymotion-api'
     }
 }
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
+    // noinspection GradleDynamicVersion
+
+    androidTestImplementation(project(path: ":detox")) {
+        exclude group: 'com.genymotion.api'
+    }
+    androidTestImplementation 'com.github.wix-incubator:detox-butler:1.0.4'
+
+    // Detox instrumentation
+    androidTestImplementation project(':detox')
+    androidTestImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")

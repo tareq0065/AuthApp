@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 20,
   },
-  welcome: {fontSize: 24, fontWeight: '600'},
+  welcome: {fontSize: 24, fontWeight: '600', color: '#000'},
   email: {fontSize: 16, color: '#666', marginVertical: 8},
   button: {
     marginTop: 20,

@@ -1,6 +1,6 @@
-17:16:23.225 detox[32475] [90mB[39m node_modules/.bin/detox test -c ios.sim.debug --record-logs all --record-videos all --take-screenshots all --artifacts-location ./files/ios/
+17:35:15.970 detox[34529] [90mB[39m node_modules/.bin/detox test -c ios.sim.debug --record-logs all --record-videos all --take-screenshots all --artifacts-location ./files/ios/
   data: {
-    "id": "8ee28fdc-dc19-99da-8d4f-8d12280f2911",
+    "id": "2ff30334-4e38-4e64-5e0f-cbc08de8d1ad",
     "detoxConfig": {
       "configurationName": "ios.sim.debug",
       "apps": {
@@ -103,50 +103,50 @@
         "debugSynchronization": 10000
       }
     },
-    "detoxIPCServer": "primary-32475",
+    "detoxIPCServer": "primary-34529",
     "testResults": [],
     "testSessionIndex": 0,
     "workersCount": 0
   }
-17:16:23.230 detox[32475] [90mi[39m Server path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + ipc.config.id /tmp/detox.primary-32475
-17:16:23.231 detox[32475] [90mi[39m starting server on  /tmp/detox.primary-32475 
-17:16:23.231 detox[32475] [90mi[39m starting TLS server false
-17:16:23.231 detox[32475] [90mi[39m starting server as Unix || Windows Socket
-17:16:23.233 detox[32475] [90mi[39m Detox server listening on localhost:54553...
-17:16:23.236 detox[32475] [90mi[39m Serialized the session state at: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8ee28fdc-dc19-99da-8d4f-8d12280f2911.detox.json
-17:16:23.237 detox[32475] [90mB[39m jest --config e2e/jest.config.js
-17:16:23.946 detox[32478] [90mi[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
-17:16:23.947 detox[32478] [90mi[39m requested connection to  primary-32475 /tmp/detox.primary-32475
-17:16:23.947 detox[32478] [90mi[39m Connecting client on Unix Socket : /tmp/detox.primary-32475
-17:16:23.948 detox[32475] [90mi[39m ## socket connection to server detected ##
-17:16:23.948 detox[32478] [90mi[39m retrying reset
-17:16:23.949 detox[32478] [90mi[39m dispatching event to  primary-32475 /tmp/detox.primary-32475  :  registerContext , { id: 'secondary-32478' }
-17:16:23.950 detox[32475] [90mi[39m received event of :  registerContext { id: 'secondary-32478' }
-17:16:23.950 detox[32475] [90mi[39m dispatching event to socket  :  registerContextDone {
+17:35:15.977 detox[34529] [90mi[39m Server path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + ipc.config.id /tmp/detox.primary-34529
+17:35:15.977 detox[34529] [90mi[39m starting server on  /tmp/detox.primary-34529 
+17:35:15.977 detox[34529] [90mi[39m starting TLS server false
+17:35:15.977 detox[34529] [90mi[39m starting server as Unix || Windows Socket
+17:35:15.979 detox[34529] [90mi[39m Detox server listening on localhost:58535...
+17:35:15.981 detox[34529] [90mi[39m Serialized the session state at: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/2ff30334-4e38-4e64-5e0f-cbc08de8d1ad.detox.json
+17:35:15.982 detox[34529] [90mB[39m jest --config e2e/jest.config.js
+17:35:16.715 detox[34535] [90mi[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+17:35:16.723 detox[34535] [90mi[39m requested connection to  primary-34529 /tmp/detox.primary-34529
+17:35:16.723 detox[34535] [90mi[39m Connecting client on Unix Socket : /tmp/detox.primary-34529
+17:35:16.724 detox[34529] [90mi[39m ## socket connection to server detected ##
+17:35:16.724 detox[34535] [90mi[39m retrying reset
+17:35:16.725 detox[34535] [90mi[39m dispatching event to  primary-34529 /tmp/detox.primary-34529  :  registerContext , { id: 'secondary-34535' }
+17:35:16.726 detox[34529] [90mi[39m received event of :  registerContext { id: 'secondary-34535' }
+17:35:16.726 detox[34529] [90mi[39m dispatching event to socket  :  registerContextDone {
   testResults: [],
   testSessionIndex: 0,
   unsafe_earlyTeardown: undefined
 }
-17:16:23.951 detox[32478] [90mi[39m ## received events ##
-17:16:23.951 detox[32478] [90mi[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
-17:16:24.004 detox[32478] [90mB[39m e2e/authFlow.e2e.ts
-17:16:24.012 detox[32478] [90mB[39m set up environment
-17:16:24.012 detox[32478] [90mi[39m dispatching event to  primary-32475 /tmp/detox.primary-32475  :  registerWorker , { workerId: 'w1' }
-17:16:24.013 detox[32475] [90mi[39m received event of :  registerWorker { workerId: 'w1' }
-17:16:24.013 detox[32475] [90mi[39m dispatching event to socket  :  registerWorkerDone { workersCount: 1 }
-17:16:24.013 detox[32475] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-32475  :   sessionStateUpdate { workersCount: 1 }
-17:16:24.013 detox[32478] [90mi[39m ## received events ##
-17:16:24.013 detox[32478] [90mi[39m detected event registerWorkerDone { workersCount: 1 }
-17:16:24.146 detox[32478] [90mi[39m ## received events ##
-17:16:24.146 detox[32478] [90mi[39m detected event sessionStateUpdate { workersCount: 1 }
-17:16:24.149 detox[32475] [90mB[39m connection :54553<->:54570
-17:16:24.150 detox[32478] [90mi[39m opened web socket to: ws://localhost:54553
-17:16:24.151 detox[32475] [90mi[39m get
-  data: {"type":"login","params":{"sessionId":"50a63e91-4d14-d391-a1fd-09b5b447cc14","role":"tester"},"messageId":0}
-17:16:24.151 detox[32478] [90mi[39m send message
-  data: {"type":"login","params":{"sessionId":"50a63e91-4d14-d391-a1fd-09b5b447cc14","role":"tester"},"messageId":0}
-17:16:24.152 detox[32475] [90mi[39m created session 50a63e91-4d14-d391-a1fd-09b5b447cc14
-17:16:24.152 detox[32475] [90mi[39m send
+17:35:16.727 detox[34535] [90mi[39m ## received events ##
+17:35:16.727 detox[34535] [90mi[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+17:35:16.780 detox[34535] [90mB[39m e2e/authFlow.e2e.ts
+17:35:16.788 detox[34535] [90mB[39m set up environment
+17:35:16.788 detox[34535] [90mi[39m dispatching event to  primary-34529 /tmp/detox.primary-34529  :  registerWorker , { workerId: 'w1' }
+17:35:16.789 detox[34529] [90mi[39m received event of :  registerWorker { workerId: 'w1' }
+17:35:16.789 detox[34529] [90mi[39m dispatching event to socket  :  registerWorkerDone { workersCount: 1 }
+17:35:16.789 detox[34529] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-34529  :   sessionStateUpdate { workersCount: 1 }
+17:35:16.789 detox[34535] [90mi[39m ## received events ##
+17:35:16.789 detox[34535] [90mi[39m detected event registerWorkerDone { workersCount: 1 }
+17:35:16.933 detox[34535] [90mi[39m ## received events ##
+17:35:16.934 detox[34535] [90mi[39m detected event sessionStateUpdate { workersCount: 1 }
+17:35:16.936 detox[34529] [90mB[39m connection :58535<->:58554
+17:35:16.937 detox[34535] [90mi[39m opened web socket to: ws://localhost:58535
+17:35:16.938 detox[34529] [90mi[39m get
+  data: {"type":"login","params":{"sessionId":"46618f87-b6ab-ac83-70fe-8a136be3b4e4","role":"tester"},"messageId":0}
+17:35:16.938 detox[34529] [90mi[39m created session 46618f87-b6ab-ac83-70fe-8a136be3b4e4
+17:35:16.938 detox[34535] [90mi[39m send message
+  data: {"type":"login","params":{"sessionId":"46618f87-b6ab-ac83-70fe-8a136be3b4e4","role":"tester"},"messageId":0}
+17:35:16.939 detox[34529] [90mi[39m send
   data: {
     "type": "loginSuccess",
     "params": {
@@ -155,35 +155,35 @@
     },
     "messageId": 0
   }
-17:16:24.152 detox[32475] [90mi[39m tester joined session 50a63e91-4d14-d391-a1fd-09b5b447cc14
-17:16:24.152 detox[32478] [90mi[39m get message
+17:35:16.939 detox[34529] [90mi[39m tester joined session 46618f87-b6ab-ac83-70fe-8a136be3b4e4
+17:35:16.939 detox[34535] [90mi[39m get message
   data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
    
-17:16:24.338 detox[32475] [90mi[39m received event of :  allocateDevice {
+17:35:17.164 detox[34529] [90mi[39m received event of :  allocateDevice {
   deviceConfig: { type: 'ios.simulator', device: { type: 'iPhone 16 Pro' } }
 }
-17:16:24.338 detox[32478] [90mi[39m dispatching event to  primary-32475 /tmp/detox.primary-32475  :  allocateDevice , {
+17:35:17.164 detox[34535] [90mi[39m dispatching event to  primary-34529 /tmp/detox.primary-34529  :  allocateDevice , {
   deviceConfig: { type: 'ios.simulator', device: { type: 'iPhone 16 Pro' } }
 }
-17:16:24.340 detox[32475] [90mB[39m init
+17:35:17.176 detox[34529] [90mB[39m init
   args: ()
-17:16:24.342 detox[32475] [90mE[39m init
-17:16:24.342 detox[32475] [90mB[39m allocate
+17:35:17.180 detox[34529] [90mE[39m init
+17:35:17.180 detox[34529] [90mB[39m allocate
   data: {
     "type": "ios.simulator",
     "device": {
       "type": "iPhone 16 Pro"
     }
   }
-17:16:24.342 detox[32475] [90mi[39m applesimutils --list --byType "iPhone 16 Pro"
-17:16:24.676 detox[32475] [90mi[39m [
+17:35:17.181 detox[34529] [90mi[39m applesimutils --list --byType "iPhone 16 Pro"
+17:35:17.675 detox[34529] [90mi[39m [
   {
     "isAvailable" : true,
     "logPath" : "\/Users\/tareqaziz\/Library\/Logs\/CoreSimulator\/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA",
-    "logPathSize" : 368640,
+    "logPathSize" : 385024,
     "state" : "Booted",
     "name" : "iPhone 16 Pro",
-    "dataPathSize" : 1617088512,
+    "dataPathSize" : 1625657344,
     "deviceType" : {
       "maxRuntimeVersion" : 4294967295,
       "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Pro.simdevicetype",
@@ -539,26 +539,26 @@
   }
 ]
 
-17:16:24.677 detox[32475] [90mi[39m settled on B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
+17:35:17.676 detox[34529] [90mi[39m settled on B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
   data: {
     "id": "B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA",
     "udid": "B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA"
   }
-17:16:24.677 detox[32475] [90mE[39m allocate
-17:16:24.677 detox[32475] [90mB[39m post-allocate: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
+17:35:17.676 detox[34529] [90mE[39m allocate
+17:35:17.676 detox[34529] [90mB[39m post-allocate: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
   data: {
     "id": "B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA",
     "udid": "B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA"
   }
-17:16:24.677 detox[32475] [90mi[39m applesimutils --list --byId B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA --maxResults 1
-17:16:24.824 detox[32475] [90mi[39m [
+17:35:17.676 detox[34529] [90mi[39m applesimutils --list --byId B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA --maxResults 1
+17:35:17.830 detox[34529] [90mi[39m [
   {
     "isAvailable" : true,
     "logPath" : "\/Users\/tareqaziz\/Library\/Logs\/CoreSimulator\/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA",
-    "logPathSize" : 368640,
+    "logPathSize" : 385024,
     "state" : "Booted",
     "name" : "iPhone 16 Pro",
-    "dataPathSize" : 1617088512,
+    "dataPathSize" : 1625657344,
     "deviceType" : {
       "maxRuntimeVersion" : 4294967295,
       "bundlePath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/DeviceTypes\/iPhone 16 Pro.simdevicetype",
@@ -914,8 +914,8 @@
   }
 ]
 
-17:16:24.824 detox[32475] [90mE[39m post-allocate: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
-17:16:24.824 detox[32475] [90mi[39m dispatching event to socket  :  allocateDeviceDone {
+17:35:17.830 detox[34529] [90mE[39m post-allocate: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
+17:35:17.830 detox[34529] [90mi[39m dispatching event to socket  :  allocateDeviceDone {
   deviceCookie: {
     id: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
     udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
@@ -924,50 +924,50 @@
     headless: undefined
   }
 }
-17:16:24.825 detox[32478] [90mi[39m ## received events ##
-17:16:24.825 detox[32478] [90mi[39m detected event allocateDeviceDone {
+17:35:17.830 detox[34535] [90mi[39m ## received events ##
+17:35:17.830 detox[34535] [90mi[39m detected event allocateDeviceDone {
   deviceCookie: {
     id: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
     udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
     type: 'ios.simulator'
   }
 }
-17:16:24.834 detox[32478] [90mB[39m onBootDevice
+17:35:17.841 detox[34535] [90mB[39m onBootDevice
   args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA"})
-17:16:24.834 detox[32478] [90mE[39m onBootDevice
-17:16:24.834 detox[32478] [90mB[39m installUtilBinaries
+17:35:17.841 detox[34535] [90mE[39m onBootDevice
+17:35:17.842 detox[34535] [90mB[39m installUtilBinaries
   args: ()
-17:16:24.834 detox[32478] [90mE[39m installUtilBinaries
-17:16:24.835 detox[32478] [90mB[39m selectApp
+17:35:17.842 detox[34535] [90mE[39m installUtilBinaries
+17:35:17.842 detox[34535] [90mB[39m selectApp
   args: ("default")
-17:16:24.840 detox[32478] [90mE[39m selectApp
-17:16:24.840 detox[32478] [90mB[39m uninstallApp
+17:35:17.848 detox[34535] [90mE[39m selectApp
+17:35:17.848 detox[34535] [90mB[39m uninstallApp
   args: ()
-17:16:24.840 detox[32478] [90mB[39m onBeforeUninstallApp
+17:35:17.849 detox[34535] [90mB[39m onBeforeUninstallApp
   args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
-17:16:24.840 detox[32478] [90mE[39m onBeforeUninstallApp
-17:16:24.841 detox[32478] [90mi[39m /usr/bin/xcrun simctl uninstall B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
-17:16:24.841 detox[32478] [90mi[39m Uninstalling com.auth.app...
-17:16:25.074 detox[32478] [90mi[39m com.auth.app uninstalled
-17:16:25.075 detox[32478] [90mE[39m uninstallApp
-17:16:25.075 detox[32478] [90mB[39m selectApp
+17:35:17.849 detox[34535] [90mE[39m onBeforeUninstallApp
+17:35:17.849 detox[34535] [90mi[39m /usr/bin/xcrun simctl uninstall B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:17.849 detox[34535] [90mi[39m Uninstalling com.auth.app...
+17:35:18.863 detox[34535] [90mi[39m com.auth.app uninstalled
+17:35:18.863 detox[34535] [90mE[39m uninstallApp
+17:35:18.863 detox[34535] [90mB[39m selectApp
   args: ("default")
-17:16:25.075 detox[32478] [90mB[39m terminateApp
+17:35:18.863 detox[34535] [90mB[39m terminateApp
   args: ()
-17:16:25.075 detox[32478] [90mB[39m onBeforeTerminateApp
+17:35:18.864 detox[34535] [90mB[39m onBeforeTerminateApp
   args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
-17:16:25.076 detox[32478] [90mE[39m onBeforeTerminateApp
-17:16:25.076 detox[32478] [90mi[39m /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
-17:16:25.076 detox[32478] [90mi[39m Terminating com.auth.app...
-17:16:26.305 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+17:35:18.864 detox[34535] [90mE[39m onBeforeTerminateApp
+17:35:18.865 detox[34535] [90mi[39m /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:18.865 detox[34535] [90mi[39m Terminating com.auth.app...
+17:35:20.132 detox[34535] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
 Simulator device failed to terminate com.auth.app.
 found nothing to terminate
 Underlying error (domain=NSPOSIXErrorDomain, code=3):
 	The request to terminate "com.auth.app" failed. found nothing to terminate
 	found nothing to terminate
 
-17:16:26.305 detox[32478] [90mi[39m Terminating com.auth.app...
-17:16:26.454 detox[32478] [90mi[39m "/usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app" failed with error = Error: Command failed: /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:20.132 detox[34535] [90mi[39m Terminating com.auth.app...
+17:35:20.280 detox[34535] [90mi[39m "/usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app" failed with error = Error: Command failed: /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
 An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
 Simulator device failed to terminate com.auth.app.
 found nothing to terminate
@@ -976,43 +976,43 @@ Underlying error (domain=NSPOSIXErrorDomain, code=3):
 	found nothing to terminate
  (code=3), stdout and stderr:
 
-17:16:26.454 detox[32478] [90mi[39m 
-17:16:26.454 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+17:35:20.280 detox[34535] [90mi[39m 
+17:35:20.280 detox[34535] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
 Simulator device failed to terminate com.auth.app.
 found nothing to terminate
 Underlying error (domain=NSPOSIXErrorDomain, code=3):
 	The request to terminate "com.auth.app" failed. found nothing to terminate
 	found nothing to terminate
 
-17:16:26.454 detox[32478] [90mB[39m onTerminateApp
+17:35:20.280 detox[34535] [90mB[39m onTerminateApp
   args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
-17:16:26.454 detox[32478] [90mE[39m onTerminateApp
-17:16:26.454 detox[32478] [90mE[39m terminateApp
-17:16:26.455 detox[32478] [90mE[39m selectApp
-17:16:26.455 detox[32478] [90mB[39m installApp
+17:35:20.281 detox[34535] [90mE[39m onTerminateApp
+17:35:20.281 detox[34535] [90mE[39m terminateApp
+17:35:20.281 detox[34535] [90mE[39m selectApp
+17:35:20.281 detox[34535] [90mB[39m installApp
   args: ()
-17:16:26.455 detox[32478] [90mi[39m /usr/bin/xcrun simctl install B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA "/Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app"
-17:16:26.455 detox[32478] [90mi[39m Installing /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app...
-17:16:26.686 detox[32478] [90mi[39m /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app installed
-17:16:26.686 detox[32478] [90mE[39m installApp
-17:16:26.686 detox[32478] [90mB[39m selectApp
+17:35:20.281 detox[34535] [90mi[39m /usr/bin/xcrun simctl install B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA "/Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app"
+17:35:20.281 detox[34535] [90mi[39m Installing /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app...
+17:35:20.588 detox[34535] [90mi[39m /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app installed
+17:35:20.589 detox[34535] [90mE[39m installApp
+17:35:20.589 detox[34535] [90mB[39m selectApp
   args: ("default")
-17:16:26.686 detox[32478] [90mB[39m terminateApp
+17:35:20.589 detox[34535] [90mB[39m terminateApp
   args: ()
-17:16:26.686 detox[32478] [90mB[39m onBeforeTerminateApp
+17:35:20.589 detox[34535] [90mB[39m onBeforeTerminateApp
   args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
-17:16:26.686 detox[32478] [90mE[39m onBeforeTerminateApp
-17:16:26.686 detox[32478] [90mi[39m /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
-17:16:26.686 detox[32478] [90mi[39m Terminating com.auth.app...
-17:16:27.848 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+17:35:20.589 detox[34535] [90mE[39m onBeforeTerminateApp
+17:35:20.589 detox[34535] [90mi[39m /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:20.589 detox[34535] [90mi[39m Terminating com.auth.app...
+17:35:21.787 detox[34535] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
 Simulator device failed to terminate com.auth.app.
 found nothing to terminate
 Underlying error (domain=NSPOSIXErrorDomain, code=3):
 	The request to terminate "com.auth.app" failed. found nothing to terminate
 	found nothing to terminate
 
-17:16:27.849 detox[32478] [90mi[39m Terminating com.auth.app...
-17:16:28.015 detox[32478] [90mi[39m "/usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app" failed with error = Error: Command failed: /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:21.788 detox[34535] [90mi[39m Terminating com.auth.app...
+17:35:21.971 detox[34535] [90mi[39m "/usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app" failed with error = Error: Command failed: /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
 An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
 Simulator device failed to terminate com.auth.app.
 found nothing to terminate
@@ -1021,48 +1021,48 @@ Underlying error (domain=NSPOSIXErrorDomain, code=3):
 	found nothing to terminate
  (code=3), stdout and stderr:
 
-17:16:28.015 detox[32478] [90mi[39m 
-17:16:28.015 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+17:35:21.971 detox[34535] [90mi[39m 
+17:35:21.971 detox[34535] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
 Simulator device failed to terminate com.auth.app.
 found nothing to terminate
 Underlying error (domain=NSPOSIXErrorDomain, code=3):
 	The request to terminate "com.auth.app" failed. found nothing to terminate
 	found nothing to terminate
 
-17:16:28.015 detox[32478] [90mB[39m onTerminateApp
+17:35:21.971 detox[34535] [90mB[39m onTerminateApp
   args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
-17:16:28.015 detox[32478] [90mE[39m onTerminateApp
-17:16:28.015 detox[32478] [90mE[39m terminateApp
-17:16:28.015 detox[32478] [90mE[39m selectApp
-17:16:28.015 detox[32478] [90mE[39m set up environment
-17:16:28.165 detox[32478] [90mi[39m authFlow.e2e.ts is assigned to B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA (iPhone 16 Pro)
-17:16:28.166 detox[32478] [90mB[39m run the tests
-17:16:28.166 detox[32478] [90mB[39m onRunDescribeStart
+17:35:21.971 detox[34535] [90mE[39m onTerminateApp
+17:35:21.971 detox[34535] [90mE[39m terminateApp
+17:35:21.971 detox[34535] [90mE[39m selectApp
+17:35:21.971 detox[34535] [90mE[39m set up environment
+17:35:22.141 detox[34535] [90mi[39m authFlow.e2e.ts is assigned to B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA (iPhone 16 Pro)
+17:35:22.141 detox[34535] [90mB[39m run the tests
+17:35:22.141 detox[34535] [90mB[39m onRunDescribeStart
   args: ({"name":"ROOT_DESCRIBE_BLOCK"})
-17:16:28.166 detox[32478] [90mE[39m onRunDescribeStart
-17:16:28.166 detox[32478] [90mB[39m AuthApp: Signup → Login → Logout flows
-17:16:28.166 detox[32478] [90mB[39m onRunDescribeStart
+17:35:22.142 detox[34535] [90mE[39m onRunDescribeStart
+17:35:22.142 detox[34535] [90mB[39m AuthApp: Signup → Login → Logout flows
+17:35:22.142 detox[34535] [90mB[39m onRunDescribeStart
   args: ({"name":"AuthApp: Signup → Login → Logout flows"})
-17:16:28.166 detox[32478] [90mE[39m onRunDescribeStart
-17:16:28.167 detox[32478] [90mB[39m beforeAll
-17:16:28.170 detox[32478] [90mB[39m launchApp
+17:35:22.142 detox[34535] [90mE[39m onRunDescribeStart
+17:35:22.142 detox[34535] [90mB[39m beforeAll
+17:35:22.148 detox[34535] [90mB[39m launchApp
   args: ({"delete":true})
-17:16:28.171 detox[32478] [90mB[39m terminateApp
+17:35:22.148 detox[34535] [90mB[39m terminateApp
   args: ("com.auth.app")
-17:16:28.171 detox[32478] [90mB[39m onBeforeTerminateApp
+17:35:22.148 detox[34535] [90mB[39m onBeforeTerminateApp
   args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
-17:16:28.171 detox[32478] [90mE[39m onBeforeTerminateApp
-17:16:28.171 detox[32478] [90mi[39m /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
-17:16:28.171 detox[32478] [90mi[39m Terminating com.auth.app...
-17:16:29.306 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+17:35:22.148 detox[34535] [90mE[39m onBeforeTerminateApp
+17:35:22.148 detox[34535] [90mi[39m /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:22.148 detox[34535] [90mi[39m Terminating com.auth.app...
+17:35:23.295 detox[34535] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
 Simulator device failed to terminate com.auth.app.
 found nothing to terminate
 Underlying error (domain=NSPOSIXErrorDomain, code=3):
 	The request to terminate "com.auth.app" failed. found nothing to terminate
 	found nothing to terminate
 
-17:16:29.307 detox[32478] [90mi[39m Terminating com.auth.app...
-17:16:29.481 detox[32478] [90mi[39m "/usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app" failed with error = Error: Command failed: /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:23.296 detox[34535] [90mi[39m Terminating com.auth.app...
+17:35:23.462 detox[34535] [90mi[39m "/usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app" failed with error = Error: Command failed: /usr/bin/xcrun simctl terminate B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
 An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
 Simulator device failed to terminate com.auth.app.
 found nothing to terminate
@@ -1071,60 +1071,60 @@ Underlying error (domain=NSPOSIXErrorDomain, code=3):
 	found nothing to terminate
  (code=3), stdout and stderr:
 
-17:16:29.481 detox[32478] [90mi[39m 
-17:16:29.481 detox[32478] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+17:35:23.462 detox[34535] [90mi[39m 
+17:35:23.462 detox[34535] [90mi[39m An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
 Simulator device failed to terminate com.auth.app.
 found nothing to terminate
 Underlying error (domain=NSPOSIXErrorDomain, code=3):
 	The request to terminate "com.auth.app" failed. found nothing to terminate
 	found nothing to terminate
 
-17:16:29.481 detox[32478] [90mB[39m onTerminateApp
+17:35:23.462 detox[34535] [90mB[39m onTerminateApp
   args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
-17:16:29.482 detox[32478] [90mE[39m onTerminateApp
-17:16:29.482 detox[32478] [90mE[39m terminateApp
-17:16:29.482 detox[32478] [90mB[39m uninstallApp
+17:35:23.462 detox[34535] [90mE[39m onTerminateApp
+17:35:23.462 detox[34535] [90mE[39m terminateApp
+17:35:23.462 detox[34535] [90mB[39m uninstallApp
   args: ()
-17:16:29.482 detox[32478] [90mB[39m onBeforeUninstallApp
+17:35:23.462 detox[34535] [90mB[39m onBeforeUninstallApp
   args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app"})
-17:16:29.482 detox[32478] [90mE[39m onBeforeUninstallApp
-17:16:29.482 detox[32478] [90mi[39m /usr/bin/xcrun simctl uninstall B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
-17:16:29.482 detox[32478] [90mi[39m Uninstalling com.auth.app...
-17:16:29.640 detox[32478] [90mi[39m com.auth.app uninstalled
-17:16:29.640 detox[32478] [90mE[39m uninstallApp
-17:16:29.640 detox[32478] [90mB[39m installApp
+17:35:23.462 detox[34535] [90mE[39m onBeforeUninstallApp
+17:35:23.462 detox[34535] [90mi[39m /usr/bin/xcrun simctl uninstall B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:23.462 detox[34535] [90mi[39m Uninstalling com.auth.app...
+17:35:23.630 detox[34535] [90mi[39m com.auth.app uninstalled
+17:35:23.631 detox[34535] [90mE[39m uninstallApp
+17:35:23.631 detox[34535] [90mB[39m installApp
   args: ()
-17:16:29.640 detox[32478] [90mi[39m /usr/bin/xcrun simctl install B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA "/Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app"
-17:16:29.640 detox[32478] [90mi[39m Installing /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app...
-17:16:29.888 detox[32478] [90mi[39m /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app installed
-17:16:29.888 detox[32478] [90mE[39m installApp
-17:16:29.889 detox[32478] [90mB[39m onBeforeLaunchApp
-  args: ({"bundleId":"com.auth.app","deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","launchArgs":{"detoxServer":"ws://localhost:54553","detoxSessionId":"50a63e91-4d14-d391-a1fd-09b5b447cc14"}})
-17:16:29.889 detox[32478] [90mi[39m starting SimulatorLogRecording {
+17:35:23.631 detox[34535] [90mi[39m /usr/bin/xcrun simctl install B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA "/Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app"
+17:35:23.631 detox[34535] [90mi[39m Installing /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app...
+17:35:23.876 detox[34535] [90mi[39m /Users/tareqaziz/workspace/reactnative/AuthApp/ios/build/Build/Products/Debug-iphonesimulator/AuthApp.app installed
+17:35:23.876 detox[34535] [90mE[39m installApp
+17:35:23.876 detox[34535] [90mB[39m onBeforeLaunchApp
+  args: ({"bundleId":"com.auth.app","deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","launchArgs":{"detoxServer":"ws://localhost:58535","detoxSessionId":"46618f87-b6ab-ac83-70fe-8a136be3b4e4"}})
+17:35:23.877 detox[34535] [90mi[39m starting SimulatorLogRecording {
   udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
   bundleId: 'com.auth.app'
 }
-17:16:29.890 detox[32478] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
-17:16:30.073 detox[32478] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app
+17:35:23.878 detox[34535] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:24.058 detox[34535] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app
 
-17:16:30.074 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\""
-17:16:30.126 detox[32478] [90mE[39m onBeforeLaunchApp
-17:16:30.126 detox[32478] [90mi[39m SIMCTL_CHILD_GULGeneratedClassDisposeDisabled=YES SIMCTL_CHILD_DYLD_INSERT_LIBRARIES="/Users/tareqaziz/Library/Detox/ios/framework/d44facb2579602593708b7c06b1ef949ed4fff78/Detox.framework/Detox" /usr/bin/xcrun simctl launch B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app --args -detoxServer ws://localhost:54553 -detoxSessionId 50a63e91-4d14-d391-a1fd-09b5b447cc14 -detoxDebugVisibility YES -detoxDisableHierarchyDump YES
-17:16:30.126 detox[32478] [90mi[39m Launching com.auth.app...
-17:16:30.388 detox[32478] [90mi[39m com.auth.app: 32581
+17:35:24.059 detox[34535] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app\""
+17:35:24.110 detox[34535] [90mE[39m onBeforeLaunchApp
+17:35:24.110 detox[34535] [90mi[39m SIMCTL_CHILD_GULGeneratedClassDisposeDisabled=YES SIMCTL_CHILD_DYLD_INSERT_LIBRARIES="/Users/tareqaziz/Library/Detox/ios/framework/d44facb2579602593708b7c06b1ef949ed4fff78/Detox.framework/Detox" /usr/bin/xcrun simctl launch B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app --args -detoxServer ws://localhost:58535 -detoxSessionId 46618f87-b6ab-ac83-70fe-8a136be3b4e4 -detoxDebugVisibility YES -detoxDisableHierarchyDump YES
+17:35:24.110 detox[34535] [90mi[39m Launching com.auth.app...
+17:35:24.376 detox[34535] [90mi[39m com.auth.app: 34674
 
-17:16:30.388 detox[32478] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
-17:16:30.560 detox[32478] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app
+17:35:24.377 detox[34535] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:24.555 detox[34535] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app
 
-17:16:30.566 detox[32478] [90mi[39m com.auth.app launched. To watch simulator logs, run:
+17:35:24.561 detox[34535] [90mi[39m com.auth.app launched. To watch simulator logs, run:
         /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate 'process == "AuthApp"'
-17:16:30.566 detox[32478] [90mB[39m onLaunchApp
-  args: ({"bundleId":"com.auth.app","deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","launchArgs":{"detoxServer":"ws://localhost:54553","detoxSessionId":"50a63e91-4d14-d391-a1fd-09b5b447cc14","detoxDebugVisibility":"YES","detoxDisableHierarchyDump":"YES"},"pid":32581})
-17:16:30.566 detox[32478] [90mE[39m onLaunchApp
-17:16:31.031 detox[32475] [90mB[39m connection :54553<->:54684
-17:16:31.723 detox[32475] [90mi[39m get
-  data: {"params":{"sessionId":"50a63e91-4d14-d391-a1fd-09b5b447cc14","role":"app"},"type":"login","messageId":0}
-17:16:31.724 detox[32475] [90mi[39m send
+17:35:24.561 detox[34535] [90mB[39m onLaunchApp
+  args: ({"bundleId":"com.auth.app","deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","launchArgs":{"detoxServer":"ws://localhost:58535","detoxSessionId":"46618f87-b6ab-ac83-70fe-8a136be3b4e4","detoxDebugVisibility":"YES","detoxDisableHierarchyDump":"YES"},"pid":34674})
+17:35:24.561 detox[34535] [90mE[39m onLaunchApp
+17:35:24.929 detox[34529] [90mB[39m connection :58535<->:58693
+17:35:25.603 detox[34529] [90mi[39m get
+  data: {"params":{"role":"app","sessionId":"46618f87-b6ab-ac83-70fe-8a136be3b4e4"},"type":"login","messageId":0}
+17:35:25.604 detox[34529] [90mi[39m send
   data: {
     "params": {
       "testerConnected": true,
@@ -1133,110 +1133,110 @@ Underlying error (domain=NSPOSIXErrorDomain, code=3):
     "type": "loginSuccess",
     "messageId": 0
   }
-17:16:31.724 detox[32475] [90mi[39m app joined session 50a63e91-4d14-d391-a1fd-09b5b447cc14
-17:16:31.724 detox[32475] [90mi[39m send
+17:35:25.606 detox[34529] [90mi[39m app joined session 46618f87-b6ab-ac83-70fe-8a136be3b4e4
+17:35:25.606 detox[34529] [90mi[39m send
   data: {
     "type": "appConnected"
   }
-17:16:31.725 detox[32478] [90mi[39m get message
+17:35:25.607 detox[34535] [90mi[39m get message
   data: {"type":"appConnected"}
    
-17:16:31.726 detox[32478] [90mi[39m send message
+17:35:25.609 detox[34535] [90mi[39m send message
   data: {"type":"isReady","params":{},"messageId":-1000}
-17:16:31.727 detox[32475] [90mi[39m get
+17:35:25.610 detox[34529] [90mi[39m get
   data: {"type":"isReady","params":{},"messageId":-1000}
-17:16:31.728 detox[32475] [90mi[39m send
+17:35:25.610 detox[34529] [90mi[39m send
   data: {
     "type": "isReady",
     "params": {},
     "messageId": -1000
   }
-17:16:33.311 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"ready","messageId":-1000}
-17:16:33.312 detox[32475] [90mi[39m send
+17:35:27.095 detox[34529] [90mi[39m get
+  data: {"type":"ready","params":{},"messageId":-1000}
+17:35:27.095 detox[34529] [90mi[39m send
   data: {
-    "params": {},
     "type": "ready",
+    "params": {},
     "messageId": -1000
   }
-17:16:33.313 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"ready","messageId":-1000}
-17:16:33.313 detox[32475] [90mi[39m send
-  data: {
-    "params": {},
-    "type": "ready",
-    "messageId": -1000
-  }
-17:16:33.313 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"ready","messageId":-1000}
+17:35:27.096 detox[34535] [90mi[39m get message
+  data: {"type":"ready","params":{},"messageId":-1000}
    
-17:16:33.314 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"ready","messageId":-1000}
-17:16:33.314 detox[32475] [90mi[39m send
+17:35:27.097 detox[34529] [90mi[39m get
+  data: {"type":"ready","params":{},"messageId":-1000}
+17:35:27.097 detox[34529] [90mi[39m send
   data: {
-    "params": {},
     "type": "ready",
+    "params": {},
     "messageId": -1000
   }
-17:16:33.316 detox[32478] [90mi[39m send message
+17:35:27.098 detox[34529] [90mi[39m get
+  data: {"type":"ready","params":{},"messageId":-1000}
+17:35:27.098 detox[34529] [90mi[39m send
+  data: {
+    "type": "ready",
+    "params": {},
+    "messageId": -1000
+  }
+17:35:27.099 detox[34535] [90mi[39m send message
   data: {"type":"waitForActive","params":{},"messageId":1}
-17:16:33.317 detox[32475] [90mi[39m get
+17:35:27.100 detox[34529] [90mi[39m get
   data: {"type":"waitForActive","params":{},"messageId":1}
-17:16:33.317 detox[32475] [90mi[39m send
+17:35:27.100 detox[34529] [90mi[39m send
   data: {
     "type": "waitForActive",
     "params": {},
     "messageId": 1
   }
-17:16:33.317 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"ready","messageId":-1000}
+17:35:27.100 detox[34535] [90mi[39m get message
+  data: {"type":"ready","params":{},"messageId":-1000}
    
-17:16:33.317 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"ready","messageId":-1000}
+17:35:27.100 detox[34535] [90mi[39m get message
+  data: {"type":"ready","params":{},"messageId":-1000}
    
-17:16:33.323 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"waitForActiveDone","messageId":1}
-17:16:33.323 detox[32475] [90mi[39m send
+17:35:27.104 detox[34529] [90mi[39m get
+  data: {"params":{},"messageId":1,"type":"waitForActiveDone"}
+17:35:27.104 detox[34529] [90mi[39m send
   data: {
     "params": {},
-    "type": "waitForActiveDone",
-    "messageId": 1
+    "messageId": 1,
+    "type": "waitForActiveDone"
   }
-17:16:33.323 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"waitForActiveDone","messageId":1}
+17:35:27.105 detox[34535] [90mi[39m get message
+  data: {"params":{},"messageId":1,"type":"waitForActiveDone"}
    
-17:16:33.323 detox[32478] [90mB[39m onAppReady
-  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app","pid":32581})
-17:16:33.323 detox[32478] [90mE[39m onAppReady
-17:16:33.323 detox[32478] [90mE[39m launchApp
-17:16:33.324 detox[32478] [90mE[39m beforeAll
-17:16:33.325 detox[32478] [90mB[39m 1. Signup: empty → invalid → short pw → success → home
-17:16:33.325 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 1. Signup: empty → invalid → short pw → success → home
-17:16:33.326 detox[32478] [90mB[39m onTestStart
+17:35:27.105 detox[34535] [90mB[39m onAppReady
+  args: ({"deviceId":"B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA","bundleId":"com.auth.app","pid":34674})
+17:35:27.105 detox[34535] [90mE[39m onAppReady
+17:35:27.105 detox[34535] [90mE[39m launchApp
+17:35:27.106 detox[34535] [90mE[39m beforeAll
+17:35:27.107 detox[34535] [90mB[39m 1. Signup: empty → invalid → short pw → success → home
+17:35:27.108 detox[34535] [90mi[39m AuthApp: Signup → Login → Logout flows: 1. Signup: empty → invalid → short pw → success → home
+17:35:27.109 detox[34535] [90mB[39m onTestStart
   args: ({"title":"1. Signup: empty → invalid → short pw → success → home","fullName":"AuthApp: Signup → Login → Logout flows 1. Signup: empty → invalid → short pw → success → home","status":"running","invocations":1})
-17:16:33.326 detox[32478] [90mi[39m stopping SimulatorLogRecording
-17:16:33.381 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app"
-17:16:33.395 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\"" exited with code #0
-17:16:33.397 detox[32478] [90mi[39m starting SimulatorLogRecording
-17:16:33.400 detox[32478] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
-17:16:33.578 detox[32478] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app
+17:35:27.110 detox[34535] [90mi[39m stopping SimulatorLogRecording
+17:35:27.164 detox[34535] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app"
+17:35:27.182 detox[34535] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app\"" exited with code #0
+17:35:27.183 detox[34535] [90mi[39m starting SimulatorLogRecording
+17:35:27.185 detox[34535] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:27.377 detox[34535] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app
 
-17:16:33.579 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\""
-17:16:33.630 detox[32478] [90mi[39m starting SimulatorScreenshot
-17:16:33.630 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8d77e18c-3d4a-4c40-b937-ad15c5d94b05.detox.png"
-17:16:33.631 detox[32478] [90mi[39m starting SimulatorVideoRecording
-17:16:33.631 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b664847f-0d27-4ec9-a307-4a06a8862e72.detox.mp4
-17:16:33.889 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8d77e18c-3d4a-4c40-b937-ad15c5d94b05.detox.png
+17:35:27.378 detox[34535] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app\""
+17:35:27.429 detox[34535] [90mi[39m starting SimulatorScreenshot
+17:35:27.429 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/ec28125a-9c32-482d-af3b-6d1d42d6eafb.detox.png"
+17:35:27.430 detox[34535] [90mi[39m starting SimulatorVideoRecording
+17:35:27.430 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/64fb9210-b72b-4b18-aee6-9e5339e63ede.detox.mp4
+17:35:27.732 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/ec28125a-9c32-482d-af3b-6d1d42d6eafb.detox.png
 
-17:16:33.889 detox[32478] [90mi[39m stopping SimulatorScreenshot
-17:16:33.889 detox[32478] [90mE[39m onTestStart
-17:16:33.889 detox[32478] [90mB[39m beforeEach
-17:16:33.889 detox[32478] [90mE[39m beforeEach
-17:16:33.890 detox[32478] [90mB[39m test_fn
-17:16:33.891 detox[32475] [90mi[39m get
+17:35:27.732 detox[34535] [90mi[39m stopping SimulatorScreenshot
+17:35:27.732 detox[34535] [90mE[39m onTestStart
+17:35:27.732 detox[34535] [90mB[39m beforeEach
+17:35:27.732 detox[34535] [90mE[39m beforeEach
+17:35:27.732 detox[34535] [90mB[39m test_fn
+17:35:27.734 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"gotoSignup","isRegex":false}},"messageId":2}
-17:16:33.891 detox[32475] [90mi[39m send
+17:35:27.734 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1250,9 +1250,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8d
     },
     "messageId": 2
   }
-17:16:33.891 detox[32478] [90mi[39m send message
+17:35:27.734 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"gotoSignup","isRegex":false}},"messageId":2}
-17:16:33.892 detox[32478] [90mB[39m tap
+17:35:27.734 detox[34535] [90mB[39m tap
   data: {
     "type": "action",
     "action": "tap",
@@ -1262,25 +1262,25 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8d
       "isRegex": false
     }
   }
-17:16:33.958 detox[32478] [90mi[39m Recording started
+17:35:27.953 detox[34535] [90mi[39m Recording started
 
-17:16:34.894 detox[32475] [90mi[39m get
-  data: {"type":"invokeResult","params":{},"messageId":2}
-17:16:34.894 detox[32475] [90mi[39m send
+17:35:28.744 detox[34529] [90mi[39m get
+  data: {"params":{},"messageId":2,"type":"invokeResult"}
+17:35:28.744 detox[34529] [90mi[39m send
   data: {
-    "type": "invokeResult",
     "params": {},
-    "messageId": 2
+    "messageId": 2,
+    "type": "invokeResult"
   }
-17:16:34.895 detox[32478] [90mi[39m get message
-  data: {"type":"invokeResult","params":{},"messageId":2}
+17:35:28.746 detox[34535] [90mi[39m get message
+  data: {"params":{},"messageId":2,"type":"invokeResult"}
    
-17:16:34.896 detox[32478] [90mE[39m tap
-17:16:34.897 detox[32478] [90mi[39m send message
+17:35:28.747 detox[34535] [90mE[39m tap
+17:35:28.749 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupName","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":3}
-17:16:34.898 detox[32475] [90mi[39m get
+17:35:28.750 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupName","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":3}
-17:16:34.898 detox[32475] [90mi[39m send
+17:35:28.750 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1295,7 +1295,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8d
     },
     "messageId": 3
   }
-17:16:34.898 detox[32478] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:35:28.750 detox[34535] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
   data: {
     "type": "expectation",
     "predicate": {
@@ -1306,45 +1306,33 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8d
     "expectation": "toBeVisible",
     "timeout": 5000
   }
-17:16:34.941 detox[32475] [90mi[39m get
-  data: {"type":"invokeResult","messageId":3,"params":{}}
-17:16:34.941 detox[32475] [90mi[39m send
+17:35:28.796 detox[34529] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":3}
+17:35:28.797 detox[34529] [90mi[39m send
   data: {
+    "params": {},
     "type": "invokeResult",
-    "messageId": 3,
-    "params": {}
+    "messageId": 3
   }
-17:16:34.942 detox[32478] [90mi[39m get message
-  data: {"type":"invokeResult","messageId":3,"params":{}}
+17:35:28.797 detox[34535] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":3}
    
-17:16:34.942 detox[32478] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
-17:16:34.944 detox[32478] [90mB[39m takeScreenshot
+17:35:28.798 detox[34535] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:35:28.800 detox[34535] [90mB[39m takeScreenshot
   args: ("01_SignupScreen")
-17:16:34.945 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe4f90ad-d3d4-4b52-9a84-17c198074da1.detox.png"
-17:16:35.228 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe4f90ad-d3d4-4b52-9a84-17c198074da1.detox.png
+17:35:28.801 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/014b1db5-c494-4492-8255-8c78c1a65426.detox.png"
+17:35:29.075 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/014b1db5-c494-4492-8255-8c78c1a65426.detox.png
 
-17:16:35.228 detox[32478] [90mB[39m onCreateExternalArtifact
-  args: ({"pluginId":"screenshot","artifactName":"01_SignupScreen","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe4f90ad-d3d4-4b52-9a84-17c198074da1.detox.png"})
-17:16:35.228 detox[32478] [90mi[39m starting FileArtifact
-17:16:35.228 detox[32478] [90mi[39m stopping FileArtifact
-17:16:35.229 detox[32478] [90mE[39m onCreateExternalArtifact
-17:16:35.229 detox[32478] [90mE[39m takeScreenshot
-17:16:35.229 detox[32478] [90mi[39m send message
+17:35:29.076 detox[34535] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"01_SignupScreen","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/014b1db5-c494-4492-8255-8c78c1a65426.detox.png"})
+17:35:29.076 detox[34535] [90mi[39m starting FileArtifact
+17:35:29.076 detox[34535] [90mi[39m stopping FileArtifact
+17:35:29.076 detox[34535] [90mE[39m onCreateExternalArtifact
+17:35:29.076 detox[34535] [90mE[39m takeScreenshot
+17:35:29.077 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":4}
-17:16:35.229 detox[32478] [90mB[39m tap
-  data: {
-    "type": "action",
-    "action": "tap",
-    "predicate": {
-      "type": "id",
-      "value": "signupButton",
-      "isRegex": false
-    }
-  }
-17:16:35.230 detox[32475] [90mi[39m get
-  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":4}
-17:16:35.230 detox[32475] [90mi[39m send
+17:35:29.077 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1358,23 +1346,35 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe
     },
     "messageId": 4
   }
-17:16:35.733 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"invokeResult","messageId":4}
-17:16:35.734 detox[32475] [90mi[39m send
+17:35:29.077 detox[34535] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":4}
+17:35:29.077 detox[34535] [90mB[39m tap
   data: {
-    "params": {},
+    "type": "action",
+    "action": "tap",
+    "predicate": {
+      "type": "id",
+      "value": "signupButton",
+      "isRegex": false
+    }
+  }
+17:35:29.580 detox[34529] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":4}
+17:35:29.580 detox[34529] [90mi[39m send
+  data: {
     "type": "invokeResult",
+    "params": {},
     "messageId": 4
   }
-17:16:35.735 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"invokeResult","messageId":4}
+17:35:29.581 detox[34535] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":4}
    
-17:16:35.735 detox[32478] [90mE[39m tap
-17:16:35.737 detox[32478] [90mi[39m send message
+17:35:29.582 detox[34535] [90mE[39m tap
+17:35:29.584 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["All fields are required"]},"messageId":5}
-17:16:35.739 detox[32475] [90mi[39m get
+17:35:29.585 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["All fields are required"]},"messageId":5}
-17:16:35.739 detox[32475] [90mi[39m send
+17:35:29.585 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1391,7 +1391,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe
     },
     "messageId": 5
   }
-17:16:35.739 detox[32478] [90mB[39m expect element to have text: "All fields are required"
+17:35:29.585 detox[34535] [90mB[39m expect element to have text: "All fields are required"
   data: {
     "type": "expectation",
     "predicate": {
@@ -1404,33 +1404,48 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe
       "All fields are required"
     ]
   }
-17:16:35.744 detox[32475] [90mi[39m get
+17:35:29.589 detox[34529] [90mi[39m get
   data: {"params":{},"type":"invokeResult","messageId":5}
-17:16:35.744 detox[32475] [90mi[39m send
+17:35:29.589 detox[34529] [90mi[39m send
   data: {
     "params": {},
     "type": "invokeResult",
     "messageId": 5
   }
-17:16:35.745 detox[32478] [90mi[39m get message
+17:35:29.590 detox[34535] [90mi[39m get message
   data: {"params":{},"type":"invokeResult","messageId":5}
    
-17:16:35.745 detox[32478] [90mE[39m expect element to have text: "All fields are required"
-17:16:35.746 detox[32478] [90mB[39m takeScreenshot
+17:35:29.590 detox[34535] [90mE[39m expect element to have text: "All fields are required"
+17:35:29.590 detox[34535] [90mB[39m takeScreenshot
   args: ("02_Signup_Error_Required")
-17:16:35.746 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6cc58b9e-f5dd-48f3-b225-60f5f2bcbe90.detox.png"
-17:16:36.013 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6cc58b9e-f5dd-48f3-b225-60f5f2bcbe90.detox.png
+17:35:29.590 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/002f47e3-7084-4c97-b8bb-8623618141dd.detox.png"
+17:35:29.846 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/002f47e3-7084-4c97-b8bb-8623618141dd.detox.png
 
-17:16:36.013 detox[32478] [90mB[39m onCreateExternalArtifact
-  args: ({"pluginId":"screenshot","artifactName":"02_Signup_Error_Required","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6cc58b9e-f5dd-48f3-b225-60f5f2bcbe90.detox.png"})
-17:16:36.013 detox[32478] [90mi[39m starting FileArtifact
-17:16:36.013 detox[32478] [90mi[39m stopping FileArtifact
-17:16:36.013 detox[32478] [90mE[39m onCreateExternalArtifact
-17:16:36.013 detox[32478] [90mE[39m takeScreenshot
-17:16:36.014 detox[32475] [90mi[39m get
+17:35:29.847 detox[34535] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"02_Signup_Error_Required","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/002f47e3-7084-4c97-b8bb-8623618141dd.detox.png"})
+17:35:29.847 detox[34535] [90mi[39m starting FileArtifact
+17:35:29.847 detox[34535] [90mi[39m stopping FileArtifact
+17:35:29.847 detox[34535] [90mE[39m onCreateExternalArtifact
+17:35:29.847 detox[34535] [90mE[39m takeScreenshot
+17:35:29.847 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["Test User"],"predicate":{"type":"id","value":"signupName","isRegex":false}},"messageId":6}
-17:16:36.014 detox[32475] [90mi[39m send
+17:35:29.847 detox[34535] [90mB[39m type input text: "Test User"
+  data: {
+    "type": "action",
+    "action": "typeText",
+    "params": [
+      "Test User"
+    ],
+    "predicate": {
+      "type": "id",
+      "value": "signupName",
+      "isRegex": false
+    }
+  }
+17:35:29.848 detox[34529] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["Test User"],"predicate":{"type":"id","value":"signupName","isRegex":false}},"messageId":6}
+17:35:29.848 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1447,38 +1462,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6c
     },
     "messageId": 6
   }
-17:16:36.014 detox[32478] [90mi[39m send message
-  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["Test User"],"predicate":{"type":"id","value":"signupName","isRegex":false}},"messageId":6}
-17:16:36.014 detox[32478] [90mB[39m type input text: "Test User"
+17:35:31.466 detox[34529] [90mi[39m get
+  data: {"messageId":6,"type":"invokeResult","params":{}}
+17:35:31.466 detox[34529] [90mi[39m send
   data: {
-    "type": "action",
-    "action": "typeText",
-    "params": [
-      "Test User"
-    ],
-    "predicate": {
-      "type": "id",
-      "value": "signupName",
-      "isRegex": false
-    }
-  }
-17:16:37.583 detox[32475] [90mi[39m get
-  data: {"params":{},"messageId":6,"type":"invokeResult"}
-17:16:37.584 detox[32475] [90mi[39m send
-  data: {
-    "params": {},
     "messageId": 6,
-    "type": "invokeResult"
+    "type": "invokeResult",
+    "params": {}
   }
-17:16:37.585 detox[32478] [90mi[39m get message
-  data: {"params":{},"messageId":6,"type":"invokeResult"}
+17:35:31.467 detox[34535] [90mi[39m get message
+  data: {"messageId":6,"type":"invokeResult","params":{}}
    
-17:16:37.586 detox[32478] [90mE[39m type input text: "Test User"
-17:16:37.586 detox[32478] [90mi[39m send message
+17:35:31.467 detox[34535] [90mE[39m type input text: "Test User"
+17:35:31.469 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["invalid-email"],"predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":7}
-17:16:37.587 detox[32475] [90mi[39m get
+17:35:31.470 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["invalid-email"],"predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":7}
-17:16:37.587 detox[32475] [90mi[39m send
+17:35:31.470 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1495,7 +1495,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6c
     },
     "messageId": 7
   }
-17:16:37.587 detox[32478] [90mB[39m type input text: "invalid-email"
+17:35:31.470 detox[34535] [90mB[39m type input text: "invalid-email"
   data: {
     "type": "action",
     "action": "typeText",
@@ -1508,21 +1508,21 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6c
       "isRegex": false
     }
   }
-17:16:39.126 detox[32475] [90mi[39m get
-  data: {"type":"invokeResult","params":{},"messageId":7}
-17:16:39.127 detox[32475] [90mi[39m send
+17:35:33.044 detox[34529] [90mi[39m get
+  data: {"params":{},"messageId":7,"type":"invokeResult"}
+17:35:33.044 detox[34529] [90mi[39m send
   data: {
-    "type": "invokeResult",
     "params": {},
-    "messageId": 7
+    "messageId": 7,
+    "type": "invokeResult"
   }
-17:16:39.127 detox[32478] [90mi[39m get message
-  data: {"type":"invokeResult","params":{},"messageId":7}
+17:35:33.046 detox[34535] [90mi[39m get message
+  data: {"params":{},"messageId":7,"type":"invokeResult"}
    
-17:16:39.127 detox[32478] [90mE[39m type input text: "invalid-email"
-17:16:39.128 detox[32475] [90mi[39m get
+17:35:33.046 detox[34535] [90mE[39m type input text: "invalid-email"
+17:35:33.048 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":8}
-17:16:39.128 detox[32475] [90mi[39m send
+17:35:33.048 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1539,9 +1539,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6c
     },
     "messageId": 8
   }
-17:16:39.128 detox[32478] [90mi[39m send message
+17:35:33.048 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":8}
-17:16:39.128 detox[32478] [90mB[39m type input text: "password"
+17:35:33.048 detox[34535] [90mB[39m type input text: "password"
   data: {
     "type": "action",
     "action": "typeText",
@@ -1554,23 +1554,21 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6c
       "isRegex": false
     }
   }
-17:16:40.313 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"invokeResult","messageId":8}
-17:16:40.314 detox[32475] [90mi[39m send
+17:35:34.331 detox[34529] [90mi[39m get
+  data: {"messageId":8,"params":{},"type":"invokeResult"}
+17:35:34.331 detox[34529] [90mi[39m send
   data: {
+    "messageId": 8,
     "params": {},
-    "type": "invokeResult",
-    "messageId": 8
+    "type": "invokeResult"
   }
-17:16:40.315 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"invokeResult","messageId":8}
+17:35:34.332 detox[34535] [90mi[39m get message
+  data: {"messageId":8,"params":{},"type":"invokeResult"}
    
-17:16:40.316 detox[32478] [90mE[39m type input text: "password"
-17:16:40.317 detox[32478] [90mi[39m send message
+17:35:34.332 detox[34535] [90mE[39m type input text: "password"
+17:35:34.333 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":9}
-17:16:40.318 detox[32475] [90mi[39m get
-  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":9}
-17:16:40.318 detox[32475] [90mi[39m send
+17:35:34.333 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1584,7 +1582,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6c
     },
     "messageId": 9
   }
-17:16:40.318 detox[32478] [90mB[39m tap
+17:35:34.333 detox[34535] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":9}
+17:35:34.333 detox[34535] [90mB[39m tap
   data: {
     "type": "action",
     "action": "tap",
@@ -1594,23 +1594,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6c
       "isRegex": false
     }
   }
-17:16:40.998 detox[32475] [90mi[39m get
-  data: {"params":{},"messageId":9,"type":"invokeResult"}
-17:16:40.998 detox[32475] [90mi[39m send
+17:35:35.011 detox[34529] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":9}
+17:35:35.012 detox[34529] [90mi[39m send
   data: {
+    "type": "invokeResult",
     "params": {},
-    "messageId": 9,
-    "type": "invokeResult"
+    "messageId": 9
   }
-17:16:40.999 detox[32478] [90mi[39m get message
-  data: {"params":{},"messageId":9,"type":"invokeResult"}
+17:35:35.012 detox[34535] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":9}
    
-17:16:41.000 detox[32478] [90mE[39m tap
-17:16:41.004 detox[32478] [90mi[39m send message
+17:35:35.013 detox[34535] [90mE[39m tap
+17:35:35.014 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["Invalid email format"]},"messageId":10}
-17:16:41.005 detox[32475] [90mi[39m get
+17:35:35.015 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["Invalid email format"]},"messageId":10}
-17:16:41.005 detox[32475] [90mi[39m send
+17:35:35.015 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1627,7 +1627,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6c
     },
     "messageId": 10
   }
-17:16:41.005 detox[32478] [90mB[39m expect element to have text: "Invalid email format"
+17:35:35.015 detox[34535] [90mB[39m expect element to have text: "Invalid email format"
   data: {
     "type": "expectation",
     "predicate": {
@@ -1640,35 +1640,33 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6c
       "Invalid email format"
     ]
   }
-17:16:41.012 detox[32475] [90mi[39m get
-  data: {"params":{},"messageId":10,"type":"invokeResult"}
-17:16:41.012 detox[32475] [90mi[39m send
+17:35:35.019 detox[34529] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":10}
+17:35:35.020 detox[34529] [90mi[39m send
   data: {
+    "type": "invokeResult",
     "params": {},
-    "messageId": 10,
-    "type": "invokeResult"
+    "messageId": 10
   }
-17:16:41.012 detox[32478] [90mi[39m get message
-  data: {"params":{},"messageId":10,"type":"invokeResult"}
+17:35:35.020 detox[34535] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":10}
    
-17:16:41.012 detox[32478] [90mE[39m expect element to have text: "Invalid email format"
-17:16:41.013 detox[32478] [90mB[39m takeScreenshot
+17:35:35.021 detox[34535] [90mE[39m expect element to have text: "Invalid email format"
+17:35:35.021 detox[34535] [90mB[39m takeScreenshot
   args: ("03_Signup_Error_InvalidEmail")
-17:16:41.013 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d6f6d7b-b8d4-427d-a70d-97b7ff8d49f2.detox.png"
-17:16:41.341 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d6f6d7b-b8d4-427d-a70d-97b7ff8d49f2.detox.png
+17:35:35.022 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/a7660c0b-ed38-4168-95de-2feebe9d7b4a.detox.png"
+17:35:35.296 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/a7660c0b-ed38-4168-95de-2feebe9d7b4a.detox.png
 
-17:16:41.341 detox[32478] [90mB[39m onCreateExternalArtifact
-  args: ({"pluginId":"screenshot","artifactName":"03_Signup_Error_InvalidEmail","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d6f6d7b-b8d4-427d-a70d-97b7ff8d49f2.detox.png"})
-17:16:41.341 detox[32478] [90mi[39m starting FileArtifact
-17:16:41.342 detox[32478] [90mi[39m stopping FileArtifact
-17:16:41.342 detox[32478] [90mE[39m onCreateExternalArtifact
-17:16:41.342 detox[32478] [90mE[39m takeScreenshot
-17:16:41.342 detox[32478] [90mi[39m send message
+17:35:35.296 detox[34535] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"03_Signup_Error_InvalidEmail","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/a7660c0b-ed38-4168-95de-2feebe9d7b4a.detox.png"})
+17:35:35.296 detox[34535] [90mi[39m starting FileArtifact
+17:35:35.296 detox[34535] [90mi[39m stopping FileArtifact
+17:35:35.296 detox[34535] [90mE[39m onCreateExternalArtifact
+17:35:35.296 detox[34535] [90mE[39m takeScreenshot
+17:35:35.297 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":11}
-17:16:41.343 detox[32475] [90mi[39m get
-  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":11}
-17:16:41.343 detox[32475] [90mi[39m send
+17:35:35.297 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1682,7 +1680,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
     },
     "messageId": 11
   }
-17:16:41.343 detox[32478] [90mB[39m clear input text
+17:35:35.297 detox[34535] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":11}
+17:35:35.298 detox[34535] [90mB[39m clear input text
   data: {
     "type": "action",
     "action": "clearText",
@@ -1692,23 +1692,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
       "isRegex": false
     }
   }
-17:16:42.357 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"invokeResult","messageId":11}
-17:16:42.357 detox[32475] [90mi[39m send
+17:35:36.300 detox[34529] [90mi[39m get
+  data: {"messageId":11,"type":"invokeResult","params":{}}
+17:35:36.301 detox[34529] [90mi[39m send
   data: {
-    "params": {},
+    "messageId": 11,
     "type": "invokeResult",
-    "messageId": 11
+    "params": {}
   }
-17:16:42.358 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"invokeResult","messageId":11}
+17:35:36.302 detox[34535] [90mi[39m get message
+  data: {"messageId":11,"type":"invokeResult","params":{}}
    
-17:16:42.358 detox[32478] [90mE[39m clear input text
-17:16:42.359 detox[32478] [90mi[39m send message
+17:35:36.303 detox[34535] [90mE[39m clear input text
+17:35:36.303 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["test@example.com"],"predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":12}
-17:16:42.360 detox[32475] [90mi[39m get
+17:35:36.304 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["test@example.com"],"predicate":{"type":"id","value":"signupEmail","isRegex":false}},"messageId":12}
-17:16:42.360 detox[32475] [90mi[39m send
+17:35:36.304 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1725,7 +1725,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
     },
     "messageId": 12
   }
-17:16:42.360 detox[32478] [90mB[39m type input text: "test@example.com"
+17:35:36.304 detox[34535] [90mB[39m type input text: "test@example.com"
   data: {
     "type": "action",
     "action": "typeText",
@@ -1738,23 +1738,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
       "isRegex": false
     }
   }
-17:16:43.717 detox[32475] [90mi[39m get
-  data: {"type":"invokeResult","params":{},"messageId":12}
-17:16:43.718 detox[32475] [90mi[39m send
+17:35:37.728 detox[34529] [90mi[39m get
+  data: {"type":"invokeResult","messageId":12,"params":{}}
+17:35:37.728 detox[34529] [90mi[39m send
   data: {
     "type": "invokeResult",
-    "params": {},
-    "messageId": 12
+    "messageId": 12,
+    "params": {}
   }
-17:16:43.722 detox[32478] [90mi[39m get message
-  data: {"type":"invokeResult","params":{},"messageId":12}
+17:35:37.729 detox[34535] [90mi[39m get message
+  data: {"type":"invokeResult","messageId":12,"params":{}}
    
-17:16:43.723 detox[32478] [90mE[39m type input text: "test@example.com"
-17:16:43.723 detox[32478] [90mi[39m send message
+17:35:37.730 detox[34535] [90mE[39m type input text: "test@example.com"
+17:35:37.731 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":13}
-17:16:43.724 detox[32475] [90mi[39m get
+17:35:37.732 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":13}
-17:16:43.724 detox[32475] [90mi[39m send
+17:35:37.732 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1768,7 +1768,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
     },
     "messageId": 13
   }
-17:16:43.724 detox[32478] [90mB[39m clear input text
+17:35:37.732 detox[34535] [90mB[39m clear input text
   data: {
     "type": "action",
     "action": "clearText",
@@ -1778,23 +1778,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
       "isRegex": false
     }
   }
-17:16:44.762 detox[32475] [90mi[39m get
-  data: {"type":"invokeResult","params":{},"messageId":13}
-17:16:44.763 detox[32475] [90mi[39m send
+17:35:38.750 detox[34529] [90mi[39m get
+  data: {"messageId":13,"type":"invokeResult","params":{}}
+17:35:38.750 detox[34529] [90mi[39m send
   data: {
+    "messageId": 13,
     "type": "invokeResult",
-    "params": {},
-    "messageId": 13
+    "params": {}
   }
-17:16:44.764 detox[32478] [90mi[39m get message
-  data: {"type":"invokeResult","params":{},"messageId":13}
+17:35:38.752 detox[34535] [90mi[39m get message
+  data: {"messageId":13,"type":"invokeResult","params":{}}
    
-17:16:44.764 detox[32478] [90mE[39m clear input text
-17:16:44.765 detox[32478] [90mi[39m send message
+17:35:38.752 detox[34535] [90mE[39m clear input text
+17:35:38.753 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["123"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":14}
-17:16:44.766 detox[32475] [90mi[39m get
+17:35:38.754 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["123"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":14}
-17:16:44.766 detox[32475] [90mi[39m send
+17:35:38.754 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1811,7 +1811,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
     },
     "messageId": 14
   }
-17:16:44.766 detox[32478] [90mB[39m type input text: "123"
+17:35:38.756 detox[34535] [90mB[39m type input text: "123"
   data: {
     "type": "action",
     "action": "typeText",
@@ -1824,23 +1824,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
       "isRegex": false
     }
   }
-17:16:45.396 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"invokeResult","messageId":14}
-17:16:45.396 detox[32475] [90mi[39m send
+17:35:39.384 detox[34529] [90mi[39m get
+  data: {"messageId":14,"type":"invokeResult","params":{}}
+17:35:39.385 detox[34529] [90mi[39m send
   data: {
-    "params": {},
+    "messageId": 14,
     "type": "invokeResult",
-    "messageId": 14
+    "params": {}
   }
-17:16:45.397 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"invokeResult","messageId":14}
+17:35:39.386 detox[34535] [90mi[39m get message
+  data: {"messageId":14,"type":"invokeResult","params":{}}
    
-17:16:45.398 detox[32478] [90mE[39m type input text: "123"
-17:16:45.398 detox[32478] [90mi[39m send message
+17:35:39.386 detox[34535] [90mE[39m type input text: "123"
+17:35:39.387 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":15}
-17:16:45.399 detox[32475] [90mi[39m get
+17:35:39.388 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":15}
-17:16:45.399 detox[32475] [90mi[39m send
+17:35:39.388 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1854,7 +1854,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
     },
     "messageId": 15
   }
-17:16:45.399 detox[32478] [90mB[39m tap
+17:35:39.388 detox[34535] [90mB[39m tap
   data: {
     "type": "action",
     "action": "tap",
@@ -1864,23 +1864,21 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
       "isRegex": false
     }
   }
-17:16:46.081 detox[32475] [90mi[39m get
-  data: {"messageId":15,"params":{},"type":"invokeResult"}
-17:16:46.081 detox[32475] [90mi[39m send
+17:35:40.077 detox[34529] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":15}
+17:35:40.077 detox[34529] [90mi[39m send
   data: {
-    "messageId": 15,
+    "type": "invokeResult",
     "params": {},
-    "type": "invokeResult"
+    "messageId": 15
   }
-17:16:46.082 detox[32478] [90mi[39m get message
-  data: {"messageId":15,"params":{},"type":"invokeResult"}
+17:35:40.077 detox[34535] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":15}
    
-17:16:46.082 detox[32478] [90mE[39m tap
-17:16:46.083 detox[32478] [90mi[39m send message
+17:35:40.077 detox[34535] [90mE[39m tap
+17:35:40.078 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["Password must be greater than or equal to 6 characters"]},"messageId":16}
-17:16:46.084 detox[32475] [90mi[39m get
-  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["Password must be greater than or equal to 6 characters"]},"messageId":16}
-17:16:46.084 detox[32475] [90mi[39m send
+17:35:40.078 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1897,7 +1895,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
     },
     "messageId": 16
   }
-17:16:46.085 detox[32478] [90mB[39m expect element to have text: "Password must be greater than or equal to 6 characters"
+17:35:40.078 detox[34535] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"signupError","isRegex":false},"expectation":"toHaveText","params":["Password must be greater than or equal to 6 characters"]},"messageId":16}
+17:35:40.078 detox[34535] [90mB[39m expect element to have text: "Password must be greater than or equal to 6 characters"
   data: {
     "type": "expectation",
     "predicate": {
@@ -1910,33 +1910,33 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d
       "Password must be greater than or equal to 6 characters"
     ]
   }
-17:16:46.090 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"invokeResult","messageId":16}
-17:16:46.091 detox[32475] [90mi[39m send
+17:35:40.082 detox[34529] [90mi[39m get
+  data: {"messageId":16,"type":"invokeResult","params":{}}
+17:35:40.082 detox[34529] [90mi[39m send
   data: {
-    "params": {},
+    "messageId": 16,
     "type": "invokeResult",
-    "messageId": 16
+    "params": {}
   }
-17:16:46.091 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"invokeResult","messageId":16}
+17:35:40.082 detox[34535] [90mi[39m get message
+  data: {"messageId":16,"type":"invokeResult","params":{}}
    
-17:16:46.091 detox[32478] [90mE[39m expect element to have text: "Password must be greater than or equal to 6 characters"
-17:16:46.092 detox[32478] [90mB[39m takeScreenshot
+17:35:40.082 detox[34535] [90mE[39m expect element to have text: "Password must be greater than or equal to 6 characters"
+17:35:40.083 detox[34535] [90mB[39m takeScreenshot
   args: ("04_Signup_Error_ShortPassword")
-17:16:46.092 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33566950-c33a-4e78-aa8a-043fa9e9b7e0.detox.png"
-17:16:46.364 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33566950-c33a-4e78-aa8a-043fa9e9b7e0.detox.png
+17:35:40.083 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/147d429d-0625-4a61-a21e-7d9410948fd5.detox.png"
+17:35:40.401 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/147d429d-0625-4a61-a21e-7d9410948fd5.detox.png
 
-17:16:46.364 detox[32478] [90mB[39m onCreateExternalArtifact
-  args: ({"pluginId":"screenshot","artifactName":"04_Signup_Error_ShortPassword","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33566950-c33a-4e78-aa8a-043fa9e9b7e0.detox.png"})
-17:16:46.364 detox[32478] [90mi[39m starting FileArtifact
-17:16:46.364 detox[32478] [90mi[39m stopping FileArtifact
-17:16:46.364 detox[32478] [90mE[39m onCreateExternalArtifact
-17:16:46.364 detox[32478] [90mE[39m takeScreenshot
-17:16:46.365 detox[32475] [90mi[39m get
+17:35:40.401 detox[34535] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"04_Signup_Error_ShortPassword","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/147d429d-0625-4a61-a21e-7d9410948fd5.detox.png"})
+17:35:40.401 detox[34535] [90mi[39m starting FileArtifact
+17:35:40.401 detox[34535] [90mi[39m stopping FileArtifact
+17:35:40.401 detox[34535] [90mE[39m onCreateExternalArtifact
+17:35:40.401 detox[34535] [90mE[39m takeScreenshot
+17:35:40.403 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":17}
-17:16:46.365 detox[32475] [90mi[39m send
+17:35:40.403 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1950,9 +1950,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33
     },
     "messageId": 17
   }
-17:16:46.365 detox[32478] [90mi[39m send message
+17:35:40.403 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":17}
-17:16:46.365 detox[32478] [90mB[39m clear input text
+17:35:40.403 detox[34535] [90mB[39m clear input text
   data: {
     "type": "action",
     "action": "clearText",
@@ -1962,21 +1962,21 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33
       "isRegex": false
     }
   }
-17:16:46.939 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"invokeResult","messageId":17}
-17:16:46.939 detox[32475] [90mi[39m send
+17:35:40.977 detox[34529] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":17}
+17:35:40.977 detox[34529] [90mi[39m send
   data: {
-    "params": {},
     "type": "invokeResult",
+    "params": {},
     "messageId": 17
   }
-17:16:46.940 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"invokeResult","messageId":17}
+17:35:40.978 detox[34535] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":17}
    
-17:16:46.941 detox[32478] [90mE[39m clear input text
-17:16:46.942 detox[32475] [90mi[39m get
+17:35:40.978 detox[34535] [90mE[39m clear input text
+17:35:40.979 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":18}
-17:16:46.942 detox[32475] [90mi[39m send
+17:35:40.979 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -1993,9 +1993,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33
     },
     "messageId": 18
   }
-17:16:46.942 detox[32478] [90mi[39m send message
+17:35:40.979 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"signupPassword","isRegex":false}},"messageId":18}
-17:16:46.942 detox[32478] [90mB[39m type input text: "password"
+17:35:40.979 detox[34535] [90mB[39m type input text: "password"
   data: {
     "type": "action",
     "action": "typeText",
@@ -2008,23 +2008,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33
       "isRegex": false
     }
   }
-17:16:47.862 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"invokeResult","messageId":18}
-17:16:47.862 detox[32475] [90mi[39m send
+17:35:41.902 detox[34529] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":18}
+17:35:41.902 detox[34529] [90mi[39m send
   data: {
-    "params": {},
     "type": "invokeResult",
+    "params": {},
     "messageId": 18
   }
-17:16:47.866 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"invokeResult","messageId":18}
+17:35:41.903 detox[34535] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":18}
    
-17:16:47.868 detox[32478] [90mE[39m type input text: "password"
-17:16:47.869 detox[32475] [90mi[39m get
+17:35:41.903 detox[34535] [90mE[39m type input text: "password"
+17:35:41.903 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":19}
-17:16:47.869 detox[32478] [90mi[39m send message
+17:35:41.904 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"signupButton","isRegex":false}},"messageId":19}
-17:16:47.870 detox[32475] [90mi[39m send
+17:35:41.904 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2038,7 +2038,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33
     },
     "messageId": 19
   }
-17:16:47.873 detox[32478] [90mB[39m tap
+17:35:41.904 detox[34535] [90mB[39m tap
   data: {
     "type": "action",
     "action": "tap",
@@ -2048,23 +2048,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33
       "isRegex": false
     }
   }
-17:16:48.894 detox[32475] [90mi[39m get
+17:35:42.942 detox[34529] [90mi[39m get
   data: {"messageId":19,"type":"invokeResult","params":{}}
-17:16:48.894 detox[32475] [90mi[39m send
+17:35:42.943 detox[34529] [90mi[39m send
   data: {
     "messageId": 19,
     "type": "invokeResult",
     "params": {}
   }
-17:16:48.895 detox[32478] [90mi[39m get message
+17:35:42.944 detox[34535] [90mi[39m get message
   data: {"messageId":19,"type":"invokeResult","params":{}}
    
-17:16:48.896 detox[32478] [90mE[39m tap
-17:16:48.898 detox[32478] [90mi[39m send message
+17:35:42.945 detox[34535] [90mE[39m tap
+17:35:42.947 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"welcomeText","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":20}
-17:16:48.899 detox[32475] [90mi[39m get
+17:35:42.948 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"welcomeText","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":20}
-17:16:48.899 detox[32475] [90mi[39m send
+17:35:42.948 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2079,7 +2079,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33
     },
     "messageId": 20
   }
-17:16:48.899 detox[32478] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:35:42.948 detox[34535] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
   data: {
     "type": "expectation",
     "predicate": {
@@ -2090,96 +2090,96 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33
     "expectation": "toBeVisible",
     "timeout": 5000
   }
-17:16:48.958 detox[32475] [90mi[39m get
-  data: {"messageId":20,"params":{},"type":"invokeResult"}
-17:16:48.958 detox[32475] [90mi[39m send
+17:35:43.013 detox[34529] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":20}
+17:35:43.013 detox[34529] [90mi[39m send
   data: {
-    "messageId": 20,
+    "type": "invokeResult",
     "params": {},
-    "type": "invokeResult"
+    "messageId": 20
   }
-17:16:48.959 detox[32478] [90mi[39m get message
-  data: {"messageId":20,"params":{},"type":"invokeResult"}
+17:35:43.014 detox[34535] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":20}
    
-17:16:48.959 detox[32478] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
-17:16:48.960 detox[32478] [90mB[39m takeScreenshot
+17:35:43.014 detox[34535] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:35:43.016 detox[34535] [90mB[39m takeScreenshot
   args: ("05_Home_After_Signup")
-17:16:48.961 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4d4d8482-d260-4144-b5a7-384177715706.detox.png"
-17:16:49.258 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4d4d8482-d260-4144-b5a7-384177715706.detox.png
+17:35:43.017 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4ed47b41-207b-4283-8cbb-6e188785f28a.detox.png"
+17:35:43.321 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4ed47b41-207b-4283-8cbb-6e188785f28a.detox.png
 
-17:16:49.258 detox[32478] [90mB[39m onCreateExternalArtifact
-  args: ({"pluginId":"screenshot","artifactName":"05_Home_After_Signup","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4d4d8482-d260-4144-b5a7-384177715706.detox.png"})
-17:16:49.258 detox[32478] [90mi[39m starting FileArtifact
-17:16:49.258 detox[32478] [90mi[39m stopping FileArtifact
-17:16:49.258 detox[32478] [90mE[39m onCreateExternalArtifact
-17:16:49.258 detox[32478] [90mE[39m takeScreenshot
-17:16:49.259 detox[32478] [90mE[39m test_fn
-17:16:49.259 detox[32478] [90mB[39m onTestDone
+17:35:43.321 detox[34535] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"05_Home_After_Signup","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4ed47b41-207b-4283-8cbb-6e188785f28a.detox.png"})
+17:35:43.321 detox[34535] [90mi[39m starting FileArtifact
+17:35:43.321 detox[34535] [90mi[39m stopping FileArtifact
+17:35:43.321 detox[34535] [90mE[39m onCreateExternalArtifact
+17:35:43.321 detox[34535] [90mE[39m takeScreenshot
+17:35:43.322 detox[34535] [90mE[39m test_fn
+17:35:43.322 detox[34535] [90mB[39m onTestDone
   args: ({"title":"1. Signup: empty → invalid → short pw → success → home","fullName":"AuthApp: Signup → Login → Logout flows 1. Signup: empty → invalid → short pw → success → home","status":"passed","invocations":1})
-17:16:49.260 detox[32478] [90mi[39m starting SimulatorScreenshot
-17:16:49.260 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/d1db593e-806f-47cd-887b-9a4119aaeafe.detox.png"
-17:16:49.260 detox[32478] [90mi[39m stopping SimulatorVideoRecording
-17:16:49.262 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b664847f-0d27-4ec9-a307-4a06a8862e72.detox.mp4
-17:16:49.288 detox[32478] [90mi[39m Recording completed. Writing to disk.
+17:35:43.323 detox[34535] [90mi[39m starting SimulatorScreenshot
+17:35:43.323 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/c28c551b-6c37-43fa-bffb-bb212d98460a.detox.png"
+17:35:43.323 detox[34535] [90mi[39m stopping SimulatorVideoRecording
+17:35:43.325 detox[34535] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/64fb9210-b72b-4b18-aee6-9e5339e63ede.detox.mp4
+17:35:43.378 detox[34535] [90mi[39m Recording completed. Writing to disk.
 
-Wrote video to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b664847f-0d27-4ec9-a307-4a06a8862e72.detox.mp4
+Wrote video to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/64fb9210-b72b-4b18-aee6-9e5339e63ede.detox.mp4
 
-17:16:49.289 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b664847f-0d27-4ec9-a307-4a06a8862e72.detox.mp4 exited with code #0
-17:16:49.290 detox[32478] [90mi[39m saving SimulatorVideoRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/test.mp4
-17:16:49.290 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b664847f-0d27-4ec9-a307-4a06a8862e72.detox.mp4" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/test.mp4
-17:16:49.471 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/d1db593e-806f-47cd-887b-9a4119aaeafe.detox.png
+17:35:43.380 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/64fb9210-b72b-4b18-aee6-9e5339e63ede.detox.mp4 exited with code #0
+17:35:43.382 detox[34535] [90mi[39m saving SimulatorVideoRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/test.mp4
+17:35:43.382 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/64fb9210-b72b-4b18-aee6-9e5339e63ede.detox.mp4" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/test.mp4
+17:35:43.551 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/c28c551b-6c37-43fa-bffb-bb212d98460a.detox.png
 
-17:16:49.471 detox[32478] [90mi[39m stopping SimulatorScreenshot
-17:16:49.472 detox[32478] [90mi[39m stopping SimulatorLogRecording
-17:16:49.472 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testStart.png
-17:16:49.472 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8d77e18c-3d4a-4c40-b937-ad15c5d94b05.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testStart.png
-17:16:49.472 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/01_SignupScreen.png
-17:16:49.472 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/fe4f90ad-d3d4-4b52-9a84-17c198074da1.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/01_SignupScreen.png
-17:16:49.473 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/02_Signup_Error_Required.png
-17:16:49.473 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6cc58b9e-f5dd-48f3-b225-60f5f2bcbe90.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/02_Signup_Error_Required.png
-17:16:49.473 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/03_Signup_Error_InvalidEmail.png
-17:16:49.473 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0d6f6d7b-b8d4-427d-a70d-97b7ff8d49f2.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/03_Signup_Error_InvalidEmail.png
-17:16:49.474 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/04_Signup_Error_ShortPassword.png
-17:16:49.474 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/33566950-c33a-4e78-aa8a-043fa9e9b7e0.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/04_Signup_Error_ShortPassword.png
-17:16:49.474 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/05_Home_After_Signup.png
-17:16:49.474 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4d4d8482-d260-4144-b5a7-384177715706.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/05_Home_After_Signup.png
-17:16:49.475 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testDone.png
-17:16:49.475 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/d1db593e-806f-47cd-887b-9a4119aaeafe.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testDone.png
-17:16:49.524 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app"
-17:16:49.535 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\"" exited with code #0
-17:16:49.535 detox[32478] [90mE[39m onTestDone
-17:16:49.535 detox[32478] [90mE[39m 1. Signup: empty → invalid → short pw → success → home
-17:16:49.535 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 1. Signup: empty → invalid → short pw → success → home [OK]
-17:16:49.537 detox[32478] [90mB[39m 2. Logout → Login: invalid email → bad creds → success
-17:16:49.537 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 2. Logout → Login: invalid email → bad creds → success
-17:16:49.537 detox[32478] [90mB[39m onTestStart
+17:35:43.552 detox[34535] [90mi[39m stopping SimulatorScreenshot
+17:35:43.552 detox[34535] [90mi[39m stopping SimulatorLogRecording
+17:35:43.552 detox[34535] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testStart.png
+17:35:43.552 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/ec28125a-9c32-482d-af3b-6d1d42d6eafb.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testStart.png
+17:35:43.553 detox[34535] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/01_SignupScreen.png
+17:35:43.553 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/014b1db5-c494-4492-8255-8c78c1a65426.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/01_SignupScreen.png
+17:35:43.553 detox[34535] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/02_Signup_Error_Required.png
+17:35:43.553 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/002f47e3-7084-4c97-b8bb-8623618141dd.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/02_Signup_Error_Required.png
+17:35:43.554 detox[34535] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/03_Signup_Error_InvalidEmail.png
+17:35:43.554 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/a7660c0b-ed38-4168-95de-2feebe9d7b4a.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/03_Signup_Error_InvalidEmail.png
+17:35:43.554 detox[34535] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/04_Signup_Error_ShortPassword.png
+17:35:43.554 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/147d429d-0625-4a61-a21e-7d9410948fd5.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/04_Signup_Error_ShortPassword.png
+17:35:43.554 detox[34535] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/05_Home_After_Signup.png
+17:35:43.554 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4ed47b41-207b-4283-8cbb-6e188785f28a.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/05_Home_After_Signup.png
+17:35:43.555 detox[34535] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testDone.png
+17:35:43.555 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/c28c551b-6c37-43fa-bffb-bb212d98460a.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/testDone.png
+17:35:43.604 detox[34535] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app"
+17:35:43.613 detox[34535] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app\"" exited with code #0
+17:35:43.614 detox[34535] [90mE[39m onTestDone
+17:35:43.614 detox[34535] [90mE[39m 1. Signup: empty → invalid → short pw → success → home
+17:35:43.614 detox[34535] [90mi[39m AuthApp: Signup → Login → Logout flows: 1. Signup: empty → invalid → short pw → success → home [OK]
+17:35:43.615 detox[34535] [90mB[39m 2. Logout → Login: invalid email → bad creds → success
+17:35:43.615 detox[34535] [90mi[39m AuthApp: Signup → Login → Logout flows: 2. Logout → Login: invalid email → bad creds → success
+17:35:43.615 detox[34535] [90mB[39m onTestStart
   args: ({"title":"2. Logout → Login: invalid email → bad creds → success","fullName":"AuthApp: Signup → Login → Logout flows 2. Logout → Login: invalid email → bad creds → success","status":"running","invocations":1})
-17:16:49.537 detox[32478] [90mi[39m starting SimulatorLogRecording
-17:16:49.537 detox[32478] [90mi[39m saving SimulatorLogRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/device.log
-17:16:49.537 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/6a1f352a-e117-4063-b8b2-dc448de8fbb3.detox.log" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/device.log
-17:16:49.538 detox[32478] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
-17:16:49.539 detox[32478] [90mi[39m saving SimulatorLogRecording to: files/ios/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA 2025-04-22 11-16-49Z.startup.log
-17:16:49.539 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f84516b6-d60e-44b3-8ce5-d239a98f0d23.detox.log" to files/ios/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA 2025-04-22 11-16-49Z.startup.log
-17:16:49.696 detox[32478] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app
+17:35:43.616 detox[34535] [90mi[39m starting SimulatorLogRecording
+17:35:43.616 detox[34535] [90mi[39m saving SimulatorLogRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/device.log
+17:35:43.616 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/af9e8289-c338-4a9c-a71f-7a2323729fa6.detox.log" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 1. Signup_ empty → invalid → short pw → success → home/device.log
+17:35:43.616 detox[34535] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:43.617 detox[34535] [90mi[39m saving SimulatorLogRecording to: files/ios/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA 2025-04-22 11-35-43Z.startup.log
+17:35:43.617 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/864b294f-3476-4238-9c5b-50d09a93ee00.detox.log" to files/ios/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA 2025-04-22 11-35-43Z.startup.log
+17:35:43.778 detox[34535] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app
 
-17:16:49.697 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\""
-17:16:49.747 detox[32478] [90mi[39m starting SimulatorScreenshot
-17:16:49.747 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/deb621a4-b7d9-4745-bcdb-db59bf33424a.detox.png"
-17:16:49.748 detox[32478] [90mi[39m starting SimulatorVideoRecording
-17:16:49.748 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/e455c5df-d68b-4454-8283-ec68d2a89cd2.detox.mp4
-17:16:49.971 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/deb621a4-b7d9-4745-bcdb-db59bf33424a.detox.png
+17:35:43.779 detox[34535] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app\""
+17:35:43.830 detox[34535] [90mi[39m starting SimulatorScreenshot
+17:35:43.831 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/a8a4e2c3-9b9d-47c7-b500-3d0041d54645.detox.png"
+17:35:43.831 detox[34535] [90mi[39m starting SimulatorVideoRecording
+17:35:43.832 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/eb47bbbe-5a26-4460-b819-271c0c4ffb26.detox.mp4
+17:35:44.090 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/a8a4e2c3-9b9d-47c7-b500-3d0041d54645.detox.png
 
-17:16:49.971 detox[32478] [90mi[39m stopping SimulatorScreenshot
-17:16:49.971 detox[32478] [90mE[39m onTestStart
-17:16:49.971 detox[32478] [90mB[39m beforeEach
-17:16:49.971 detox[32478] [90mE[39m beforeEach
-17:16:49.971 detox[32478] [90mB[39m test_fn
-17:16:49.972 detox[32475] [90mi[39m get
+17:35:44.090 detox[34535] [90mi[39m stopping SimulatorScreenshot
+17:35:44.090 detox[34535] [90mE[39m onTestStart
+17:35:44.090 detox[34535] [90mB[39m beforeEach
+17:35:44.090 detox[34535] [90mE[39m beforeEach
+17:35:44.090 detox[34535] [90mB[39m test_fn
+17:35:44.091 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"logoutButton","isRegex":false}},"messageId":21}
-17:16:49.972 detox[32475] [90mi[39m send
+17:35:44.091 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2193,9 +2193,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/de
     },
     "messageId": 21
   }
-17:16:49.972 detox[32478] [90mi[39m send message
+17:35:44.091 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"logoutButton","isRegex":false}},"messageId":21}
-17:16:49.972 detox[32478] [90mB[39m tap
+17:35:44.091 detox[34535] [90mB[39m tap
   data: {
     "type": "action",
     "action": "tap",
@@ -2205,23 +2205,25 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/de
       "isRegex": false
     }
   }
-17:16:50.040 detox[32478] [90mi[39m Recording started
+17:35:44.163 detox[34535] [90mi[39m Recording started
 
-17:16:50.943 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"invokeResult","messageId":21}
-17:16:50.943 detox[32475] [90mi[39m send
+17:35:45.074 detox[34529] [90mi[39m get
+  data: {"messageId":21,"params":{},"type":"invokeResult"}
+17:35:45.074 detox[34529] [90mi[39m send
   data: {
+    "messageId": 21,
     "params": {},
-    "type": "invokeResult",
-    "messageId": 21
+    "type": "invokeResult"
   }
-17:16:50.945 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"invokeResult","messageId":21}
+17:35:45.075 detox[34535] [90mi[39m get message
+  data: {"messageId":21,"params":{},"type":"invokeResult"}
    
-17:16:50.946 detox[32478] [90mE[39m tap
-17:16:50.947 detox[32475] [90mi[39m get
+17:35:45.075 detox[34535] [90mE[39m tap
+17:35:45.076 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginButton","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":22}
-17:16:50.947 detox[32475] [90mi[39m send
+17:35:45.077 detox[34529] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginButton","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":22}
+17:35:45.077 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2236,9 +2238,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/de
     },
     "messageId": 22
   }
-17:16:50.947 detox[32478] [90mi[39m send message
-  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginButton","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":22}
-17:16:50.947 detox[32478] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:35:45.077 detox[34535] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
   data: {
     "type": "expectation",
     "predicate": {
@@ -2249,35 +2249,30 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/de
     "expectation": "toBeVisible",
     "timeout": 5000
   }
-17:16:51.008 detox[32475] [90mi[39m get
-  data: {"messageId":22,"params":{},"type":"invokeResult"}
-17:16:51.009 detox[32475] [90mi[39m send
+17:35:45.106 detox[34529] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":22}
+17:35:45.106 detox[34529] [90mi[39m send
   data: {
-    "messageId": 22,
+    "type": "invokeResult",
     "params": {},
-    "type": "invokeResult"
+    "messageId": 22
   }
-17:16:51.011 detox[32478] [90mi[39m get message
-  data: {"messageId":22,"params":{},"type":"invokeResult"}
+17:35:45.107 detox[34535] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":22}
    
-17:16:51.011 detox[32478] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
-17:16:51.013 detox[32478] [90mB[39m takeScreenshot
+17:35:45.107 detox[34535] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:35:45.108 detox[34535] [90mB[39m takeScreenshot
   args: ("06_Login_After_Logout")
-17:16:51.014 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0cbcf80c-4e65-4100-b5ef-ab35c1b92a61.detox.png"
-17:16:51.283 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0cbcf80c-4e65-4100-b5ef-ab35c1b92a61.detox.png
+17:35:45.108 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cd4accb9-7b35-4cfd-b955-11e4d20058fa.detox.png"
+17:35:45.375 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cd4accb9-7b35-4cfd-b955-11e4d20058fa.detox.png
 
-17:16:51.283 detox[32478] [90mB[39m onCreateExternalArtifact
-  args: ({"pluginId":"screenshot","artifactName":"06_Login_After_Logout","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0cbcf80c-4e65-4100-b5ef-ab35c1b92a61.detox.png"})
-17:16:51.283 detox[32478] [90mi[39m starting FileArtifact
-17:16:51.283 detox[32478] [90mi[39m stopping FileArtifact
-17:16:51.283 detox[32478] [90mE[39m onCreateExternalArtifact
-17:16:51.283 detox[32478] [90mE[39m takeScreenshot
-17:16:51.283 detox[32478] [90mi[39m send message
+17:35:45.375 detox[34535] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"06_Login_After_Logout","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cd4accb9-7b35-4cfd-b955-11e4d20058fa.detox.png"})
+17:35:45.375 detox[34535] [90mi[39m starting FileArtifact
+17:35:45.376 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["bad-email"],"predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":23}
-17:16:51.284 detox[32475] [90mi[39m get
-  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["bad-email"],"predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":23}
-17:16:51.284 detox[32475] [90mi[39m send
+17:35:45.376 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2294,7 +2289,12 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0c
     },
     "messageId": 23
   }
-17:16:51.284 detox[32478] [90mB[39m type input text: "bad-email"
+17:35:45.376 detox[34535] [90mi[39m stopping FileArtifact
+17:35:45.376 detox[34535] [90mE[39m onCreateExternalArtifact
+17:35:45.376 detox[34535] [90mE[39m takeScreenshot
+17:35:45.376 detox[34535] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["bad-email"],"predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":23}
+17:35:45.376 detox[34535] [90mB[39m type input text: "bad-email"
   data: {
     "type": "action",
     "action": "typeText",
@@ -2307,23 +2307,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0c
       "isRegex": false
     }
   }
-17:16:52.609 detox[32475] [90mi[39m get
-  data: {"params":{},"messageId":23,"type":"invokeResult"}
-17:16:52.609 detox[32475] [90mi[39m send
+17:35:46.710 detox[34529] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":23}
+17:35:46.710 detox[34529] [90mi[39m send
   data: {
     "params": {},
-    "messageId": 23,
-    "type": "invokeResult"
+    "type": "invokeResult",
+    "messageId": 23
   }
-17:16:52.610 detox[32478] [90mi[39m get message
-  data: {"params":{},"messageId":23,"type":"invokeResult"}
+17:35:46.710 detox[34535] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":23}
    
-17:16:52.611 detox[32478] [90mE[39m type input text: "bad-email"
-17:16:52.612 detox[32478] [90mi[39m send message
+17:35:46.710 detox[34535] [90mE[39m type input text: "bad-email"
+17:35:46.711 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":24}
-17:16:52.613 detox[32475] [90mi[39m get
+17:35:46.711 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":24}
-17:16:52.613 detox[32475] [90mi[39m send
+17:35:46.712 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2340,7 +2340,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0c
     },
     "messageId": 24
   }
-17:16:52.613 detox[32478] [90mB[39m type input text: "password"
+17:35:46.712 detox[34535] [90mB[39m type input text: "password"
   data: {
     "type": "action",
     "action": "typeText",
@@ -2353,21 +2353,21 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0c
       "isRegex": false
     }
   }
-17:16:53.861 detox[32475] [90mi[39m get
-  data: {"params":{},"messageId":24,"type":"invokeResult"}
-17:16:53.863 detox[32475] [90mi[39m send
+17:35:47.978 detox[34529] [90mi[39m get
+  data: {"messageId":24,"type":"invokeResult","params":{}}
+17:35:47.979 detox[34529] [90mi[39m send
   data: {
-    "params": {},
     "messageId": 24,
-    "type": "invokeResult"
+    "type": "invokeResult",
+    "params": {}
   }
-17:16:53.864 detox[32478] [90mi[39m get message
-  data: {"params":{},"messageId":24,"type":"invokeResult"}
+17:35:47.981 detox[34535] [90mi[39m get message
+  data: {"messageId":24,"type":"invokeResult","params":{}}
    
-17:16:53.864 detox[32478] [90mE[39m type input text: "password"
-17:16:53.866 detox[32475] [90mi[39m get
+17:35:47.982 detox[34535] [90mE[39m type input text: "password"
+17:35:47.986 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":25}
-17:16:53.866 detox[32475] [90mi[39m send
+17:35:47.986 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2381,9 +2381,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0c
     },
     "messageId": 25
   }
-17:16:53.866 detox[32478] [90mi[39m send message
+17:35:47.986 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":25}
-17:16:53.866 detox[32478] [90mB[39m tap
+17:35:47.986 detox[34535] [90mB[39m tap
   data: {
     "type": "action",
     "action": "tap",
@@ -2393,36 +2393,21 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0c
       "isRegex": false
     }
   }
-17:16:54.545 detox[32475] [90mi[39m get
+17:35:48.648 detox[34529] [90mi[39m get
   data: {"params":{},"messageId":25,"type":"invokeResult"}
-17:16:54.545 detox[32475] [90mi[39m send
+17:35:48.648 detox[34529] [90mi[39m send
   data: {
     "params": {},
     "messageId": 25,
     "type": "invokeResult"
   }
-17:16:54.546 detox[32478] [90mi[39m get message
+17:35:48.648 detox[34535] [90mi[39m get message
   data: {"params":{},"messageId":25,"type":"invokeResult"}
    
-17:16:54.546 detox[32478] [90mE[39m tap
-17:16:54.547 detox[32475] [90mi[39m get
+17:35:48.649 detox[34535] [90mE[39m tap
+17:35:48.650 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginError","isRegex":false},"expectation":"toHaveText","params":["Invalid email format"]},"messageId":26}
-17:16:54.547 detox[32478] [90mi[39m send message
-  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginError","isRegex":false},"expectation":"toHaveText","params":["Invalid email format"]},"messageId":26}
-17:16:54.547 detox[32478] [90mB[39m expect element to have text: "Invalid email format"
-  data: {
-    "type": "expectation",
-    "predicate": {
-      "type": "id",
-      "value": "loginError",
-      "isRegex": false
-    },
-    "expectation": "toHaveText",
-    "params": [
-      "Invalid email format"
-    ]
-  }
-17:16:54.548 detox[32475] [90mi[39m send
+17:35:48.650 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2439,45 +2424,48 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0c
     },
     "messageId": 26
   }
-17:16:54.552 detox[32475] [90mi[39m get
+17:35:48.650 detox[34535] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginError","isRegex":false},"expectation":"toHaveText","params":["Invalid email format"]},"messageId":26}
+17:35:48.650 detox[34535] [90mB[39m expect element to have text: "Invalid email format"
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "loginError",
+      "isRegex": false
+    },
+    "expectation": "toHaveText",
+    "params": [
+      "Invalid email format"
+    ]
+  }
+17:35:48.656 detox[34529] [90mi[39m get
   data: {"messageId":26,"type":"invokeResult","params":{}}
-17:16:54.552 detox[32475] [90mi[39m send
+17:35:48.657 detox[34529] [90mi[39m send
   data: {
     "messageId": 26,
     "type": "invokeResult",
     "params": {}
   }
-17:16:54.553 detox[32478] [90mi[39m get message
+17:35:48.657 detox[34535] [90mi[39m get message
   data: {"messageId":26,"type":"invokeResult","params":{}}
    
-17:16:54.553 detox[32478] [90mE[39m expect element to have text: "Invalid email format"
-17:16:54.553 detox[32478] [90mB[39m takeScreenshot
+17:35:48.657 detox[34535] [90mE[39m expect element to have text: "Invalid email format"
+17:35:48.658 detox[34535] [90mB[39m takeScreenshot
   args: ("07_Login_Error_InvalidEmail")
-17:16:54.553 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a904969-d63b-46d3-9ac3-33ff0d67d1e6.detox.png"
-17:16:54.837 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a904969-d63b-46d3-9ac3-33ff0d67d1e6.detox.png
+17:35:48.658 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8016dffa-a7ee-4d09-b26c-4c07ce5bed34.detox.png"
+17:35:49.002 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8016dffa-a7ee-4d09-b26c-4c07ce5bed34.detox.png
 
-17:16:54.837 detox[32478] [90mB[39m onCreateExternalArtifact
-  args: ({"pluginId":"screenshot","artifactName":"07_Login_Error_InvalidEmail","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a904969-d63b-46d3-9ac3-33ff0d67d1e6.detox.png"})
-17:16:54.838 detox[32478] [90mi[39m starting FileArtifact
-17:16:54.838 detox[32478] [90mi[39m stopping FileArtifact
-17:16:54.838 detox[32478] [90mE[39m onCreateExternalArtifact
-17:16:54.838 detox[32478] [90mE[39m takeScreenshot
-17:16:54.838 detox[32478] [90mi[39m send message
+17:35:49.002 detox[34535] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"07_Login_Error_InvalidEmail","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8016dffa-a7ee-4d09-b26c-4c07ce5bed34.detox.png"})
+17:35:49.003 detox[34535] [90mi[39m starting FileArtifact
+17:35:49.003 detox[34535] [90mi[39m stopping FileArtifact
+17:35:49.003 detox[34535] [90mE[39m onCreateExternalArtifact
+17:35:49.003 detox[34535] [90mE[39m takeScreenshot
+17:35:49.004 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":27}
-17:16:54.838 detox[32478] [90mB[39m clear input text
-  data: {
-    "type": "action",
-    "action": "clearText",
-    "predicate": {
-      "type": "id",
-      "value": "loginEmail",
-      "isRegex": false
-    }
-  }
-17:16:54.839 detox[32475] [90mi[39m get
-  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":27}
-17:16:54.839 detox[32475] [90mi[39m send
+17:35:49.004 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2491,23 +2479,35 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a
     },
     "messageId": 27
   }
-17:16:55.857 detox[32475] [90mi[39m get
-  data: {"params":{},"messageId":27,"type":"invokeResult"}
-17:16:55.858 detox[32475] [90mi[39m send
+17:35:49.004 detox[34535] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":27}
+17:35:49.004 detox[34535] [90mB[39m clear input text
   data: {
-    "params": {},
-    "messageId": 27,
-    "type": "invokeResult"
+    "type": "action",
+    "action": "clearText",
+    "predicate": {
+      "type": "id",
+      "value": "loginEmail",
+      "isRegex": false
+    }
   }
-17:16:55.858 detox[32478] [90mi[39m get message
-  data: {"params":{},"messageId":27,"type":"invokeResult"}
+17:35:50.063 detox[34529] [90mi[39m get
+  data: {"messageId":27,"type":"invokeResult","params":{}}
+17:35:50.063 detox[34529] [90mi[39m send
+  data: {
+    "messageId": 27,
+    "type": "invokeResult",
+    "params": {}
+  }
+17:35:50.064 detox[34535] [90mi[39m get message
+  data: {"messageId":27,"type":"invokeResult","params":{}}
    
-17:16:55.859 detox[32478] [90mE[39m clear input text
-17:16:55.860 detox[32475] [90mi[39m get
+17:35:50.065 detox[34535] [90mE[39m clear input text
+17:35:50.066 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["test@example.com"],"predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":28}
-17:16:55.860 detox[32478] [90mi[39m send message
+17:35:50.067 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["test@example.com"],"predicate":{"type":"id","value":"loginEmail","isRegex":false}},"messageId":28}
-17:16:55.861 detox[32475] [90mi[39m send
+17:35:50.067 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2524,7 +2524,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a
     },
     "messageId": 28
   }
-17:16:55.861 detox[32478] [90mB[39m type input text: "test@example.com"
+17:35:50.067 detox[34535] [90mB[39m type input text: "test@example.com"
   data: {
     "type": "action",
     "action": "typeText",
@@ -2537,23 +2537,21 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a
       "isRegex": false
     }
   }
-17:16:57.232 detox[32475] [90mi[39m get
+17:35:51.436 detox[34529] [90mi[39m get
   data: {"params":{},"messageId":28,"type":"invokeResult"}
-17:16:57.232 detox[32475] [90mi[39m send
+17:35:51.437 detox[34529] [90mi[39m send
   data: {
     "params": {},
     "messageId": 28,
     "type": "invokeResult"
   }
-17:16:57.233 detox[32478] [90mi[39m get message
+17:35:51.437 detox[34535] [90mi[39m get message
   data: {"params":{},"messageId":28,"type":"invokeResult"}
    
-17:16:57.234 detox[32478] [90mE[39m type input text: "test@example.com"
-17:16:57.235 detox[32475] [90mi[39m get
+17:35:51.438 detox[34535] [90mE[39m type input text: "test@example.com"
+17:35:51.439 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":29}
-17:16:57.235 detox[32478] [90mi[39m send message
-  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":29}
-17:16:57.236 detox[32475] [90mi[39m send
+17:35:51.439 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2567,7 +2565,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a
     },
     "messageId": 29
   }
-17:16:57.236 detox[32478] [90mB[39m clear input text
+17:35:51.439 detox[34535] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":29}
+17:35:51.439 detox[34535] [90mB[39m clear input text
   data: {
     "type": "action",
     "action": "clearText",
@@ -2577,20 +2577,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a
       "isRegex": false
     }
   }
-17:16:58.249 detox[32475] [90mi[39m get
+17:35:52.478 detox[34529] [90mi[39m get
   data: {"params":{},"messageId":29,"type":"invokeResult"}
-17:16:58.249 detox[32475] [90mi[39m send
+17:35:52.478 detox[34529] [90mi[39m send
   data: {
     "params": {},
     "messageId": 29,
     "type": "invokeResult"
   }
-17:16:58.249 detox[32478] [90mi[39m get message
+17:35:52.479 detox[34535] [90mi[39m get message
   data: {"params":{},"messageId":29,"type":"invokeResult"}
    
-17:16:58.250 detox[32475] [90mi[39m get
+17:35:52.479 detox[34535] [90mE[39m clear input text
+17:35:52.480 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["wrongpassword"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":30}
-17:16:58.250 detox[32475] [90mi[39m send
+17:35:52.481 detox[34529] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["wrongpassword"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":30}
+17:35:52.481 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2607,10 +2610,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a
     },
     "messageId": 30
   }
-17:16:58.250 detox[32478] [90mE[39m clear input text
-17:16:58.250 detox[32478] [90mi[39m send message
-  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["wrongpassword"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":30}
-17:16:58.250 detox[32478] [90mB[39m type input text: "wrongpassword"
+17:35:52.481 detox[34535] [90mB[39m type input text: "wrongpassword"
   data: {
     "type": "action",
     "action": "typeText",
@@ -2623,21 +2623,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a
       "isRegex": false
     }
   }
-17:16:59.465 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"invokeResult","messageId":30}
-17:16:59.465 detox[32475] [90mi[39m send
+17:35:53.698 detox[34529] [90mi[39m get
+  data: {"messageId":30,"type":"invokeResult","params":{}}
+17:35:53.698 detox[34529] [90mi[39m send
   data: {
-    "params": {},
+    "messageId": 30,
     "type": "invokeResult",
-    "messageId": 30
+    "params": {}
   }
-17:16:59.466 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"invokeResult","messageId":30}
+17:35:53.699 detox[34535] [90mi[39m get message
+  data: {"messageId":30,"type":"invokeResult","params":{}}
    
-17:16:59.467 detox[32478] [90mE[39m type input text: "wrongpassword"
-17:16:59.468 detox[32475] [90mi[39m get
+17:35:53.700 detox[34535] [90mE[39m type input text: "wrongpassword"
+17:35:53.701 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":31}
-17:16:59.468 detox[32475] [90mi[39m send
+17:35:53.701 detox[34535] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":31}
+17:35:53.702 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2651,9 +2653,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a
     },
     "messageId": 31
   }
-17:16:59.468 detox[32478] [90mi[39m send message
-  data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":31}
-17:16:59.468 detox[32478] [90mB[39m tap
+17:35:53.702 detox[34535] [90mB[39m tap
   data: {
     "type": "action",
     "action": "tap",
@@ -2663,23 +2663,36 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a
       "isRegex": false
     }
   }
-17:17:00.146 detox[32475] [90mi[39m get
-  data: {"params":{},"messageId":31,"type":"invokeResult"}
-17:17:00.147 detox[32475] [90mi[39m send
+17:35:54.362 detox[34529] [90mi[39m get
+  data: {"messageId":31,"type":"invokeResult","params":{}}
+17:35:54.362 detox[34529] [90mi[39m send
   data: {
-    "params": {},
     "messageId": 31,
-    "type": "invokeResult"
+    "type": "invokeResult",
+    "params": {}
   }
-17:17:00.147 detox[32478] [90mi[39m get message
-  data: {"params":{},"messageId":31,"type":"invokeResult"}
+17:35:54.363 detox[34535] [90mi[39m get message
+  data: {"messageId":31,"type":"invokeResult","params":{}}
    
-17:17:00.148 detox[32478] [90mE[39m tap
-17:17:00.149 detox[32478] [90mi[39m send message
+17:35:54.363 detox[34535] [90mE[39m tap
+17:35:54.365 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginError","isRegex":false},"expectation":"toHaveText","params":["Incorrect credentials"]},"messageId":32}
-17:17:00.150 detox[32475] [90mi[39m get
+17:35:54.365 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginError","isRegex":false},"expectation":"toHaveText","params":["Incorrect credentials"]},"messageId":32}
-17:17:00.150 detox[32475] [90mi[39m send
+17:35:54.365 detox[34535] [90mB[39m expect element to have text: "Incorrect credentials"
+  data: {
+    "type": "expectation",
+    "predicate": {
+      "type": "id",
+      "value": "loginError",
+      "isRegex": false
+    },
+    "expectation": "toHaveText",
+    "params": [
+      "Incorrect credentials"
+    ]
+  }
+17:35:54.366 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2696,48 +2709,33 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a
     },
     "messageId": 32
   }
-17:17:00.151 detox[32478] [90mB[39m expect element to have text: "Incorrect credentials"
-  data: {
-    "type": "expectation",
-    "predicate": {
-      "type": "id",
-      "value": "loginError",
-      "isRegex": false
-    },
-    "expectation": "toHaveText",
-    "params": [
-      "Incorrect credentials"
-    ]
-  }
-17:17:00.155 detox[32475] [90mi[39m get
+17:35:54.371 detox[34529] [90mi[39m get
   data: {"params":{},"messageId":32,"type":"invokeResult"}
-17:17:00.155 detox[32475] [90mi[39m send
+17:35:54.371 detox[34529] [90mi[39m send
   data: {
     "params": {},
     "messageId": 32,
     "type": "invokeResult"
   }
-17:17:00.156 detox[32478] [90mi[39m get message
+17:35:54.372 detox[34535] [90mi[39m get message
   data: {"params":{},"messageId":32,"type":"invokeResult"}
    
-17:17:00.156 detox[32478] [90mE[39m expect element to have text: "Incorrect credentials"
-17:17:00.156 detox[32478] [90mB[39m takeScreenshot
+17:35:54.372 detox[34535] [90mE[39m expect element to have text: "Incorrect credentials"
+17:35:54.373 detox[34535] [90mB[39m takeScreenshot
   args: ("08_Login_Error_WrongCreds")
-17:17:00.156 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aaeb8c97-7143-418b-a832-64d2709e636c.detox.png"
-17:17:00.423 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aaeb8c97-7143-418b-a832-64d2709e636c.detox.png
+17:35:54.373 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/d62ce0ab-f96c-417a-9a6a-cddd093f7365.detox.png"
+17:35:54.656 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/d62ce0ab-f96c-417a-9a6a-cddd093f7365.detox.png
 
-17:17:00.423 detox[32478] [90mB[39m onCreateExternalArtifact
-  args: ({"pluginId":"screenshot","artifactName":"08_Login_Error_WrongCreds","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aaeb8c97-7143-418b-a832-64d2709e636c.detox.png"})
-17:17:00.423 detox[32478] [90mi[39m starting FileArtifact
-17:17:00.423 detox[32478] [90mi[39m stopping FileArtifact
-17:17:00.423 detox[32478] [90mE[39m onCreateExternalArtifact
-17:17:00.423 detox[32478] [90mE[39m takeScreenshot
-17:17:00.423 detox[32478] [90mi[39m send message
+17:35:54.656 detox[34535] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"08_Login_Error_WrongCreds","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/d62ce0ab-f96c-417a-9a6a-cddd093f7365.detox.png"})
+17:35:54.657 detox[34535] [90mi[39m starting FileArtifact
+17:35:54.657 detox[34535] [90mi[39m stopping FileArtifact
+17:35:54.657 detox[34535] [90mE[39m onCreateExternalArtifact
+17:35:54.657 detox[34535] [90mE[39m takeScreenshot
+17:35:54.658 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":33}
-17:17:00.424 detox[32475] [90mi[39m get
-  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":33}
-17:17:00.424 detox[32475] [90mi[39m send
+17:35:54.658 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2751,7 +2749,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aa
     },
     "messageId": 33
   }
-17:17:00.424 detox[32478] [90mB[39m clear input text
+17:35:54.658 detox[34535] [90mi[39m send message
+  data: {"type":"invoke","params":{"type":"action","action":"clearText","predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":33}
+17:35:54.658 detox[34535] [90mB[39m clear input text
   data: {
     "type": "action",
     "action": "clearText",
@@ -2761,21 +2761,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aa
       "isRegex": false
     }
   }
-17:17:01.007 detox[32475] [90mi[39m get
-  data: {"messageId":33,"type":"invokeResult","params":{}}
-17:17:01.008 detox[32475] [90mi[39m send
+17:35:55.240 detox[34529] [90mi[39m get
+  data: {"params":{},"type":"invokeResult","messageId":33}
+17:35:55.240 detox[34529] [90mi[39m send
   data: {
-    "messageId": 33,
+    "params": {},
     "type": "invokeResult",
-    "params": {}
+    "messageId": 33
   }
-17:17:01.008 detox[32478] [90mi[39m get message
-  data: {"messageId":33,"type":"invokeResult","params":{}}
+17:35:55.241 detox[34535] [90mi[39m get message
+  data: {"params":{},"type":"invokeResult","messageId":33}
    
-17:17:01.009 detox[32478] [90mE[39m clear input text
-17:17:01.010 detox[32475] [90mi[39m get
+17:35:55.241 detox[34535] [90mE[39m clear input text
+17:35:55.242 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":34}
-17:17:01.010 detox[32475] [90mi[39m send
+17:35:55.243 detox[34529] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":34}
+17:35:55.243 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2792,9 +2794,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aa
     },
     "messageId": 34
   }
-17:17:01.010 detox[32478] [90mi[39m send message
-  data: {"type":"invoke","params":{"type":"action","action":"typeText","params":["password"],"predicate":{"type":"id","value":"loginPassword","isRegex":false}},"messageId":34}
-17:17:01.012 detox[32478] [90mB[39m type input text: "password"
+17:35:55.243 detox[34535] [90mB[39m type input text: "password"
   data: {
     "type": "action",
     "action": "typeText",
@@ -2807,23 +2807,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aa
       "isRegex": false
     }
   }
-17:17:01.934 detox[32475] [90mi[39m get
-  data: {"params":{},"messageId":34,"type":"invokeResult"}
-17:17:01.934 detox[32475] [90mi[39m send
+17:35:56.139 detox[34529] [90mi[39m get
+  data: {"messageId":34,"params":{},"type":"invokeResult"}
+17:35:56.140 detox[34529] [90mi[39m send
   data: {
-    "params": {},
     "messageId": 34,
+    "params": {},
     "type": "invokeResult"
   }
-17:17:01.935 detox[32478] [90mi[39m get message
-  data: {"params":{},"messageId":34,"type":"invokeResult"}
+17:35:56.141 detox[34535] [90mi[39m get message
+  data: {"messageId":34,"params":{},"type":"invokeResult"}
    
-17:17:01.935 detox[32478] [90mE[39m type input text: "password"
-17:17:01.936 detox[32478] [90mi[39m send message
+17:35:56.141 detox[34535] [90mE[39m type input text: "password"
+17:35:56.142 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":35}
-17:17:01.937 detox[32475] [90mi[39m get
+17:35:56.144 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"loginButton","isRegex":false}},"messageId":35}
-17:17:01.937 detox[32475] [90mi[39m send
+17:35:56.144 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2837,7 +2837,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aa
     },
     "messageId": 35
   }
-17:17:01.937 detox[32478] [90mB[39m tap
+17:35:56.144 detox[34535] [90mB[39m tap
   data: {
     "type": "action",
     "action": "tap",
@@ -2847,21 +2847,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aa
       "isRegex": false
     }
   }
-17:17:02.958 detox[32475] [90mi[39m get
+17:35:57.160 detox[34529] [90mi[39m get
   data: {"params":{},"messageId":35,"type":"invokeResult"}
-17:17:02.958 detox[32475] [90mi[39m send
+17:35:57.161 detox[34529] [90mi[39m send
   data: {
     "params": {},
     "messageId": 35,
     "type": "invokeResult"
   }
-17:17:02.958 detox[32478] [90mi[39m get message
+17:35:57.162 detox[34535] [90mi[39m get message
   data: {"params":{},"messageId":35,"type":"invokeResult"}
    
-17:17:02.959 detox[32478] [90mE[39m tap
-17:17:02.960 detox[32475] [90mi[39m get
+17:35:57.163 detox[34535] [90mE[39m tap
+17:35:57.166 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"welcomeText","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":36}
-17:17:02.960 detox[32475] [90mi[39m send
+17:35:57.167 detox[34529] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"welcomeText","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":36}
+17:35:57.168 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2876,9 +2878,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aa
     },
     "messageId": 36
   }
-17:17:02.960 detox[32478] [90mi[39m send message
-  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"welcomeText","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":36}
-17:17:02.961 detox[32478] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:35:57.170 detox[34535] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
   data: {
     "type": "expectation",
     "predicate": {
@@ -2889,91 +2889,92 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aa
     "expectation": "toBeVisible",
     "timeout": 5000
   }
-17:17:02.987 detox[32475] [90mi[39m get
-  data: {"type":"invokeResult","messageId":36,"params":{}}
-17:17:02.987 detox[32475] [90mi[39m send
+17:35:57.216 detox[34529] [90mi[39m get
+  data: {"type":"invokeResult","params":{},"messageId":36}
+17:35:57.216 detox[34529] [90mi[39m send
   data: {
     "type": "invokeResult",
-    "messageId": 36,
-    "params": {}
+    "params": {},
+    "messageId": 36
   }
-17:17:02.988 detox[32478] [90mi[39m get message
-  data: {"type":"invokeResult","messageId":36,"params":{}}
+17:35:57.217 detox[34535] [90mi[39m get message
+  data: {"type":"invokeResult","params":{},"messageId":36}
    
-17:17:02.988 detox[32478] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
-17:17:02.989 detox[32478] [90mB[39m takeScreenshot
+17:35:57.217 detox[34535] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:35:57.218 detox[34535] [90mB[39m takeScreenshot
   args: ("09_Home_After_Login")
-17:17:02.989 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cac0a45a-53bf-46e7-8de3-bb072b9904d5.detox.png"
-17:17:03.273 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cac0a45a-53bf-46e7-8de3-bb072b9904d5.detox.png
+17:35:57.218 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/ad67d32b-9288-45cc-9b9d-a59cba23ac52.detox.png"
+17:35:57.501 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/ad67d32b-9288-45cc-9b9d-a59cba23ac52.detox.png
 
-17:17:03.273 detox[32478] [90mB[39m onCreateExternalArtifact
-  args: ({"pluginId":"screenshot","artifactName":"09_Home_After_Login","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cac0a45a-53bf-46e7-8de3-bb072b9904d5.detox.png"})
-17:17:03.273 detox[32478] [90mi[39m starting FileArtifact
-17:17:03.273 detox[32478] [90mi[39m stopping FileArtifact
-17:17:03.273 detox[32478] [90mE[39m onCreateExternalArtifact
-17:17:03.273 detox[32478] [90mE[39m takeScreenshot
-17:17:03.274 detox[32478] [90mE[39m test_fn
-17:17:03.274 detox[32478] [90mB[39m onTestDone
+17:35:57.501 detox[34535] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"09_Home_After_Login","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/ad67d32b-9288-45cc-9b9d-a59cba23ac52.detox.png"})
+17:35:57.501 detox[34535] [90mi[39m starting FileArtifact
+17:35:57.501 detox[34535] [90mi[39m stopping FileArtifact
+17:35:57.501 detox[34535] [90mE[39m onCreateExternalArtifact
+17:35:57.501 detox[34535] [90mE[39m takeScreenshot
+17:35:57.501 detox[34535] [90mE[39m test_fn
+17:35:57.502 detox[34535] [90mB[39m onTestDone
   args: ({"title":"2. Logout → Login: invalid email → bad creds → success","fullName":"AuthApp: Signup → Login → Logout flows 2. Logout → Login: invalid email → bad creds → success","status":"passed","invocations":1})
-17:17:03.274 detox[32478] [90mi[39m starting SimulatorScreenshot
-17:17:03.274 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3e1057fc-16fb-4b8d-b4ad-2d3a4e4af38b.detox.png"
-17:17:03.275 detox[32478] [90mi[39m stopping SimulatorVideoRecording
-17:17:03.276 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/e455c5df-d68b-4454-8283-ec68d2a89cd2.detox.mp4
-17:17:03.283 detox[32478] [90mi[39m Recording completed. Writing to disk.
+17:35:57.502 detox[34535] [90mi[39m starting SimulatorScreenshot
+17:35:57.502 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4fe59f2d-b6ce-47a8-be48-5e5c3b1b06ff.detox.png"
+17:35:57.502 detox[34535] [90mi[39m stopping SimulatorVideoRecording
+17:35:57.504 detox[34535] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/eb47bbbe-5a26-4460-b819-271c0c4ffb26.detox.mp4
+17:35:57.544 detox[34535] [90mi[39m Recording completed. Writing to disk.
 
-Wrote video to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/e455c5df-d68b-4454-8283-ec68d2a89cd2.detox.mp4
+Wrote video to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/eb47bbbe-5a26-4460-b819-271c0c4ffb26.detox.mp4
 
-17:17:03.285 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/e455c5df-d68b-4454-8283-ec68d2a89cd2.detox.mp4 exited with code #0
-17:17:03.285 detox[32478] [90mi[39m saving SimulatorVideoRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/test.mp4
-17:17:03.285 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/e455c5df-d68b-4454-8283-ec68d2a89cd2.detox.mp4" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/test.mp4
-17:17:03.493 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3e1057fc-16fb-4b8d-b4ad-2d3a4e4af38b.detox.png
+17:35:57.546 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/eb47bbbe-5a26-4460-b819-271c0c4ffb26.detox.mp4 exited with code #0
+17:35:57.546 detox[34535] [90mi[39m saving SimulatorVideoRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/test.mp4
+17:35:57.547 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/eb47bbbe-5a26-4460-b819-271c0c4ffb26.detox.mp4" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/test.mp4
+17:35:57.722 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4fe59f2d-b6ce-47a8-be48-5e5c3b1b06ff.detox.png
 
-17:17:03.493 detox[32478] [90mi[39m stopping SimulatorScreenshot
-17:17:03.493 detox[32478] [90mi[39m stopping SimulatorLogRecording
-17:17:03.493 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testStart.png
-17:17:03.493 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/deb621a4-b7d9-4745-bcdb-db59bf33424a.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testStart.png
-17:17:03.494 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testDone.png
-17:17:03.494 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3e1057fc-16fb-4b8d-b4ad-2d3a4e4af38b.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testDone.png
-17:17:03.495 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/06_Login_After_Logout.png
-17:17:03.495 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0cbcf80c-4e65-4100-b5ef-ab35c1b92a61.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/06_Login_After_Logout.png
-17:17:03.495 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/07_Login_Error_InvalidEmail.png
-17:17:03.495 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3a904969-d63b-46d3-9ac3-33ff0d67d1e6.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/07_Login_Error_InvalidEmail.png
-17:17:03.496 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/08_Login_Error_WrongCreds.png
-17:17:03.496 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/aaeb8c97-7143-418b-a832-64d2709e636c.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/08_Login_Error_WrongCreds.png
-17:17:03.496 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/09_Home_After_Login.png
-17:17:03.497 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cac0a45a-53bf-46e7-8de3-bb072b9904d5.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/09_Home_After_Login.png
-17:17:03.546 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app"
-17:17:03.555 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\"" exited with code #0
-17:17:03.555 detox[32478] [90mE[39m onTestDone
-17:17:03.555 detox[32478] [90mE[39m 2. Logout → Login: invalid email → bad creds → success
-17:17:03.555 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 2. Logout → Login: invalid email → bad creds → success [OK]
-17:17:03.556 detox[32478] [90mB[39m 3. Final logout → back to Login
-17:17:03.556 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 3. Final logout → back to Login
-17:17:03.557 detox[32478] [90mB[39m onTestStart
+17:35:57.722 detox[34535] [90mi[39m stopping SimulatorScreenshot
+17:35:57.722 detox[34535] [90mi[39m stopping SimulatorLogRecording
+17:35:57.722 detox[34535] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testStart.png
+17:35:57.722 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/a8a4e2c3-9b9d-47c7-b500-3d0041d54645.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testStart.png
+17:35:57.723 detox[34535] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testDone.png
+17:35:57.723 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4fe59f2d-b6ce-47a8-be48-5e5c3b1b06ff.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/testDone.png
+17:35:57.724 detox[34535] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/06_Login_After_Logout.png
+17:35:57.724 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cd4accb9-7b35-4cfd-b955-11e4d20058fa.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/06_Login_After_Logout.png
+17:35:57.724 detox[34535] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/07_Login_Error_InvalidEmail.png
+17:35:57.724 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/8016dffa-a7ee-4d09-b26c-4c07ce5bed34.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/07_Login_Error_InvalidEmail.png
+17:35:57.725 detox[34535] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/08_Login_Error_WrongCreds.png
+17:35:57.725 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/d62ce0ab-f96c-417a-9a6a-cddd093f7365.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/08_Login_Error_WrongCreds.png
+17:35:57.725 detox[34535] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/09_Home_After_Login.png
+17:35:57.725 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/ad67d32b-9288-45cc-9b9d-a59cba23ac52.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/09_Home_After_Login.png
+17:35:57.775 detox[34535] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app"
+17:35:57.784 detox[34535] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app\"" exited with code #0
+17:35:57.784 detox[34535] [90mE[39m onTestDone
+17:35:57.784 detox[34535] [90mE[39m 2. Logout → Login: invalid email → bad creds → success
+17:35:57.784 detox[34535] [90mi[39m AuthApp: Signup → Login → Logout flows: 2. Logout → Login: invalid email → bad creds → success [OK]
+17:35:57.785 detox[34535] [90mB[39m 3. Final logout → back to Login
+17:35:57.785 detox[34535] [90mi[39m AuthApp: Signup → Login → Logout flows: 3. Final logout → back to Login
+17:35:57.786 detox[34535] [90mB[39m onTestStart
   args: ({"title":"3. Final logout → back to Login","fullName":"AuthApp: Signup → Login → Logout flows 3. Final logout → back to Login","status":"running","invocations":1})
-17:17:03.557 detox[32478] [90mi[39m starting SimulatorLogRecording
-17:17:03.557 detox[32478] [90mi[39m saving SimulatorLogRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/device.log
-17:17:03.557 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0a101fbf-5506-461b-9a05-834eeb56c0b5.detox.log" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/device.log
-17:17:03.557 detox[32478] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
-17:17:03.714 detox[32478] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app
+17:35:57.786 detox[34535] [90mi[39m starting SimulatorLogRecording
+17:35:57.786 detox[34535] [90mi[39m saving SimulatorLogRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/device.log
+17:35:57.787 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/21de0188-8df8-49f5-9444-5ee8762ca780.detox.log" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 2. Logout → Login_ invalid email → bad creds → success/device.log
+17:35:57.787 detox[34535] [90mi[39m /usr/bin/xcrun simctl get_app_container B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA com.auth.app
+17:35:57.948 detox[34535] [90mi[39m /Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app
 
-17:17:03.715 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\""
-17:17:03.766 detox[32478] [90mi[39m starting SimulatorScreenshot
-17:17:03.766 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/00da4040-767d-4253-aa5e-75823fbde7b9.detox.png"
-17:17:03.767 detox[32478] [90mi[39m starting SimulatorVideoRecording
-17:17:03.767 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/9f5c7dc2-1b5f-4766-b44b-0e94a147277e.detox.mp4
-17:17:03.991 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/00da4040-767d-4253-aa5e-75823fbde7b9.detox.png
+17:35:57.948 detox[34535] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app\""
+17:35:57.999 detox[34535] [90mi[39m starting SimulatorScreenshot
+17:35:58.000 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b91f7783-7066-43c8-8f72-1a98e61dd1b2.detox.png"
+17:35:58.000 detox[34535] [90mi[39m starting SimulatorVideoRecording
+17:35:58.000 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0fcba194-fd21-41e2-acf5-be5cd1aabee3.detox.mp4
+17:35:58.231 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b91f7783-7066-43c8-8f72-1a98e61dd1b2.detox.png
 
-17:17:03.991 detox[32478] [90mi[39m stopping SimulatorScreenshot
-17:17:03.991 detox[32478] [90mE[39m onTestStart
-17:17:03.991 detox[32478] [90mB[39m beforeEach
-17:17:03.991 detox[32478] [90mE[39m beforeEach
-17:17:03.992 detox[32475] [90mi[39m get
+17:35:58.231 detox[34535] [90mi[39m stopping SimulatorScreenshot
+17:35:58.231 detox[34535] [90mE[39m onTestStart
+17:35:58.231 detox[34535] [90mB[39m beforeEach
+17:35:58.231 detox[34535] [90mE[39m beforeEach
+17:35:58.231 detox[34535] [90mB[39m test_fn
+17:35:58.232 detox[34529] [90mi[39m get
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"logoutButton","isRegex":false}},"messageId":37}
-17:17:03.992 detox[32475] [90mi[39m send
+17:35:58.232 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -2987,10 +2988,9 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/00
     },
     "messageId": 37
   }
-17:17:03.992 detox[32478] [90mB[39m test_fn
-17:17:03.992 detox[32478] [90mi[39m send message
+17:35:58.232 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"action","action":"tap","predicate":{"type":"id","value":"logoutButton","isRegex":false}},"messageId":37}
-17:17:03.992 detox[32478] [90mB[39m tap
+17:35:58.232 detox[34535] [90mB[39m tap
   data: {
     "type": "action",
     "action": "tap",
@@ -3000,23 +3000,25 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/00
       "isRegex": false
     }
   }
-17:17:04.077 detox[32478] [90mi[39m Recording started
+17:35:58.295 detox[34535] [90mi[39m Recording started
 
-17:17:04.979 detox[32475] [90mi[39m get
+17:35:59.210 detox[34529] [90mi[39m get
   data: {"messageId":37,"type":"invokeResult","params":{}}
-17:17:04.980 detox[32475] [90mi[39m send
+17:35:59.211 detox[34529] [90mi[39m send
   data: {
     "messageId": 37,
     "type": "invokeResult",
     "params": {}
   }
-17:17:04.982 detox[32478] [90mi[39m get message
+17:35:59.213 detox[34535] [90mi[39m get message
   data: {"messageId":37,"type":"invokeResult","params":{}}
    
-17:17:04.982 detox[32478] [90mE[39m tap
-17:17:04.984 detox[32475] [90mi[39m get
+17:35:59.213 detox[34535] [90mE[39m tap
+17:35:59.214 detox[34535] [90mi[39m send message
   data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginButton","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":38}
-17:17:04.984 detox[32475] [90mi[39m send
+17:35:59.215 detox[34529] [90mi[39m get
+  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginButton","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":38}
+17:35:59.215 detox[34529] [90mi[39m send
   data: {
     "type": "invoke",
     "params": {
@@ -3031,9 +3033,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/00
     },
     "messageId": 38
   }
-17:17:04.984 detox[32478] [90mi[39m send message
-  data: {"type":"invoke","params":{"type":"expectation","predicate":{"type":"id","value":"loginButton","isRegex":false},"expectation":"toBeVisible","timeout":5000},"messageId":38}
-17:17:04.984 detox[32478] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:35:59.215 detox[34535] [90mB[39m wait until timeout (5000 ms) with timeout (5000 ms)
   data: {
     "type": "expectation",
     "predicate": {
@@ -3044,79 +3044,81 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/00
     "expectation": "toBeVisible",
     "timeout": 5000
   }
-17:17:05.048 detox[32475] [90mi[39m get
-  data: {"type":"invokeResult","params":{},"messageId":38}
-17:17:05.049 detox[32475] [90mi[39m send
+17:35:59.276 detox[34529] [90mi[39m get
+  data: {"messageId":38,"params":{},"type":"invokeResult"}
+17:35:59.277 detox[34529] [90mi[39m send
   data: {
-    "type": "invokeResult",
+    "messageId": 38,
     "params": {},
-    "messageId": 38
+    "type": "invokeResult"
   }
-17:17:05.050 detox[32478] [90mi[39m get message
-  data: {"type":"invokeResult","params":{},"messageId":38}
+17:35:59.278 detox[34535] [90mi[39m get message
+  data: {"messageId":38,"params":{},"type":"invokeResult"}
    
-17:17:05.050 detox[32478] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
-17:17:05.051 detox[32478] [90mB[39m takeScreenshot
+17:35:59.279 detox[34535] [90mE[39m wait until timeout (5000 ms) with timeout (5000 ms)
+17:35:59.280 detox[34535] [90mB[39m takeScreenshot
   args: ("10_Login_Final")
-17:17:05.051 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cc91dc6c-405d-4324-a3e4-7f4d2dd2105c.detox.png"
-17:17:05.327 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cc91dc6c-405d-4324-a3e4-7f4d2dd2105c.detox.png
+17:35:59.280 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/912a5604-c576-4117-839d-3e9b8513a1bf.detox.png"
+17:35:59.538 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/912a5604-c576-4117-839d-3e9b8513a1bf.detox.png
 
-17:17:05.328 detox[32478] [90mB[39m onCreateExternalArtifact
-  args: ({"pluginId":"screenshot","artifactName":"10_Login_Final","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cc91dc6c-405d-4324-a3e4-7f4d2dd2105c.detox.png"})
-17:17:05.328 detox[32478] [90mi[39m starting FileArtifact
-17:17:05.328 detox[32478] [90mi[39m stopping FileArtifact
-17:17:05.328 detox[32478] [90mE[39m onCreateExternalArtifact
-17:17:05.328 detox[32478] [90mE[39m takeScreenshot
-17:17:05.328 detox[32478] [90mE[39m test_fn
-17:17:05.328 detox[32478] [90mB[39m onTestDone
+17:35:59.538 detox[34535] [90mB[39m onCreateExternalArtifact
+  args: ({"pluginId":"screenshot","artifactName":"10_Login_Final","artifactPath":"/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/912a5604-c576-4117-839d-3e9b8513a1bf.detox.png"})
+17:35:59.538 detox[34535] [90mi[39m starting FileArtifact
+17:35:59.538 detox[34535] [90mi[39m stopping FileArtifact
+17:35:59.538 detox[34535] [90mE[39m onCreateExternalArtifact
+17:35:59.539 detox[34535] [90mE[39m takeScreenshot
+17:35:59.539 detox[34535] [90mE[39m test_fn
+17:35:59.539 detox[34535] [90mB[39m onTestDone
   args: ({"title":"3. Final logout → back to Login","fullName":"AuthApp: Signup → Login → Logout flows 3. Final logout → back to Login","status":"passed","invocations":1})
-17:17:05.328 detox[32478] [90mi[39m starting SimulatorScreenshot
-17:17:05.329 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3b14b03-0e0d-4cc8-8c09-42d069dd1213.detox.png"
-17:17:05.329 detox[32478] [90mi[39m stopping SimulatorVideoRecording
-17:17:05.329 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/9f5c7dc2-1b5f-4766-b44b-0e94a147277e.detox.mp4
-17:17:05.353 detox[32478] [90mi[39m Recording completed. Writing to disk.
+17:35:59.539 detox[34535] [90mi[39m starting SimulatorScreenshot
+17:35:59.539 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA screenshot "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3f396e4b-abb1-4b35-aeaa-611117265b7e.detox.png"
+17:35:59.540 detox[34535] [90mi[39m stopping SimulatorVideoRecording
+17:35:59.540 detox[34535] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0fcba194-fd21-41e2-acf5-be5cd1aabee3.detox.mp4
+17:35:59.571 detox[34535] [90mi[39m Recording completed. Writing to disk.
 
-Wrote video to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/9f5c7dc2-1b5f-4766-b44b-0e94a147277e.detox.mp4
+Wrote video to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0fcba194-fd21-41e2-acf5-be5cd1aabee3.detox.mp4
 
-17:17:05.355 detox[32478] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/9f5c7dc2-1b5f-4766-b44b-0e94a147277e.detox.mp4 exited with code #0
-17:17:05.355 detox[32478] [90mi[39m saving SimulatorVideoRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/test.mp4
-17:17:05.355 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/9f5c7dc2-1b5f-4766-b44b-0e94a147277e.detox.mp4" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/test.mp4
-17:17:05.549 detox[32478] [90mi[39m Detected file type 'PNG' from extension
-Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3b14b03-0e0d-4cc8-8c09-42d069dd1213.detox.png
+17:35:59.572 detox[34535] [90mi[39m /usr/bin/xcrun simctl io B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA recordVideo /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0fcba194-fd21-41e2-acf5-be5cd1aabee3.detox.mp4 exited with code #0
+17:35:59.572 detox[34535] [90mi[39m saving SimulatorVideoRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/test.mp4
+17:35:59.573 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/0fcba194-fd21-41e2-acf5-be5cd1aabee3.detox.mp4" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/test.mp4
+17:35:59.761 detox[34535] [90mi[39m Detected file type 'PNG' from extension
+Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3f396e4b-abb1-4b35-aeaa-611117265b7e.detox.png
 
-17:17:05.550 detox[32478] [90mi[39m stopping SimulatorScreenshot
-17:17:05.550 detox[32478] [90mi[39m stopping SimulatorLogRecording
-17:17:05.550 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testStart.png
-17:17:05.550 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/00da4040-767d-4253-aa5e-75823fbde7b9.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testStart.png
-17:17:05.550 detox[32478] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testDone.png
-17:17:05.550 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3b14b03-0e0d-4cc8-8c09-42d069dd1213.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testDone.png
-17:17:05.551 detox[32478] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/10_Login_Final.png
-17:17:05.551 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/cc91dc6c-405d-4324-a3e4-7f4d2dd2105c.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/10_Login_Final.png
-17:17:05.602 detox[32478] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app"
-17:17:05.612 detox[32478] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/90F61E2F-63FD-4827-8C93-289BF8BCA868/AuthApp.app\"" exited with code #0
-17:17:05.612 detox[32478] [90mE[39m onTestDone
-17:17:05.612 detox[32478] [90mE[39m 3. Final logout → back to Login
-17:17:05.612 detox[32478] [90mi[39m AuthApp: Signup → Login → Logout flows: 3. Final logout → back to Login [OK]
-17:17:05.613 detox[32478] [90mB[39m onRunDescribeFinish
+17:35:59.761 detox[34535] [90mi[39m stopping SimulatorScreenshot
+17:35:59.761 detox[34535] [90mi[39m stopping SimulatorLogRecording
+17:35:59.761 detox[34535] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testStart.png
+17:35:59.761 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/b91f7783-7066-43c8-8f72-1a98e61dd1b2.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testStart.png
+17:35:59.762 detox[34535] [90mi[39m saving SimulatorScreenshot to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testDone.png
+17:35:59.762 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/3f396e4b-abb1-4b35-aeaa-611117265b7e.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/testDone.png
+17:35:59.762 detox[34535] [90mi[39m saving FileArtifact to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/10_Login_Final.png
+17:35:59.762 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/912a5604-c576-4117-839d-3e9b8513a1bf.detox.png" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/10_Login_Final.png
+17:35:59.814 detox[34535] [90mi[39m sending SIGINT to: /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate processImagePath beginsWith "/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app"
+17:35:59.821 detox[34535] [90mi[39m /usr/bin/xcrun simctl spawn B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA log stream --level debug --style compact --predicate "processImagePath beginsWith \"/Users/tareqaziz/Library/Developer/CoreSimulator/Devices/B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA/data/Containers/Bundle/Application/947D0012-2A32-45F1-AB05-CEF2F71E5B84/AuthApp.app\"" exited with code #0
+17:35:59.822 detox[34535] [90mE[39m onTestDone
+17:35:59.822 detox[34535] [90mE[39m 3. Final logout → back to Login
+17:35:59.822 detox[34535] [90mi[39m AuthApp: Signup → Login → Logout flows: 3. Final logout → back to Login [OK]
+17:35:59.823 detox[34535] [90mB[39m onRunDescribeFinish
   args: ({"name":"AuthApp: Signup → Login → Logout flows"})
-17:17:05.613 detox[32478] [90mE[39m onRunDescribeFinish
-17:17:05.613 detox[32478] [90mE[39m AuthApp: Signup → Login → Logout flows
-17:17:05.613 detox[32478] [90mB[39m onRunDescribeFinish
+17:35:59.823 detox[34535] [90mE[39m onRunDescribeFinish
+17:35:59.823 detox[34535] [90mE[39m AuthApp: Signup → Login → Logout flows
+17:35:59.823 detox[34535] [90mB[39m onRunDescribeFinish
   args: ({"name":"ROOT_DESCRIBE_BLOCK"})
-17:17:05.613 detox[32478] [90mE[39m onRunDescribeFinish
-17:17:05.613 detox[32478] [90mE[39m run the tests
-17:17:05.615 detox[32478] [90mB[39m tear down environment
-17:17:05.615 detox[32478] [90mB[39m onBeforeCleanup
+17:35:59.823 detox[34535] [90mE[39m onRunDescribeFinish
+17:35:59.823 detox[34535] [90mE[39m run the tests
+17:35:59.824 detox[34535] [90mB[39m tear down environment
+17:35:59.825 detox[34535] [90mB[39m onBeforeCleanup
   args: ()
-17:17:05.615 detox[32478] [90mi[39m saving SimulatorLogRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/device.log
-17:17:05.616 detox[32478] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4e2eb09c-d0a4-40d4-936e-5bc47bef31a5.detox.log" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/device.log
-17:17:05.616 detox[32478] [90mi[39m saving FileArtifact to: files/ios/detox_pid_32478.json.log { append: true }
-17:17:05.616 detox[32478] [90mi[39m saving FileArtifact to: files/ios/detox_pid_32478.log { append: true }
-17:17:05.616 detox[32478] [90mE[39m onBeforeCleanup
-17:17:05.618 detox[32475] [90mi[39m get
+17:35:59.826 detox[34535] [90mi[39m saving SimulatorLogRecording to: files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/device.log
+17:35:59.826 detox[34535] [90mi[39m moving "/private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/4daf1da5-fb7f-4db2-8128-c27868906dcf.detox.log" to files/ios/✓ AuthApp_ Signup → Login → Logout flows 3. Final logout → back to Login/device.log
+17:35:59.827 detox[34535] [90mi[39m saving FileArtifact to: files/ios/detox_pid_34535.json.log { append: true }
+17:35:59.827 detox[34535] [90mi[39m saving FileArtifact to: files/ios/detox_pid_34535.log { append: true }
+17:35:59.827 detox[34535] [90mE[39m onBeforeCleanup
+17:35:59.828 detox[34535] [90mi[39m send message
   data: {"type":"cleanup","params":{"stopRunner":true},"messageId":-49642}
-17:17:05.618 detox[32475] [90mi[39m send
+17:35:59.829 detox[34529] [90mi[39m get
+  data: {"type":"cleanup","params":{"stopRunner":true},"messageId":-49642}
+17:35:59.829 detox[34529] [90mi[39m send
   data: {
     "type": "cleanup",
     "params": {
@@ -3124,49 +3126,47 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3
     },
     "messageId": -49642
   }
-17:17:05.618 detox[32478] [90mi[39m send message
-  data: {"type":"cleanup","params":{"stopRunner":true},"messageId":-49642}
-17:17:05.619 detox[32475] [90mi[39m get
-  data: {"params":{},"type":"cleanupDone","messageId":-49642}
-17:17:05.620 detox[32475] [90mi[39m send
+17:35:59.830 detox[34529] [90mi[39m get
+  data: {"messageId":-49642,"type":"cleanupDone","params":{}}
+17:35:59.830 detox[34529] [90mi[39m send
   data: {
-    "params": {},
+    "messageId": -49642,
     "type": "cleanupDone",
-    "messageId": -49642
+    "params": {}
   }
-17:17:05.620 detox[32478] [90mi[39m get message
-  data: {"params":{},"type":"cleanupDone","messageId":-49642}
+17:35:59.830 detox[34535] [90mi[39m get message
+  data: {"messageId":-49642,"type":"cleanupDone","params":{}}
    
-17:17:05.621 detox[32475] [90mi[39m tester exited session 50a63e91-4d14-d391-a1fd-09b5b447cc14
-17:17:05.621 detox[32475] [90mi[39m send
+17:35:59.832 detox[34535] [90mi[39m dispatching event to  primary-34529 /tmp/detox.primary-34529  :  deallocateDevice , {
+  deviceCookie: {
+    id: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+    udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
+    type: 'ios.simulator'
+  }
+}
+17:35:59.833 detox[34529] [90mi[39m tester exited session 46618f87-b6ab-ac83-70fe-8a136be3b4e4
+17:35:59.833 detox[34529] [90mi[39m send
   data: {
     "type": "testerDisconnected",
     "messageId": -1
   }
-17:17:05.621 detox[32475] [90mE[39m connection :54553<->:54570
-17:17:05.621 detox[32478] [90mi[39m dispatching event to  primary-32475 /tmp/detox.primary-32475  :  deallocateDevice , {
+17:35:59.833 detox[34529] [90mE[39m connection :58535<->:58554
+17:35:59.833 detox[34529] [90mi[39m received event of :  deallocateDevice {
   deviceCookie: {
     id: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
     udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
     type: 'ios.simulator'
   }
 }
-17:17:05.622 detox[32475] [90mi[39m received event of :  deallocateDevice {
-  deviceCookie: {
-    id: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
-    udid: 'B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA',
-    type: 'ios.simulator'
-  }
-}
-17:17:05.622 detox[32475] [90mB[39m free: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
+17:35:59.833 detox[34529] [90mB[39m free: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
   data: {}
-17:17:05.623 detox[32475] [90mE[39m free: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
-17:17:05.623 detox[32475] [90mi[39m dispatching event to socket  :  deallocateDeviceDone {}
-17:17:05.623 detox[32478] [90mi[39m ## received events ##
-17:17:05.624 detox[32478] [90mi[39m detected event deallocateDeviceDone {}
-17:17:05.624 detox[32478] [90mE[39m tear down environment
-17:17:05.624 detox[32478] [90mE[39m e2e/authFlow.e2e.ts
-17:17:05.627 detox[32475] [90mi[39m received event of :  reportTestResults {
+17:35:59.835 detox[34529] [90mE[39m free: B3C64997-DA23-4F5D-A32D-E12FDB4AD6FA
+17:35:59.835 detox[34529] [90mi[39m dispatching event to socket  :  deallocateDeviceDone {}
+17:35:59.835 detox[34535] [90mi[39m ## received events ##
+17:35:59.835 detox[34535] [90mi[39m detected event deallocateDeviceDone {}
+17:35:59.835 detox[34535] [90mE[39m tear down environment
+17:35:59.835 detox[34535] [90mE[39m e2e/authFlow.e2e.ts
+17:35:59.839 detox[34529] [90mi[39m received event of :  reportTestResults {
   testResults: [
     {
       success: true,
@@ -3175,7 +3175,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3
     }
   ]
 }
-17:17:05.627 detox[32475] [90mi[39m dispatching event to socket  :  reportTestResultsDone {
+17:35:59.839 detox[34529] [90mi[39m dispatching event to socket  :  reportTestResultsDone {
   testResults: [
     {
       success: true,
@@ -3184,16 +3184,7 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3
     }
   ]
 }
-17:17:05.627 detox[32475] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-32475  :   sessionStateUpdate {
-  testResults: [
-    {
-      success: true,
-      testFilePath: '/Users/tareqaziz/workspace/reactnative/AuthApp/e2e/authFlow.e2e.ts',
-      isPermanentFailure: false
-    }
-  ]
-}
-17:17:05.627 detox[32478] [90mi[39m dispatching event to  primary-32475 /tmp/detox.primary-32475  :  reportTestResults , {
+17:35:59.839 detox[34535] [90mi[39m dispatching event to  primary-34529 /tmp/detox.primary-34529  :  reportTestResults , {
   testResults: [
     {
       success: true,
@@ -3203,8 +3194,8 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3
     }
   ]
 }
-17:17:05.627 detox[32478] [90mi[39m ## received events ##
-17:17:05.627 detox[32478] [90mi[39m detected event reportTestResultsDone {
+17:35:59.839 detox[34535] [90mi[39m ## received events ##
+17:35:59.839 detox[34535] [90mi[39m detected event reportTestResultsDone {
   testResults: [
     {
       success: true,
@@ -3213,14 +3204,23 @@ Wrote screenshot to: /private/var/folders/h7/ct1rpqv95z5g_dmdl3790yxm0000gn/T/f3
     }
   ]
 }
-17:17:05.629 detox[32475] [90mi[39m socket disconnected secondary-32478
-17:17:05.629 detox[32478] [90mi[39m connection closed primary-32475 /tmp/detox.primary-32475 0 tries remaining of 0
-17:17:05.629 detox[32478] [90mi[39m secondary-32478 exceeded connection rety amount of  or stopRetrying flag set.
-17:17:05.734 detox[32475] [90mE[39m jest --config e2e/jest.config.js
-17:17:05.734 detox[32475] [90mB[39m cleanup
+17:35:59.840 detox[34529] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-34529  :   sessionStateUpdate {
+  testResults: [
+    {
+      success: true,
+      testFilePath: '/Users/tareqaziz/workspace/reactnative/AuthApp/e2e/authFlow.e2e.ts',
+      isPermanentFailure: false
+    }
+  ]
+}
+17:35:59.841 detox[34529] [90mi[39m socket disconnected secondary-34535
+17:35:59.841 detox[34535] [90mi[39m connection closed primary-34529 /tmp/detox.primary-34529 0 tries remaining of 0
+17:35:59.841 detox[34535] [90mi[39m secondary-34535 exceeded connection rety amount of  or stopRetrying flag set.
+17:35:59.905 detox[34529] [90mE[39m jest --config e2e/jest.config.js
+17:35:59.906 detox[34529] [90mB[39m cleanup
   args: ()
-17:17:05.735 detox[32475] [90mE[39m cleanup
-17:17:05.735 detox[32475] [90mi[39m Detox server has been closed gracefully
-17:17:05.736 detox[32475] [90mi[39m app exited session 50a63e91-4d14-d391-a1fd-09b5b447cc14
-17:17:05.736 detox[32475] [90mE[39m connection :54553<->:54684
-17:17:05.737 detox[32475] [90mE[39m node_modules/.bin/detox test -c ios.sim.debug --record-logs all --record-videos all --take-screenshots all --artifacts-location ./files/ios/
+17:35:59.906 detox[34529] [90mE[39m cleanup
+17:35:59.907 detox[34529] [90mi[39m Detox server has been closed gracefully
+17:35:59.907 detox[34529] [90mi[39m app exited session 46618f87-b6ab-ac83-70fe-8a136be3b4e4
+17:35:59.907 detox[34529] [90mE[39m connection :58535<->:58693
+17:35:59.908 detox[34529] [90mE[39m node_modules/.bin/detox test -c ios.sim.debug --record-logs all --record-videos all --take-screenshots all --artifacts-location ./files/ios/

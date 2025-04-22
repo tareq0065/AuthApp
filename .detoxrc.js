@@ -28,6 +28,8 @@ module.exports = {
       binaryPath: 'android/app/build/outputs/apk/debug/app-debug.apk',
       build:
         'cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug',
+      testBinaryPath:
+        'android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk',
       reversePorts: [8081],
     },
     'android.release': {
@@ -35,6 +37,8 @@ module.exports = {
       binaryPath: 'android/app/build/outputs/apk/release/app-release.apk',
       build:
         'cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release',
+      testBinaryPath:
+        'android/app/build/outputs/apk/androidTest/debug/app-release-androidTest.apk',
     },
   },
   devices: {

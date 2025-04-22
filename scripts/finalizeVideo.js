@@ -32,46 +32,50 @@ function findFilesRecursively(dir, ext) {
     process.exit(1);
   }
 
-  // 1) Find & merge all mp4 clips
+  // 1) Gather and merge all mp4 clips
   const videos = findFilesRecursively(root, '.mp4');
-  if (videos.length) {
-    const listFile = path.join(root, 'ffmpeg_list.txt');
-    fs.writeFileSync(
-      listFile,
-      videos
-        .sort()
-        .map(v => `file '${v.replace(/'/g, "'\\''")}'`)
-        .join('\n'),
-    );
-
-    const merged = path.join(root, `${platform}.mp4`);
-    console.log(`🎬 Merging ${videos.length} clips into ${platform}.mp4…`);
-    execSync(
-      `ffmpeg -y -f concat -safe 0 -i "${listFile}" -c copy "${merged}"`,
-      {stdio: 'inherit'},
-    );
-    fs.unlinkSync(listFile);
-  } else {
+  if (!videos.length) {
     console.warn(`⚠️  No .mp4 clips found under files/${platform}/`);
+    process.exit(0);
   }
 
-  // 2) Collect all .png screenshots and move them up
-  const pngs = findFilesRecursively(root, '.png');
-  for (const src of pngs) {
-    const dest = path.join(root, path.basename(src));
-    // overwrite if same name
-    fs.renameSync(src, dest);
-  }
+  const listFile = path.join(root, 'ffmpeg_list.txt');
+  fs.writeFileSync(
+    listFile,
+    videos
+      .sort()
+      .map(v => `file '${v.replace(/'/g, "'\\''")}'`)
+      .join('\n'),
+  );
 
-  // 3) Remove every subfolder (including “✓ …” ones)
-  for (const entry of fs.readdirSync(root)) {
+  const mergedMp4 = path.join(root, `${platform}.mp4`);
+  console.log(`🎬 Merging ${videos.length} clips into ${platform}.mp4…`);
+  execSync(
+    `ffmpeg -y -f concat -safe 0 -i "${listFile}" -c copy "${mergedMp4}"`,
+    {stdio: 'inherit'},
+  );
+  fs.unlinkSync(listFile);
+
+  // 2) Convert merged MP4 → GIF (adjust fps/scale as you like)
+  const gifPath = path.join(root, `${platform}.gif`);
+  console.log(`🔄 Converting ${platform}.mp4 → ${platform}.gif…`);
+  execSync(
+    `ffmpeg -y -i "${mergedMp4}" -vf "fps=10,scale=480:-1:flags=lanczos" "${gifPath}"`,
+    {stdio: 'inherit'},
+  );
+
+  // 3) Cleanup: remove all original clips + merged MP4
+  console.log('🧹 Cleaning up intermediate files…');
+  videos.forEach(v => fs.unlinkSync(v));
+  fs.unlinkSync(mergedMp4);
+
+  // Remove any sub‑directories (those “✓ …” folders)
+  fs.readdirSync(root).forEach(entry => {
     const full = path.join(root, entry);
     if (fs.statSync(full).isDirectory()) {
       fs.rmSync(full, {recursive: true, force: true});
     }
-  }
+  });
 
-  console.log(
-    `✅ Done! files/${platform} now contains:\n  • ${platform}.mp4\n  • ${pngs.length} screenshot(s)`,
-  );
+  console.log(`✅ Done! GIF available at files/${platform}/${platform}.gif`);
 })();

@@ -70,6 +70,7 @@ export default function SignupScreen({navigation}: Props) {
           style={styles.input}
           value={name}
           onChangeText={setName}
+          placeholderTextColor="#000"
         />
         <TextInput
           placeholder="Email"
@@ -78,6 +79,7 @@ export default function SignupScreen({navigation}: Props) {
           style={styles.input}
           value={email}
           onChangeText={setEmail}
+          placeholderTextColor="#000"
         />
         <View style={styles.pwContainer}>
           <TextInput
@@ -87,9 +89,10 @@ export default function SignupScreen({navigation}: Props) {
             autoComplete="off"
             textContentType="none"
             importantForAutofill="no"
-            style={[styles.input, {flex: 1}]}
+            style={[styles.input, {height: 40, flex: 1}]}
             value={password}
             onChangeText={setPassword}
+            placeholderTextColor="#000"
           />
           <TouchableOpacity onPress={() => setSecure(s => !s)}>
             <Text style={styles.toggle}>{secure ? '👁️' : '🚫'}</Text>
@@ -119,6 +122,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
     textAlign: 'center',
+    color: '#000',
   },
   input: {
     borderWidth: 1,
@@ -126,6 +130,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 12,
     marginVertical: 8,
+    color: '#000',
   },
   pwContainer: {
     flexDirection: 'row',
